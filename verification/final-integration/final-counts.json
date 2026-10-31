@@ -1,0 +1,23 @@
+{
+  "Local": {
+    "Total": 536,
+    "Passed": 536,
+    "NotExecuted": 0,
+    "Failed": 0,
+    "Executed": 536
+  },
+  "Infrastructure": {
+    "Total": 2,
+    "Passed": 2,
+    "NotExecuted": 0,
+    "Failed": 0,
+    "Executed": 2
+  },
+  "PostgreSql": {
+    "Total": 112,
+    "Passed": 112,
+    "NotExecuted": 0,
+    "Failed": 0,
+    "Executed": 112
+  }
+}

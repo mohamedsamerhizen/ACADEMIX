@@ -1,0 +1,44 @@
+Test run for C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\bin\Release\net10.0\Academix.Tests.dll (.NETCoreApp,Version=v10.0)
+VSTest version 18.0.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:00:55.52]     Academix.Tests.Integration.Phase19CompletionWorkflowTests.FinalAuditLegacyMutationRevalidatesAfterObservedResourceWait(operation: "Transfer", revocation: "Disabled") [FAIL]
+  Failed Academix.Tests.Integration.Phase19CompletionWorkflowTests.FinalAuditLegacyMutationRevalidatesAfterObservedResourceWait(operation: "Transfer", revocation: "Disabled") [189 ms]
+  Error Message:
+   Academix.Api.Middleware.ApiFault : All target courses must belong to the active program.
+  Stack Trace:
+     at Academix.Api.Services.Lifecycle.LifecycleService.RequestTransfer(ClaimsPrincipal principal, SubmitTransferCredit body, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Lifecycle\LifecycleService.cs:line 159
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.FinalAuditLegacyMutationRevalidatesAfterObservedResourceWait(String operation, String revocation) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalAuditRevocationTests.cs:line 63
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.FinalAuditLegacyMutationRevalidatesAfterObservedResourceWait(String operation, String revocation) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalAuditRevocationTests.cs:line 152
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:56.87]     Academix.Tests.Integration.Phase19CompletionWorkflowTests.FinalAuditLegacyMutationRevalidatesAfterObservedResourceWait(operation: "Transfer", revocation: "Role") [FAIL]
+  Failed Academix.Tests.Integration.Phase19CompletionWorkflowTests.FinalAuditLegacyMutationRevalidatesAfterObservedResourceWait(operation: "Transfer", revocation: "Role") [174 ms]
+  Error Message:
+   Academix.Api.Middleware.ApiFault : All target courses must belong to the active program.
+  Stack Trace:
+     at Academix.Api.Services.Lifecycle.LifecycleService.RequestTransfer(ClaimsPrincipal principal, SubmitTransferCredit body, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Lifecycle\LifecycleService.cs:line 159
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.FinalAuditLegacyMutationRevalidatesAfterObservedResourceWait(String operation, String revocation) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalAuditRevocationTests.cs:line 63
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.FinalAuditLegacyMutationRevalidatesAfterObservedResourceWait(String operation, String revocation) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalAuditRevocationTests.cs:line 152
+--- End of stack trace from previous location ---
+[xUnit.net 00:01:31.82]     Academix.Tests.Integration.Phase19CompletionWorkflowTests.FinalAuditLegacyMutationRevalidatesAfterObservedResourceWait(operation: "Transfer", revocation: "Membership") [FAIL]
+  Failed Academix.Tests.Integration.Phase19CompletionWorkflowTests.FinalAuditLegacyMutationRevalidatesAfterObservedResourceWait(operation: "Transfer", revocation: "Membership") [157 ms]
+  Error Message:
+   Academix.Api.Middleware.ApiFault : All target courses must belong to the active program.
+  Stack Trace:
+     at Academix.Api.Services.Lifecycle.LifecycleService.RequestTransfer(ClaimsPrincipal principal, SubmitTransferCredit body, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Lifecycle\LifecycleService.cs:line 159
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.FinalAuditLegacyMutationRevalidatesAfterObservedResourceWait(String operation, String revocation) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalAuditRevocationTests.cs:line 63
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.FinalAuditLegacyMutationRevalidatesAfterObservedResourceWait(String operation, String revocation) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalAuditRevocationTests.cs:line 152
+--- End of stack trace from previous location ---
+[xUnit.net 00:01:33.13]     Academix.Tests.Integration.Phase19CompletionWorkflowTests.FinalAuditChainedRecognitionPreservesExternalCreditButRevalidatesCorrectedLocalSources(external: True) [FAIL]
+  Failed Academix.Tests.Integration.Phase19CompletionWorkflowTests.FinalAuditChainedRecognitionPreservesExternalCreditButRevalidatesCorrectedLocalSources(external: True) [331 ms]
+  Error Message:
+   Academix.Api.Middleware.ApiFault : All target courses must belong to the active program.
+  Stack Trace:
+     at Academix.Api.Services.Lifecycle.LifecycleService.RequestTransfer(ClaimsPrincipal principal, SubmitTransferCredit body, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Lifecycle\LifecycleService.cs:line 159
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.FinalAuditChainedRecognitionPreservesExternalCreditButRevalidatesCorrectedLocalSources(Boolean external) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalAuditAcademicTests.cs:line 44
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.FinalAuditChainedRecognitionPreservesExternalCreditButRevalidatesCorrectedLocalSources(Boolean external) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalAuditAcademicTests.cs:line 45
+--- End of stack trace from previous location ---
+Results File: C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\verification\runtime-closure\integration-initial.trx
+
+Failed!  - Failed:     4, Passed:   152, Skipped:     0, Total:   156, Duration: 1 m 41 s - Academix.Tests.dll (net10.0)

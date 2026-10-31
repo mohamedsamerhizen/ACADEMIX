@@ -1,0 +1,653 @@
+Test run for C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\bin\Release\net10.0\Academix.Tests.dll (.NETCoreApp,Version=v10.0)
+VSTest version 18.0.1 (x64)
+
+The following Tests are available:
+    Academix.Tests.Unit.AcademicOperationsPolicyTests.RejectInvalidSlot(weekday: 0, start: 540, duration: 60)
+    Academix.Tests.Unit.AcademicOperationsPolicyTests.RejectInvalidSlot(weekday: 8, start: 540, duration: 60)
+    Academix.Tests.Unit.AcademicOperationsPolicyTests.RejectInvalidSlot(weekday: 1, start: 1430, duration: 60)
+    Academix.Tests.Unit.AcademicOperationsPolicyTests.RejectInvalidSlot(weekday: 1, start: 600, duration: 5)
+    Academix.Tests.Unit.AcademicOperationsPolicyTests.RejectInvalidSlot(weekday: 3, start: 600, duration: 601)
+    Academix.Tests.Unit.AcademicOperationsPolicyTests.AcceptLastMinuteSlotWithBoundary
+    Academix.Tests.Unit.AcademicOperationsPolicyTests.RejectLocalOrUnorderedTimes
+    Academix.Tests.Unit.AcademicOperationsPolicyTests.ValidAttendanceStatuses(status: "Present")
+    Academix.Tests.Unit.AcademicOperationsPolicyTests.ValidAttendanceStatuses(status: "Late")
+    Academix.Tests.Unit.AcademicOperationsPolicyTests.ValidAttendanceStatuses(status: "Absent")
+    Academix.Tests.Unit.AcademicOperationsPolicyTests.ValidAttendanceStatuses(status: "Excused")
+    Academix.Tests.Unit.AcademicOperationsPolicyTests.RejectDuplicateAttendanceRows
+    Academix.Tests.Unit.AcademicOperationsPolicyTests.ValidateAdministrativeDecisions
+    Academix.Tests.Unit.AcademicOperationsPolicyTests.RejectShortStudentRequest
+    Academix.Tests.Unit.AcademicOperationsPolicyTests.CalendarCannotPublishBadAudience
+    Academix.Tests.Unit.AdvisingPolicyTests.Pagination_IsBounded(page: 1, skip: 0)
+    Academix.Tests.Unit.AdvisingPolicyTests.Pagination_IsBounded(page: 2, skip: 25)
+    Academix.Tests.Unit.AdvisingPolicyTests.Pagination_IsBounded(page: 10000, skip: 249975)
+    Academix.Tests.Unit.AdvisingPolicyTests.Pagination_RejectsOutOfRange(page: 0)
+    Academix.Tests.Unit.AdvisingPolicyTests.Pagination_RejectsOutOfRange(page: 10001)
+    Academix.Tests.Unit.AdvisingPolicyTests.Risk_RequiresRealEvidence_NotEmptyDenominators
+    Academix.Tests.Unit.AdvisingPolicyTests.ResolvedCase_RequiresCompletedTasks
+    Academix.Tests.Unit.AdvisingPolicyTests.TextValidation_RejectsEmptyOrOversizedStrings
+    Academix.Tests.Unit.AdvisingPolicyTests.AdvisingController_IsAuthenticated
+    Academix.Tests.Unit.AnalyticsPolicyTests.Offset_UsesBoundedPaging(page: 1, expected: 0)
+    Academix.Tests.Unit.AnalyticsPolicyTests.Offset_UsesBoundedPaging(page: 2, expected: 20)
+    Academix.Tests.Unit.AnalyticsPolicyTests.Offset_UsesBoundedPaging(page: 10000, expected: 199980)
+    Academix.Tests.Unit.AnalyticsPolicyTests.Offset_RejectsInvalidPages(page: 0)
+    Academix.Tests.Unit.AnalyticsPolicyTests.Offset_RejectsInvalidPages(page: -1)
+    Academix.Tests.Unit.AnalyticsPolicyTests.Offset_RejectsInvalidPages(page: 10001)
+    Academix.Tests.Unit.AnalyticsPolicyTests.Rate_DoesNotInventDenominatorForEmptyMetrics
+    Academix.Tests.Unit.AnalyticsPolicyTests.CsvCell_DisarmsSpreadsheetFormulas(malicious: "=SUM(A1:A3)")
+    Academix.Tests.Unit.AnalyticsPolicyTests.CsvCell_DisarmsSpreadsheetFormulas(malicious: "+cmd")
+    Academix.Tests.Unit.AnalyticsPolicyTests.CsvCell_DisarmsSpreadsheetFormulas(malicious: "-999")
+    Academix.Tests.Unit.AnalyticsPolicyTests.CsvCell_DisarmsSpreadsheetFormulas(malicious: "@formula")
+    Academix.Tests.Unit.AnalyticsPolicyTests.CsvCell_DisarmsSpreadsheetFormulas(malicious: "\ttab")
+    Academix.Tests.Unit.AnalyticsPolicyTests.CsvCell_DisarmsSpreadsheetFormulas(malicious: "  =SUM(A1)")
+    Academix.Tests.Unit.AnalyticsPolicyTests.CsvCell_EscapesEmbeddedQuotesAndNewlines
+    Academix.Tests.Unit.AnalyticsPolicyTests.AnalyticsController_RequiresAuthentication
+    Academix.Tests.Unit.BackgroundWorkerCancellationTests.CancelledTickPropagatesCancellationBeforeResolvingDatabaseWork
+    Academix.Tests.Unit.CommunicationPolicyTests.ParticipantOrderIsStableRegardlessOfRequestDirection
+    Academix.Tests.Unit.CommunicationPolicyTests.BlankMessagesAreRejected(value: null)
+    Academix.Tests.Unit.CommunicationPolicyTests.BlankMessagesAreRejected(value: "")
+    Academix.Tests.Unit.CommunicationPolicyTests.BlankMessagesAreRejected(value: "  ")
+    Academix.Tests.Unit.CommunicationPolicyTests.TextTrimmedAndLengthBounded
+    Academix.Tests.Unit.CommunicationPolicyTests.PaginationBoundsRejectInvalidRequests(offset: -1, limit: 10)
+    Academix.Tests.Unit.CommunicationPolicyTests.PaginationBoundsRejectInvalidRequests(offset: 0, limit: 0)
+    Academix.Tests.Unit.CommunicationPolicyTests.PaginationBoundsRejectInvalidRequests(offset: 0, limit: 101)
+    Academix.Tests.Unit.CommunicationPolicyTests.AnnouncementAudienceAndUtcDatesAreValidated
+    Academix.Tests.Unit.ControllerRouteTests.ControllerRoutesMatchApprovedApiSurface
+    Academix.Tests.Unit.CourseTests.Create_NormalizesCodeAndTitle
+    Academix.Tests.Unit.CourseTests.Create_RejectsEmptyId
+    Academix.Tests.Unit.CourseTests.Create_RejectsInvalidCodes(code: "CS")
+    Academix.Tests.Unit.CourseTests.Create_RejectsInvalidCodes(code: "1CS101")
+    Academix.Tests.Unit.CourseTests.Create_RejectsInvalidCodes(code: "")
+    Academix.Tests.Unit.CourseTests.Create_RejectsWhitespaceTitle
+    Academix.Tests.Unit.CurriculumPolicyTests.ValidatesCreditHoursAndRejectsDuplicateCourse
+    Academix.Tests.Unit.CurriculumPolicyTests.GradeBandsRejectInvalidThresholdsAndPointOrder
+    Academix.Tests.Unit.CurriculumPolicyTests.PlanRequiresValidCatalogAndGpaLimits
+    Academix.Tests.Unit.CurriculumPolicyTests.GpaUsesCreditWeightsAndReturnsNullWithNoGrades
+    Academix.Tests.Unit.CurriculumPolicyTests.RepeatedCourseCountsOnceAtBestResult
+    Academix.Tests.Unit.CurriculumPolicyTests.GraduationAuditRejectsMissingRequiredAndUnmetElectiveCredits
+    Academix.Tests.Unit.CurriculumPolicyTests.GraduationAuditRequiresPassingGradesAndMinimumGpa
+    Academix.Tests.Unit.ExamAttemptPolicyTests.DeadlineIsBoundedByExamClosure
+    Academix.Tests.Unit.ExamAttemptPolicyTests.OpeningIsInclusiveAndClosureIsExclusive
+    Academix.Tests.Unit.ExamAttemptPolicyTests.RepeatedSequenceAndValueAreIdempotentButStaleIsNot
+    Academix.Tests.Unit.ExamAttemptPolicyTests.SingleChoiceMustMatchPublishedOption
+    Academix.Tests.Unit.ExamAttemptPolicyTests.MultipleChoiceNormalizesOrderAndRejectsDuplicates
+    Academix.Tests.Unit.ExamAttemptPolicyTests.TrueFalseRejectsStringValues
+    Academix.Tests.Unit.ExamAttemptPolicyTests.TextResponsesRespectBounds
+    Academix.Tests.Unit.ExamAttemptPolicyTests.NullClearsAnswerButKeepsSequence
+    Academix.Tests.Unit.ExamAttemptPolicyTests.PersistedQuestionOrderingDoesNotMutateSource
+    Academix.Tests.Unit.ExamGradingPolicyTests.ChoiceAndBooleanScoringIsAllOrNothing
+    Academix.Tests.Unit.ExamGradingPolicyTests.ShortTextAcceptsCaseWhitespaceAndUnicodeNormalization
+    Academix.Tests.Unit.ExamGradingPolicyTests.EssayRequiresManualReviewUnlessBlank
+    Academix.Tests.Unit.ExamGradingPolicyTests.InvalidManualGradesAreRejected
+    Academix.Tests.Unit.ExamValidationTests.ValidDraftReturnsNormalizedTitle
+    Academix.Tests.Unit.ExamValidationTests.InvalidDurationRejected(duration: 0)
+    Academix.Tests.Unit.ExamValidationTests.InvalidDurationRejected(duration: 481)
+    Academix.Tests.Unit.ExamValidationTests.InvalidAttemptLimitRejected(attempts: 0)
+    Academix.Tests.Unit.ExamValidationTests.InvalidAttemptLimitRejected(attempts: 11)
+    Academix.Tests.Unit.ExamValidationTests.InvalidUtcWindowRejected
+    Academix.Tests.Unit.ExamValidationTests.EmptyQuestionSelectionRejected
+    Academix.Tests.Unit.ExamValidationTests.DuplicateQuestionRejected
+    Academix.Tests.Unit.ExamValidationTests.InvalidQuestionPointsRejected(pointsText: "0")
+    Academix.Tests.Unit.ExamValidationTests.InvalidQuestionPointsRejected(pointsText: "1000.001")
+    Academix.Tests.Unit.ExamValidationTests.ValidQuestionSelectionMaintainsOrder
+    Academix.Tests.Unit.FinalRemediationRulesTests.PublishedSourceVersionsAndLegacyUncertaintyDetermineFreshness(marked: False, published: "{\"Version\":1}", current: "{\"Version\":1}", external: True, stale: False)
+    Academix.Tests.Unit.FinalRemediationRulesTests.PublishedSourceVersionsAndLegacyUncertaintyDetermineFreshness(marked: False, published: "{\"Version\":1}", current: "{\"Version\":2}", external: True, stale: True)
+    Academix.Tests.Unit.FinalRemediationRulesTests.PublishedSourceVersionsAndLegacyUncertaintyDetermineFreshness(marked: True, published: "{}", current: "{}", external: False, stale: True)
+    Academix.Tests.Unit.FinalRemediationRulesTests.PublishedSourceVersionsAndLegacyUncertaintyDetermineFreshness(marked: False, published: "[]", current: "{}", external: True, stale: True)
+    Academix.Tests.Unit.FinalRemediationRulesTests.PublishedSourceVersionsAndLegacyUncertaintyDetermineFreshness(marked: False, published: "[]", current: "{}", external: False, stale: False)
+    Academix.Tests.Unit.FinalRemediationRulesTests.EquivalentJsonFormattingCannotInventAChangedAssessment
+    Academix.Tests.Unit.FinalRemediationRulesTests.ExplicitSupportedDecisionsPreserveOverrideIntent(decision: "Retain", manual: True)
+    Academix.Tests.Unit.FinalRemediationRulesTests.ExplicitSupportedDecisionsPreserveOverrideIntent(decision: "Retain", manual: False)
+    Academix.Tests.Unit.FinalRemediationRulesTests.ExplicitSupportedDecisionsPreserveOverrideIntent(decision: "Recalculate", manual: False)
+    Academix.Tests.Unit.FinalRemediationRulesTests.AutomaticRecalculationCannotSilentlyDiscardAnOfficialOverride(decision: "Recalculate", manual: True)
+    Academix.Tests.Unit.FinalRemediationRulesTests.AutomaticRecalculationCannotSilentlyDiscardAnOfficialOverride(decision: "Overwrite", manual: False)
+    Academix.Tests.Unit.FinalRemediationRulesTests.AutomaticRecalculationCannotSilentlyDiscardAnOfficialOverride(decision: "", manual: False)
+    Academix.Tests.Unit.FinalRemediationRulesTests.LaterEnrollmentMustFitExistingReservedSeats(current: 30, added: 1, seats: 30, valid: False)
+    Academix.Tests.Unit.FinalRemediationRulesTests.LaterEnrollmentMustFitExistingReservedSeats(current: 29, added: 1, seats: 30, valid: True)
+    Academix.Tests.Unit.FinalRemediationRulesTests.LaterEnrollmentMustFitExistingReservedSeats(current: 30, added: 2, seats: 32, valid: True)
+    Academix.Tests.Unit.FinalRemediationRulesTests.LaterEnrollmentMustFitExistingReservedSeats(current: 30, added: 3, seats: 32, valid: False)
+    Academix.Tests.Unit.FinalRemediationRulesTests.CapacityChangesRespectPreviouslyAssignedRooms(proposed: 30, room: 30, valid: True)
+    Academix.Tests.Unit.FinalRemediationRulesTests.CapacityChangesRespectPreviouslyAssignedRooms(proposed: 31, room: 30, valid: False)
+    Academix.Tests.Unit.FinalRemediationRulesTests.CapacityChangesRespectPreviouslyAssignedRooms(proposed: 20, room: 30, valid: True)
+    Academix.Tests.Unit.FinalRemediationRulesTests.UnassignedSectionsDoNotAcquireAnArtificialRoomLimit
+    Academix.Tests.Unit.FinalRemediationRulesTests.ConcreteConflictsUseHalfOpenIntervals(offset: 30, conflict: True)
+    Academix.Tests.Unit.FinalRemediationRulesTests.ConcreteConflictsUseHalfOpenIntervals(offset: 60, conflict: False)
+    Academix.Tests.Unit.FinalRemediationRulesTests.ConcreteConflictsUseHalfOpenIntervals(offset: 61, conflict: False)
+    Academix.Tests.Unit.FinalRemediationRulesTests.NewMigrationPreservesHistoryAndModelsAgree
+    Academix.Tests.Unit.GovernancePolicyTests.OnlyScopedStaffOperationsAreSupported(action: "AddRole", role: "Instructor")
+    Academix.Tests.Unit.GovernancePolicyTests.OnlyScopedStaffOperationsAreSupported(action: "RemoveRole", role: "TeachingAssistant")
+    Academix.Tests.Unit.GovernancePolicyTests.OnlyScopedStaffOperationsAreSupported(action: "AddRole", role: "Student")
+    Academix.Tests.Unit.GovernancePolicyTests.OnlyScopedStaffOperationsAreSupported(action: "Activate", role: "")
+    Academix.Tests.Unit.GovernancePolicyTests.OnlyScopedStaffOperationsAreSupported(action: "Deactivate", role: "")
+    Academix.Tests.Unit.GovernancePolicyTests.EscalationOrInvalidActionIsRejected(action: "AddRole", role: "SuperAdministrator")
+    Academix.Tests.Unit.GovernancePolicyTests.EscalationOrInvalidActionIsRejected(action: "AddRole", role: "InstitutionAdministrator")
+    Academix.Tests.Unit.GovernancePolicyTests.EscalationOrInvalidActionIsRejected(action: "Deactivate", role: "Student")
+    Academix.Tests.Unit.GovernancePolicyTests.EscalationOrInvalidActionIsRejected(action: "Arbitrary", role: "")
+    Academix.Tests.Unit.GovernancePolicyTests.BatchValidationRejectsEmptyDuplicateOversizedOrEmptyGuids
+    Academix.Tests.Unit.GovernancePolicyTests.ReviewRequiresSeparateApproverAndExactVersion
+    Academix.Tests.Unit.GovernancePolicyTests.PaginationAndReasonAreBounded
+    Academix.Tests.Unit.GradebookPolicyTests.WeightedComponentsAcrossCategoriesProduceDeterministicFinalPercentage
+    Academix.Tests.Unit.GradebookPolicyTests.LettersFollowPublishedPercentage(value: 90, expected: "A")
+    Academix.Tests.Unit.GradebookPolicyTests.LettersFollowPublishedPercentage(value: 89, expected: "B")
+    Academix.Tests.Unit.GradebookPolicyTests.LettersFollowPublishedPercentage(value: 70, expected: "C")
+    Academix.Tests.Unit.GradebookPolicyTests.LettersFollowPublishedPercentage(value: 59, expected: "F")
+    Academix.Tests.Unit.GradebookPolicyTests.InvalidWeightsAndRangesAreRejected
+    Academix.Tests.Unit.GradebookPolicyTests.SourcesRequireValidKindAndId
+    Academix.Tests.Unit.InstitutionalDocumentPolicyTests.SupportedKinds(kind: "Enrollment")
+    Academix.Tests.Unit.InstitutionalDocumentPolicyTests.SupportedKinds(kind: "Transcript")
+    Academix.Tests.Unit.InstitutionalDocumentPolicyTests.SupportedKinds(kind: "Standing")
+    Academix.Tests.Unit.InstitutionalDocumentPolicyTests.SupportedKinds(kind: "Graduation")
+    Academix.Tests.Unit.InstitutionalDocumentPolicyTests.RejectsUnknownKinds(kind: "FinancialStatement")
+    Academix.Tests.Unit.InstitutionalDocumentPolicyTests.RejectsUnknownKinds(kind: "")
+    Academix.Tests.Unit.InstitutionalDocumentPolicyTests.PurposeAndReasonAreNormalizedAndValidated
+    Academix.Tests.Unit.InstitutionalDocumentPolicyTests.RestrictsValidityAndStaleWrites
+    Academix.Tests.Unit.InstitutionalDocumentPolicyTests.ChecksStateTransitionsAndSelfReview
+    Academix.Tests.Unit.InstitutionalDocumentPolicyTests.RevocationAlwaysOverridesExpiry
+    Academix.Tests.Unit.LearningFileContentPolicyTests.AcceptsRecognizedSimpleContent(mime: "application/pdf", body: "%PDF-1.7\n1 0 obj\n")
+    Academix.Tests.Unit.LearningFileContentPolicyTests.AcceptsRecognizedSimpleContent(mime: "text/plain", body: "Text in valid UTF-8: hello\r\n")
+    Academix.Tests.Unit.LearningFileContentPolicyTests.AcceptsPngSignature
+    Academix.Tests.Unit.LearningFileContentPolicyTests.AcceptsJpegSignature
+    Academix.Tests.Unit.LearningFileContentPolicyTests.RejectsSpoofedBinaryMime(mime: "application/pdf")
+    Academix.Tests.Unit.LearningFileContentPolicyTests.RejectsSpoofedBinaryMime(mime: "image/png")
+    Academix.Tests.Unit.LearningFileContentPolicyTests.RejectsSpoofedBinaryMime(mime: "image/jpeg")
+    Academix.Tests.Unit.LearningFileContentPolicyTests.RejectsTruncatedPng
+    Academix.Tests.Unit.LearningFileContentPolicyTests.RejectsInvalidUtf8Text
+    Academix.Tests.Unit.LearningFileContentPolicyTests.RejectsBinaryControlCharactersInText
+    Academix.Tests.Unit.LearningFileContentPolicyTests.RejectsUnsupportedMediaType
+    Academix.Tests.Unit.LifecycleEquivalencyTests.ApprovedTransferSatisfiesCourseButNeverFabricatesGpaPoints
+    Academix.Tests.Unit.LifecycleEquivalencyTests.SameCourseCreditIsCountedOnlyOnceWhenGradedAndTransferred
+    Academix.Tests.Unit.LifecyclePolicyTests.OnlySupportedReviewDecisionsAreAccepted(decision: "Approve")
+    Academix.Tests.Unit.LifecyclePolicyTests.OnlySupportedReviewDecisionsAreAccepted(decision: "Reject")
+    Academix.Tests.Unit.LifecyclePolicyTests.InvalidDecisionIsRejected(decision: "Pending")
+    Academix.Tests.Unit.LifecyclePolicyTests.InvalidDecisionIsRejected(decision: "Issue")
+    Academix.Tests.Unit.LifecyclePolicyTests.InvalidDecisionIsRejected(decision: "approved")
+    Academix.Tests.Unit.LifecyclePolicyTests.StaleVersionCannotApproveRequest
+    Academix.Tests.Unit.LifecyclePolicyTests.ReviewedRequestCannotBeApprovedAgain
+    Academix.Tests.Unit.LifecyclePolicyTests.TransferRejectsDuplicateTargets
+    Academix.Tests.Unit.LifecyclePolicyTests.TransferRejectsInvalidCredits
+    Academix.Tests.Unit.LifecyclePolicyTests.TransferValidatesCompleteRequest
+    Academix.Tests.Unit.LifecyclePolicyTests.ReasonRejectsBlankOrOverlongText
+    Academix.Tests.Unit.LifecyclePolicyTests.AnAdministratorCannotApproveTheirOwnAcademicApplication
+    Academix.Tests.Unit.Phase19CompletionTests.LostDataProtectionKeyringFailsClosedWithAnExplicitConflict
+    Academix.Tests.Unit.Phase19CompletionTests.DetachedArtifactSignatureBindsThePdfDigestWithoutCircularProofHashing
+    Academix.Tests.Unit.Phase19CompletionTests.StoredJsonIdempotencySurvivesPostgreSqlFormatting
+    Academix.Tests.Unit.Phase19CompletionTests.ApplicantCannotReceiveStudentAccountBeforeAcceptance(status: "Invited")
+    Academix.Tests.Unit.Phase19CompletionTests.ApplicantCannotReceiveStudentAccountBeforeAcceptance(status: "Submitted")
+    Academix.Tests.Unit.Phase19CompletionTests.ApplicantCannotReceiveStudentAccountBeforeAcceptance(status: "Rejected")
+    Academix.Tests.Unit.Phase19CompletionTests.ApplicantCannotReceiveStudentAccountBeforeAcceptance(status: "invalid")
+    Academix.Tests.Unit.Phase19CompletionTests.AcceptedApplicantCanActivateOrRetry(status: "Accepted")
+    Academix.Tests.Unit.Phase19CompletionTests.AcceptedApplicantCanActivateOrRetry(status: "Converted")
+    Academix.Tests.Unit.Phase19CompletionTests.ApplicantEmailMustBeAnActualAddress(email: null)
+    Academix.Tests.Unit.Phase19CompletionTests.ApplicantEmailMustBeAnActualAddress(email: "")
+    Academix.Tests.Unit.Phase19CompletionTests.ApplicantEmailMustBeAnActualAddress(email: "invalid")
+    Academix.Tests.Unit.Phase19CompletionTests.ApplicantEmailMustBeAnActualAddress(email: "person <a@example.test>")
+    Academix.Tests.Unit.Phase19CompletionTests.ApplicantProfilePreservesUnicodeAndNormalizesOnlyWhitespace
+    Academix.Tests.Unit.Phase19CompletionTests.DocumentProofBindsItsSnapshotAndVersionedContext
+    Academix.Tests.Unit.Phase19CompletionTests.DocumentProofSurvivesJsonbObjectOrderingWhitespaceAndNumericNormalization
+    Academix.Tests.Unit.Phase19CompletionTests.PdfRendererProducesARealMultiPageArtifactAndDetectsChanges
+    Academix.Tests.Unit.Phase19CompletionTests.PdfIssuanceFailsClosedWhenLicenseNotConfigured
+    Academix.Tests.Unit.Phase19CompletionTests.TypedRequestsRejectMissingTargetsAndBroadExceptions
+    Academix.Tests.Unit.Phase19CompletionTests.TransitionPreventsRepeatedSourceOrTargetCreditRecognition
+    Academix.Tests.Unit.Phase19CompletionTests.DurableDeliveryUsesBoundedBackoff(attempt: 1, seconds: 5)
+    Academix.Tests.Unit.Phase19CompletionTests.DurableDeliveryUsesBoundedBackoff(attempt: 2, seconds: 10)
+    Academix.Tests.Unit.Phase19CompletionTests.DurableDeliveryUsesBoundedBackoff(attempt: 4, seconds: 40)
+    Academix.Tests.Unit.Phase19CompletionTests.DurableDeliveryUsesBoundedBackoff(attempt: 1000, seconds: 3600)
+    Academix.Tests.Unit.Phase19CompletionTests.StaleDeliveryLeaseCannotAcknowledgeAnotherAttempt
+    Academix.Tests.Unit.Phase19CompletionTests.CsvParsesQuotedValuesAndRejectsAmbiguousInput
+    Academix.Tests.Unit.Phase19CompletionTests.ImportsCanMapProfilesAndOnlyExplicitPublishedHistoryReferences
+    Academix.Tests.Unit.Phase19MigrationTests.CourseForeignKeysUseActualPostgreSqlColumnNamesAcrossHistory
+    Academix.Tests.Unit.Phase19MigrationTests.Phase19MigrationsFollowExistingHistoryAndNeverDropAcademicDataInUp
+    Academix.Tests.Unit.Phase19PolicyAndImportTests.InvalidAuthenticationInputFailsAsUnauthorized(email: null, password: "password")
+    Academix.Tests.Unit.Phase19PolicyAndImportTests.InvalidAuthenticationInputFailsAsUnauthorized(email: "", password: "password")
+    Academix.Tests.Unit.Phase19PolicyAndImportTests.InvalidAuthenticationInputFailsAsUnauthorized(email: "invalid", password: "password")
+    Academix.Tests.Unit.Phase19PolicyAndImportTests.InvalidAuthenticationInputFailsAsUnauthorized(email: "a@example.test", password: null)
+    Academix.Tests.Unit.Phase19PolicyAndImportTests.InvalidAuthenticationInputFailsAsUnauthorized(email: "a@example.test", password: "")
+    Academix.Tests.Unit.Phase19PolicyAndImportTests.NullLoginAndProvisionAreControlledFailures
+    Academix.Tests.Unit.Phase19PolicyAndImportTests.OnlyFinalizedAttemptsCanBeGraded(status: "Submitted", expected: True)
+    Academix.Tests.Unit.Phase19PolicyAndImportTests.OnlyFinalizedAttemptsCanBeGraded(status: "Expired", expected: True)
+    Academix.Tests.Unit.Phase19PolicyAndImportTests.OnlyFinalizedAttemptsCanBeGraded(status: "InProgress", expected: False)
+    Academix.Tests.Unit.Phase19PolicyAndImportTests.OnlyFinalizedAttemptsCanBeGraded(status: "Unknown", expected: False)
+    Academix.Tests.Unit.Phase19PolicyAndImportTests.DeadlineIsInclusiveAndSubmittedAttemptsRemainFinal
+    Academix.Tests.Unit.Phase19PolicyAndImportTests.EligibilityExplainsSpecificRejections(enforce: True, prerequisites: False, hold: False, current: 12, requested: 3, reason: "Prerequisites")
+    Academix.Tests.Unit.Phase19PolicyAndImportTests.EligibilityExplainsSpecificRejections(enforce: True, prerequisites: True, hold: True, current: 12, requested: 3, reason: "ActiveAcademicHold")
+    Academix.Tests.Unit.Phase19PolicyAndImportTests.EligibilityExplainsSpecificRejections(enforce: True, prerequisites: True, hold: False, current: 16, requested: 3, reason: "CreditLoad")
+    Academix.Tests.Unit.Phase19PolicyAndImportTests.CreditBoundaryAndScopedExceptionPreserveOtherRules
+    Academix.Tests.Unit.Phase19PolicyAndImportTests.PolicyRejectsUnsafeCreditLimits(limit: 0)
+    Academix.Tests.Unit.Phase19PolicyAndImportTests.PolicyRejectsUnsafeCreditLimits(limit: -1)
+    Academix.Tests.Unit.Phase19PolicyAndImportTests.PolicyRejectsUnsafeCreditLimits(limit: 101)
+    Academix.Tests.Unit.Phase19PolicyAndImportTests.PolicyRejectsEmptyAndNonUtcEffectiveIntervals
+    Academix.Tests.Unit.Phase19PolicyAndImportTests.ImportMapsFieldsAndNormalizesIdentityWithoutCredentials
+    Academix.Tests.Unit.Phase19PolicyAndImportTests.ImportRejectsDuplicateRecordsAndAmbiguousMapping
+    Academix.Tests.Unit.Phase19PolicyAndImportTests.ImportRejectsMalformedMappedValues(field: "external", value: "")
+    Academix.Tests.Unit.Phase19PolicyAndImportTests.ImportRejectsMalformedMappedValues(field: "mail", value: "invalid")
+    Academix.Tests.Unit.Phase19PolicyAndImportTests.ImportRejectsMalformedMappedValues(field: "program", value: "invalid")
+    Academix.Tests.Unit.Phase19PolicyAndImportTests.ImportRejectsMalformedMappedValues(field: "term", value: "00000000-0000-0000-0000-000000000000")
+    Academix.Tests.Unit.Phase19PolicyAndImportTests.ImportRejectsExtraFieldsAndUnboundedFiles
+    Academix.Tests.Unit.Phase1DomainTests.Course_BindsToInstitution
+    Academix.Tests.Unit.Phase1DomainTests.Course_ConcurrentVersionCheckRejectsStaleUpdate
+    Academix.Tests.Unit.Phase1DomainTests.Course_RejectsDifferentEmptyInstitution
+    Academix.Tests.Unit.Phase1DomainTests.RefreshTokenHashesAreStable
+    Academix.Tests.Unit.Phase1DomainTests.RandomRefreshTokensAreIndependent
+    Academix.Tests.Unit.Phase1DomainTests.RoleCatalogIsUnique
+    Academix.Tests.Unit.Phase20DegreeAuditTests.CompletedRequirementsAreEligibleWithExplainableEvidence
+    Academix.Tests.Unit.Phase20DegreeAuditTests.MissingMandatoryCourseBlocksEvenWhenElectiveCreditsCoverTotal
+    Academix.Tests.Unit.Phase20DegreeAuditTests.ElectiveGroupMustBeSatisfiedInAdditionToOverallCreditTotals
+    Academix.Tests.Unit.Phase20DegreeAuditTests.OverlappingGroupsAreRejectedInsteadOfSharingOneAchievement
+    Academix.Tests.Unit.Phase20DegreeAuditTests.RepeatedAttemptsUseBestGradeAndEarnCreditOnce
+    Academix.Tests.Unit.Phase20DegreeAuditTests.RecognizedCreditDoesNotInventGpaOrDuplicateNativeCredit
+    Academix.Tests.Unit.Phase20DegreeAuditTests.OneRecognizedSourceCannotSatisfyTwoTargets
+    Academix.Tests.Unit.Phase20DegreeAuditTests.CurriculumWithoutMinimumGpaDoesNotRequireInventedGradesForRecognizedCredit
+    Academix.Tests.Unit.Phase20DegreeAuditTests.GpaAndPassedCreditBoundariesAreExact(grade: 60, eligible: True)
+    Academix.Tests.Unit.Phase20DegreeAuditTests.GpaAndPassedCreditBoundariesAreExact(grade: 59.99, eligible: False)
+    Academix.Tests.Unit.Phase20DegreeAuditTests.HigherCurriculumRevisionCanIntroduceNewMandatoryRequirements
+    Academix.Tests.Unit.Phase20DegreeAuditTests.ApprovedWaiverSatisfiesCourseButDoesNotGrantCredits
+    Academix.Tests.Unit.Phase20DegreeAuditTests.ApprovedPassedSubstitutionIsConsumedOnlyOnce
+    Academix.Tests.Unit.Phase20DegreeAuditTests.SubstitutionCannotStealNativeCurriculumCredit
+    Academix.Tests.Unit.Phase20DegreeAuditTests.ActiveCoursesArePendingAndDeduplicatedRatherThanEarned
+    Academix.Tests.Unit.Phase20DegreeAuditTests.InstitutionalStandingReviewCanBlockOtherwiseCompleteDegree
+    Academix.Tests.Unit.Phase20DegreeAuditTests.CurrentRecordChangesImmediatelyChangeEligibility
+    Academix.Tests.Unit.Phase20DegreeAuditTests.MissingPrerequisiteAndCompletionBottleneckExplainDelay
+    Academix.Tests.Unit.Phase20DegreeAuditTests.PassedPrerequisiteStillMustMeetItsMinimumPercentage
+    Academix.Tests.Unit.Phase20MigrationTests.Phase20FollowsPhase19PreservesDataAndMatchesTheModel
+    Academix.Tests.Unit.Phase21FinanceRulesTests.CurrencyUsesOfficialMinorUnitsRatherThanLocaleFormatting(code: "USD", digits: 2)
+    Academix.Tests.Unit.Phase21FinanceRulesTests.CurrencyUsesOfficialMinorUnitsRatherThanLocaleFormatting(code: "IQD", digits: 3)
+    Academix.Tests.Unit.Phase21FinanceRulesTests.CurrencyUsesOfficialMinorUnitsRatherThanLocaleFormatting(code: "JPY", digits: 0)
+    Academix.Tests.Unit.Phase21FinanceRulesTests.CurrencyUsesOfficialMinorUnitsRatherThanLocaleFormatting(code: "CLF", digits: 4)
+    Academix.Tests.Unit.Phase21FinanceRulesTests.InvalidOrNonMonetaryCurrencyCodesAreRejected(code: "XYZ")
+    Academix.Tests.Unit.Phase21FinanceRulesTests.InvalidOrNonMonetaryCurrencyCodesAreRejected(code: "XAU")
+    Academix.Tests.Unit.Phase21FinanceRulesTests.InvalidOrNonMonetaryCurrencyCodesAreRejected(code: "")
+    Academix.Tests.Unit.Phase21FinanceRulesTests.InvalidOrNonMonetaryCurrencyCodesAreRejected(code: null)
+    Academix.Tests.Unit.Phase21FinanceRulesTests.NoImplicitCurrencyConversionOrCrossCurrencyAllocation
+    Academix.Tests.Unit.Phase21FinanceRulesTests.MonetaryAmountsArePositiveAndBounded(amount: 0)
+    Academix.Tests.Unit.Phase21FinanceRulesTests.MonetaryAmountsArePositiveAndBounded(amount: -1)
+    Academix.Tests.Unit.Phase21FinanceRulesTests.MonetaryAmountsArePositiveAndBounded(amount: -9223372036854775808)
+    Academix.Tests.Unit.Phase21FinanceRulesTests.MonetaryAmountsArePositiveAndBounded(amount: 9223372036854775807)
+    Academix.Tests.Unit.Phase21FinanceRulesTests.FixedAndCreditHourPricingDeriveDifferentAuthoritativeQuantities
+    Academix.Tests.Unit.Phase21FinanceRulesTests.AcademicYearScopesUseExplicitInstitutionalPeriodsAcrossCalendarYears
+    Academix.Tests.Unit.Phase21FinanceRulesTests.CreditPricingRoundsOnceInMinorUnitsAwayFromZero(rate: 101, credits: 1.5, expected: 152)
+    Academix.Tests.Unit.Phase21FinanceRulesTests.CreditPricingRoundsOnceInMinorUnitsAwayFromZero(rate: 101, credits: 1, expected: 101)
+    Academix.Tests.Unit.Phase21FinanceRulesTests.CreditPricingRoundsOnceInMinorUnitsAwayFromZero(rate: 999, credits: 3.25, expected: 3247)
+    Academix.Tests.Unit.Phase21FinanceRulesTests.FractionalMinorUnitUnderflowAndOverflowFailExplicitly
+    Academix.Tests.Unit.Phase21FinanceRulesTests.VersionChecksProtectPublishedPricingAndConflictingAdjustments
+    Academix.Tests.Unit.Phase21FinanceRulesTests.JournalsMustBeBalancedCompleteAndUseDistinctValidBuckets
+    Academix.Tests.Unit.Phase21FinanceRulesTests.CashAllocationOverpaymentAndReversalArithmeticReconcile
+    Academix.Tests.Unit.Phase21FinanceRulesTests.NegativeDebtUnderfundedRefundAndUnbackedCreditFail(bucket: "Receivable", amount: -1)
+    Academix.Tests.Unit.Phase21FinanceRulesTests.NegativeDebtUnderfundedRefundAndUnbackedCreditFail(bucket: "Funds", amount: -1)
+    Academix.Tests.Unit.Phase21FinanceRulesTests.NegativeDebtUnderfundedRefundAndUnbackedCreditFail(bucket: "StudentCredit", amount: 1)
+    Academix.Tests.Unit.Phase21FinanceRulesTests.PendingClaimsDoNotBecomeCollectedMoney
+    Academix.Tests.Unit.Phase21FinanceRulesTests.DuplicatePaymentReferencesNormalizeConsistently
+    Academix.Tests.Unit.Phase21FinanceRulesTests.AllocationsRespectBothInvoiceDebtAndUnreservedSourceCash
+    Academix.Tests.Unit.Phase21FinanceRulesTests.ConcurrentRefundReservationInvariantLeavesOnlyUnreservedCash
+    Academix.Tests.Unit.Phase21FinanceRulesTests.RefundabilityRequiresExplicitPolicyAndHonorsDebtRules
+    Academix.Tests.Unit.Phase21FinanceRulesTests.InstallmentsReconcileRemaindersWithoutAdditionalDebt
+    Academix.Tests.Unit.Phase21FinanceRulesTests.ReschedulingKeepsOriginalDebtSnapshotAndExposesNewUnscheduledCharges
+    Academix.Tests.Unit.Phase21FinanceRulesTests.InstallmentDatesAndCountsFollowInstitutionalPolicy
+    Academix.Tests.Unit.Phase21FinanceRulesTests.ScholarshipsHaveDeterministicOrderingAndCannotExceedChargeOrBudget
+    Academix.Tests.Unit.Phase21FinanceRulesTests.ScholarshipCategoryCannotConsumeOtherFeesAndBudgetExhaustionGivesZero
+    Academix.Tests.Unit.Phase21FinanceRulesTests.ReportingNetsCorrectionsRatherThanCountingReversedCashOrAidTwice
+    Academix.Tests.Unit.Phase21FinanceRulesTests.FinancialRestrictionsAreOptInAndCannotRetroactivelyApplyNewPolicies
+    Academix.Tests.Unit.Phase21FinanceRulesTests.HoldThresholdAndGraceBoundariesAreStrict
+    Academix.Tests.Unit.Phase21FinanceRulesTests.InstitutionLocalDatesCanDifferFromUtc
+    Academix.Tests.Unit.Phase21MigrationTests.FinanceMigrationIsAdditiveAndCurrentModelHasNoPendingChanges
+    Academix.Tests.Unit.Phase21MigrationTests.NaturalKeysPreventDuplicateTuitionReferencesPostingAndRefundExecution
+    Academix.Tests.Unit.Phase21MigrationTests.AllocationsHaveTenantAccountAndCurrencyBoundReferencesOnBothSides
+    Academix.Tests.Unit.Phase22CampusSchedulingTests.WeeklyIntervalsUseHalfOpenBoundaries(a: 540, durationA: 60, b: 600, durationB: 60, conflict: False)
+    Academix.Tests.Unit.Phase22CampusSchedulingTests.WeeklyIntervalsUseHalfOpenBoundaries(a: 540, durationA: 60, b: 599, durationB: 60, conflict: True)
+    Academix.Tests.Unit.Phase22CampusSchedulingTests.WeeklyIntervalsUseHalfOpenBoundaries(a: 600, durationA: 30, b: 540, durationB: 60, conflict: False)
+    Academix.Tests.Unit.Phase22CampusSchedulingTests.WeeklyIntervalsUseHalfOpenBoundaries(a: 600, durationA: 30, b: 540, durationB: 61, conflict: True)
+    Academix.Tests.Unit.Phase22CampusSchedulingTests.WeeklyIntervalsUseHalfOpenBoundaries(a: 600, durationA: 60, b: 600, durationB: 60, conflict: True)
+    Academix.Tests.Unit.Phase22CampusSchedulingTests.UtcIntervalsUseHalfOpenBoundaries
+    Academix.Tests.Unit.Phase22CampusSchedulingTests.SupportedRoomKindsAndCapacitiesAreAccepted(kind: "Classroom", capacity: 30)
+    Academix.Tests.Unit.Phase22CampusSchedulingTests.SupportedRoomKindsAndCapacitiesAreAccepted(kind: "Laboratory", capacity: 60)
+    Academix.Tests.Unit.Phase22CampusSchedulingTests.SupportedRoomKindsAndCapacitiesAreAccepted(kind: "LectureHall", capacity: 500)
+    Academix.Tests.Unit.Phase22CampusSchedulingTests.SupportedRoomKindsAndCapacitiesAreAccepted(kind: "SeminarRoom", capacity: 1)
+    Academix.Tests.Unit.Phase22CampusSchedulingTests.InvalidRoomsAreRejected(kind: "Classroom", capacity: 0)
+    Academix.Tests.Unit.Phase22CampusSchedulingTests.InvalidRoomsAreRejected(kind: "Auditorium", capacity: 30)
+    Academix.Tests.Unit.Phase22CampusSchedulingTests.InvalidRoomsAreRejected(kind: "Laboratory", capacity: 10001)
+    Academix.Tests.Unit.Phase22CampusSchedulingTests.RevisionReasonIsNormalized(entered: "  Lab relocation  ", expected: "Lab relocation")
+    Academix.Tests.Unit.Phase22CampusSchedulingTests.RevisionReasonIsNormalized(entered: null, expected: "Timetable updated")
+    Academix.Tests.Unit.Phase22CampusSchedulingTests.InvalidRevisionReasonsAreRejected(entered: "")
+    Academix.Tests.Unit.Phase22CampusSchedulingTests.InvalidRevisionReasonsAreRejected(entered: "a")
+    Academix.Tests.Unit.Phase22CampusSchedulingTests.InvalidRevisionReasonsAreRejected(entered: "  ")
+    Academix.Tests.Unit.Phase22CampusSchedulingTests.RevisionReasonIsLengthBounded
+    Academix.Tests.Unit.Phase22CampusSchedulingTests.SlotNoOpComparisonIgnoresOnlyOptimisticVersion
+    Academix.Tests.Unit.Phase22CampusSchedulingTests.BuildingCodeAndNameAreValidated
+    Academix.Tests.Unit.Phase22PhysicalVenueTests.AValidMaintenanceWindowIsAccepted
+    Academix.Tests.Unit.Phase22PhysicalVenueTests.AValidPhysicalExamDoesNotChangeElectronicWindow
+    Academix.Tests.Unit.Phase22PhysicalVenueTests.NonFutureReservationIsRejected(minutes: 0)
+    Academix.Tests.Unit.Phase22PhysicalVenueTests.NonFutureReservationIsRejected(minutes: -30)
+    Academix.Tests.Unit.Phase22PhysicalVenueTests.PastTimeWindowIsRejected
+    Academix.Tests.Unit.Phase22PhysicalVenueTests.LocalClockTimesCannotBeUsedForPhysicalRooms
+    Academix.Tests.Unit.Phase22PhysicalVenueTests.MaintenanceCannotClaimExamMetadata
+    Academix.Tests.Unit.Phase22PhysicalVenueTests.PhysicalExamRequiresExistingLinkageAndInvigilator
+    Academix.Tests.Unit.Phase22PhysicalVenueTests.ExamDurationIsBounded
+    Academix.Tests.Unit.Phase22PhysicalVenueTests.MaintenanceMaximumDurationIsBounded
+    Academix.Tests.Unit.Phase22PhysicalVenueTests.MissingRequestIdIsRejected
+    Academix.Tests.Unit.Phase22PhysicalVenueTests.IdempotencyRequiresIdenticalPayload
+    Academix.Tests.Unit.Phase22PhysicalVenueTests.CancellationRequiresVersionAndAuditableReason
+    Academix.Tests.Unit.Phase22PhysicalVenueTests.HalfOpenIntervalAllowsAdjacentReservations
+    Academix.Tests.Unit.Phase22PhysicalVenueTests.Phase22FinalMigrationIsAdditiveAndTenantLinked
+    Academix.Tests.Unit.Phase22SessionReschedulingTests.ValidRescheduleAcceptsFutureUtcAppointmentAndReason
+    Academix.Tests.Unit.Phase22SessionReschedulingTests.InvalidTimeWindowRejected(hoursFromNow: -1, durationMinutes: 60)
+    Academix.Tests.Unit.Phase22SessionReschedulingTests.InvalidTimeWindowRejected(hoursFromNow: 1, durationMinutes: 0)
+    Academix.Tests.Unit.Phase22SessionReschedulingTests.InvalidTimeWindowRejected(hoursFromNow: 1, durationMinutes: 721)
+    Academix.Tests.Unit.Phase22SessionReschedulingTests.NonUtcSessionTimesAreRejected
+    Academix.Tests.Unit.Phase22SessionReschedulingTests.RescheduleRequiresMeaningfulReason(reason: "")
+    Academix.Tests.Unit.Phase22SessionReschedulingTests.RescheduleRequiresMeaningfulReason(reason: "  ")
+    Academix.Tests.Unit.Phase22SessionReschedulingTests.RescheduleRequiresMeaningfulReason(reason: "ab")
+    Academix.Tests.Unit.Phase22SessionReschedulingTests.SessionNoOpIgnoresOnlyVersion
+    Academix.Tests.Unit.Phase22SessionReschedulingTests.SessionSnapshotPreservesTimesSlotAndVersion
+    Academix.Tests.Unit.Phase22SessionReschedulingTests.OccupancyRequiresBoundedUtcInterval
+    Academix.Tests.Unit.Phase22SessionReschedulingTests.MigrationIsAdditiveAndModelDefinesTenantBoundImmutableHistory
+    Academix.Tests.Unit.Phase22StandaloneSessionRoomsTests.StandaloneSessionMayAllocateAnExplicitRoom
+    Academix.Tests.Unit.Phase22StandaloneSessionRoomsTests.OmittedRoomPreservesExistingStandaloneRoom
+    Academix.Tests.Unit.Phase22StandaloneSessionRoomsTests.StandaloneRoomCanBeExplicitlyReleased
+    Academix.Tests.Unit.Phase22StandaloneSessionRoomsTests.LinkedSessionInheritsSlotRoom
+    Academix.Tests.Unit.Phase22StandaloneSessionRoomsTests.LinkedSessionCannotOverrideOrRemoveRoom
+    Academix.Tests.Unit.Phase22StandaloneSessionRoomsTests.SessionRevisionTracksRoomAssignment
+    Academix.Tests.Unit.Phase22StandaloneSessionRoomsTests.ExistingSessionContractsRemainBackwardsCompatible
+    Academix.Tests.Unit.Phase22StandaloneSessionRoomsTests.MigrationIsAdditiveAndTenantScoped
+    Academix.Tests.Unit.Phase22TimetableRevisionTests.RevisionMigrationIsAdditiveAndPreservesEarlierPhase
+    Academix.Tests.Unit.Phase22TimetableRevisionTests.HistoryHasInstitutionBoundSlotAndActorReferences
+    Academix.Tests.Unit.Phase22TimetableRevisionTests.StateSnapshotsRoundTripWithRoomAndVersion
+    Academix.Tests.Unit.Phase23CompletionMigrationTests.CompletionAddsThreeTablesAndPreservesExistingTables
+    Academix.Tests.Unit.Phase23CompletionRulesTests.SupportedServiceDesks(code: "GeneralSupport")
+    Academix.Tests.Unit.Phase23CompletionRulesTests.SupportedServiceDesks(code: "StudentAffairs")
+    Academix.Tests.Unit.Phase23CompletionRulesTests.SupportedServiceDesks(code: "ITSupport")
+    Academix.Tests.Unit.Phase23CompletionRulesTests.SupportedServiceDesks(code: "Library")
+    Academix.Tests.Unit.Phase23CompletionRulesTests.SupportedServiceDesks(code: "CampusServices")
+    Academix.Tests.Unit.Phase23CompletionRulesTests.NativeWorkflowsCannotBeRecreatedAsGenericQueues(code: "Finance")
+    Academix.Tests.Unit.Phase23CompletionRulesTests.NativeWorkflowsCannotBeRecreatedAsGenericQueues(code: "Graduation")
+    Academix.Tests.Unit.Phase23CompletionRulesTests.NativeWorkflowsCannotBeRecreatedAsGenericQueues(code: "AcademicRequests")
+    Academix.Tests.Unit.Phase23CompletionRulesTests.NativeWorkflowsCannotBeRecreatedAsGenericQueues(code: "")
+    Academix.Tests.Unit.Phase23CompletionRulesTests.ReferralRejectsSameQueue
+    Academix.Tests.Unit.Phase23CompletionRulesTests.ReferralRequiresReasonAndVersion
+    Academix.Tests.Unit.Phase23CompletionRulesTests.EscalationRejectsUnsupportedPriority(priority: "Normal")
+    Academix.Tests.Unit.Phase23CompletionRulesTests.EscalationRejectsUnsupportedPriority(priority: "Critical")
+    Academix.Tests.Unit.Phase23CompletionRulesTests.EscalationRejectsUnsupportedPriority(priority: "emergency")
+    Academix.Tests.Unit.Phase23CompletionRulesTests.EscalationRequiresConcurrencyVersion
+    Academix.Tests.Unit.Phase23CompletionRulesTests.AssignmentRequiresJustification
+    Academix.Tests.Unit.Phase23CompletionRulesTests.PdfAttachmentAcceptsMatchingHeader
+    Academix.Tests.Unit.Phase23CompletionRulesTests.AttachmentRejectsSpoofedMimeType
+    Academix.Tests.Unit.Phase23CompletionRulesTests.AttachmentRejectsOversizedPayload
+    Academix.Tests.Unit.Phase23CompletionRulesTests.AttachmentRejectsExtensionMismatch
+    Academix.Tests.Unit.Phase23CompletionRulesTests.StudentViewContainsNoPrivateNoteContract
+    Academix.Tests.Unit.Phase23MigrationTests.NewCaseSchemaIsAdditiveAndInstitutionScoped
+    Academix.Tests.Unit.Phase23StudentServiceRulesTests.AuthorizedTransition(from: "Submitted", action: "Start", student: False, result: "InReview")
+    Academix.Tests.Unit.Phase23StudentServiceRulesTests.AuthorizedTransition(from: "InReview", action: "RequestInfo", student: False, result: "AwaitingStudent")
+    Academix.Tests.Unit.Phase23StudentServiceRulesTests.AuthorizedTransition(from: "AwaitingStudent", action: "Reply", student: True, result: "InReview")
+    Academix.Tests.Unit.Phase23StudentServiceRulesTests.AuthorizedTransition(from: "InReview", action: "Resolve", student: False, result: "Resolved")
+    Academix.Tests.Unit.Phase23StudentServiceRulesTests.AuthorizedTransition(from: "InReview", action: "Reject", student: False, result: "Rejected")
+    Academix.Tests.Unit.Phase23StudentServiceRulesTests.AuthorizedTransition(from: "Resolved", action: "Close", student: False, result: "Closed")
+    Academix.Tests.Unit.Phase23StudentServiceRulesTests.AuthorizedTransition(from: "Submitted", action: "Cancel", student: True, result: "Cancelled")
+    Academix.Tests.Unit.Phase23StudentServiceRulesTests.AuthorizedTransition(from: "AwaitingStudent", action: "Cancel", student: True, result: "Cancelled")
+    Academix.Tests.Unit.Phase23StudentServiceRulesTests.InvalidTransition(from: "Submitted", action: "Resolve", student: False)
+    Academix.Tests.Unit.Phase23StudentServiceRulesTests.InvalidTransition(from: "Submitted", action: "Start", student: True)
+    Academix.Tests.Unit.Phase23StudentServiceRulesTests.InvalidTransition(from: "InReview", action: "Resolve", student: True)
+    Academix.Tests.Unit.Phase23StudentServiceRulesTests.InvalidTransition(from: "Resolved", action: "Resolve", student: False)
+    Academix.Tests.Unit.Phase23StudentServiceRulesTests.InvalidTransition(from: "Rejected", action: "Reply", student: True)
+    Academix.Tests.Unit.Phase23StudentServiceRulesTests.InvalidTransition(from: "Closed", action: "Start", student: False)
+    Academix.Tests.Unit.Phase23StudentServiceRulesTests.InvalidTransition(from: "Cancelled", action: "Start", student: False)
+    Academix.Tests.Unit.Phase23StudentServiceRulesTests.FinanceAndAcademicServiceDuplicationBlocked
+    Academix.Tests.Unit.Phase23StudentServiceRulesTests.NewCatalogEntryIsValidated
+    Academix.Tests.Unit.Phase23StudentServiceRulesTests.StableClientRequestIdIsMandatory
+    Academix.Tests.Unit.Phase23StudentServiceRulesTests.StudentCannotSupplyPrivateNotes
+    Academix.Tests.Unit.Phase23StudentServiceRulesTests.EveryActionRequiresOptimisticVersion
+    Academix.Tests.Unit.Phase23StudentServiceRulesTests.PublicTimelineContractCannotSerializeStaffNotes
+    Academix.Tests.Unit.Phase24QualityCompletionTests.RubricProficiencyChecksActualPoints(points: 70, max: 100, threshold: 70, expected: True)
+    Academix.Tests.Unit.Phase24QualityCompletionTests.RubricProficiencyChecksActualPoints(points: 69, max: 100, threshold: 70, expected: False)
+    Academix.Tests.Unit.Phase24QualityCompletionTests.RubricProficiencyChecksActualPoints(points: 7, max: 10, threshold: 70, expected: True)
+    Academix.Tests.Unit.Phase24QualityCompletionTests.RubricProficiencyChecksActualPoints(points: 0, max: 20, threshold: 0, expected: True)
+    Academix.Tests.Unit.Phase24QualityCompletionTests.RubricProficiencyChecksActualPoints(points: 15, max: 20, threshold: 80, expected: False)
+    Academix.Tests.Unit.Phase24QualityCompletionTests.RejectsInvalidRubricScoresAndThresholds(points: -1, max: 100, threshold: 50)
+    Academix.Tests.Unit.Phase24QualityCompletionTests.RejectsInvalidRubricScoresAndThresholds(points: 101, max: 100, threshold: 50)
+    Academix.Tests.Unit.Phase24QualityCompletionTests.RejectsInvalidRubricScoresAndThresholds(points: 5, max: 0, threshold: 50)
+    Academix.Tests.Unit.Phase24QualityCompletionTests.RejectsInvalidRubricScoresAndThresholds(points: 5, max: -1, threshold: 50)
+    Academix.Tests.Unit.Phase24QualityCompletionTests.RejectsInvalidRubricScoresAndThresholds(points: 5, max: 10, threshold: 101)
+    Academix.Tests.Unit.Phase24QualityCompletionTests.UnmappedCriteriaNeverClaimAttainment
+    Academix.Tests.Unit.Phase24QualityCompletionTests.MissingGradedEvidenceIsUnknownNotFailure
+    Academix.Tests.Unit.Phase24QualityCompletionTests.ThresholdsMeasureCriterionObservationsNotStudentCount(total: 10, proficient: 7, target: 70, status: "DirectCriterionTargetMet")
+    Academix.Tests.Unit.Phase24QualityCompletionTests.ThresholdsMeasureCriterionObservationsNotStudentCount(total: 10, proficient: 6, target: 70, status: "DirectCriterionBelowTarget")
+    Academix.Tests.Unit.Phase24QualityCompletionTests.ThresholdsMeasureCriterionObservationsNotStudentCount(total: 3, proficient: 1, target: 34, status: "DirectCriterionBelowTarget")
+    Academix.Tests.Unit.Phase24QualityCompletionTests.RejectsFabricatedAchievementCounts
+    Academix.Tests.Unit.Phase24QualityCompletionTests.EvidenceLabelsMustBeMeaningful(title: "")
+    Academix.Tests.Unit.Phase24QualityCompletionTests.EvidenceLabelsMustBeMeaningful(title: "x")
+    Academix.Tests.Unit.Phase24QualityCompletionTests.EvidenceLabelsMustBeMeaningful(title: "a\nproblem")
+    Academix.Tests.Unit.Phase24QualityCompletionTests.EvidenceDigestsAreStableAndChangeWithContent
+    Academix.Tests.Unit.Phase24QualityCompletionTests.CompletionMigrationIsAdditiveWithImmutableEvidenceGuards
+    Academix.Tests.Unit.Phase24QualityMigrationTests.QualityMigrationIsAdditiveAndModelsHaveInstitutionScopedKeys
+    Academix.Tests.Unit.Phase24QualityRulesTests.OutcomeCodeNormalizes(supplied: " plo_01 ", expected: "PLO_01")
+    Academix.Tests.Unit.Phase24QualityRulesTests.OutcomeCodeNormalizes(supplied: "abc-12", expected: "ABC-12")
+    Academix.Tests.Unit.Phase24QualityRulesTests.InvalidOutcomeCodesAreRejected(supplied: "")
+    Academix.Tests.Unit.Phase24QualityRulesTests.InvalidOutcomeCodesAreRejected(supplied: "a")
+    Academix.Tests.Unit.Phase24QualityRulesTests.InvalidOutcomeCodesAreRejected(supplied: "contains space")
+    Academix.Tests.Unit.Phase24QualityRulesTests.InvalidOutcomeCodesAreRejected(supplied: "invalid/char")
+    Academix.Tests.Unit.Phase24QualityRulesTests.NoMappingsCannotClaimOutcomesWereAchieved
+    Academix.Tests.Unit.Phase24QualityRulesTests.MissingPublishedGradesAreNotReportedAsFailure
+    Academix.Tests.Unit.Phase24QualityRulesTests.ProxyThresholdUsesGradeRecordsNotStudentClaims(count: 10, passed: 7, target: 70, expected: "ProxyTargetMet")
+    Academix.Tests.Unit.Phase24QualityRulesTests.ProxyThresholdUsesGradeRecordsNotStudentClaims(count: 10, passed: 6, target: 70, expected: "ProxyBelowTarget")
+    Academix.Tests.Unit.Phase24QualityRulesTests.ProxyThresholdUsesGradeRecordsNotStudentClaims(count: 8, passed: 3, target: 40, expected: "ProxyBelowTarget")
+    Academix.Tests.Unit.Phase24QualityRulesTests.InvalidEvidenceCountsNeverYieldPercentages
+    Academix.Tests.Unit.Phase24QualityRulesTests.SupportedActionTransitions(current: "Open", target: "InProgress", result: "InProgress")
+    Academix.Tests.Unit.Phase24QualityRulesTests.SupportedActionTransitions(current: "Open", target: "Completed", result: "Completed")
+    Academix.Tests.Unit.Phase24QualityRulesTests.SupportedActionTransitions(current: "InProgress", target: "Open", result: "Open")
+    Academix.Tests.Unit.Phase24QualityRulesTests.SupportedActionTransitions(current: "InProgress", target: "Completed", result: "Completed")
+    Academix.Tests.Unit.Phase24QualityRulesTests.InvalidOrRepeatedActionTransitionsAreRejected(current: "Open", target: "Open")
+    Academix.Tests.Unit.Phase24QualityRulesTests.InvalidOrRepeatedActionTransitionsAreRejected(current: "Completed", target: "Open")
+    Academix.Tests.Unit.Phase24QualityRulesTests.InvalidOrRepeatedActionTransitionsAreRejected(current: "Completed", target: "Completed")
+    Academix.Tests.Unit.PoolAssemblyTests.SpecificDifficultyIsAllocatedBeforeWildcardToAvoidUnnecessaryShortages
+    Academix.Tests.Unit.PoolAssemblyTests.AllocatorNeverReusesManualOrPooledQuestions
+    Academix.Tests.Unit.PoolAssemblyTests.ShortageFailsRatherThanSilentlyPublishingFewerQuestions
+    Academix.Tests.Unit.PoolAssemblyTests.InvalidPoolKindRejected
+    Academix.Tests.Unit.PoolAssemblyTests.NegativeAndZeroPoolQuantityRejected
+    Academix.Tests.Unit.PoolAssemblyTests.PoolPointPrecisionIsBounded
+    Academix.Tests.Unit.PoolAssemblyTests.EmptyArrayExplicitlyClearsPools
+    Academix.Tests.Unit.PoolAssemblyTests.NullPoolsArrayRejected
+    Academix.Tests.Unit.PoolAssemblyTests.CombinedQuestionCountAndScoreLimitsAreEnforced
+    Academix.Tests.Unit.PoolAssemblyTests.PoolsOverLimitAreRejected
+    Academix.Tests.Unit.PoolAssemblyTests.DraftManualQuestionValidatorRetainsExistingDefaultBehavior
+    Academix.Tests.Unit.QuestionValidationTests.AcceptsSupportedTypes(kind: "SingleChoice")
+    Academix.Tests.Unit.QuestionValidationTests.AcceptsSupportedTypes(kind: "MultipleChoice")
+    Academix.Tests.Unit.QuestionValidationTests.AcceptsSupportedTypes(kind: "TrueFalse")
+    Academix.Tests.Unit.QuestionValidationTests.AcceptsSupportedTypes(kind: "ShortText")
+    Academix.Tests.Unit.QuestionValidationTests.AcceptsSupportedTypes(kind: "Essay")
+    Academix.Tests.Unit.QuestionValidationTests.RejectsCorrectOptionOutsideDefinedChoices
+    Academix.Tests.Unit.QuestionValidationTests.RejectsDuplicateOptionIdsEvenDifferentCase
+    Academix.Tests.Unit.QuestionValidationTests.RejectsEssayWithAnswerKey
+    Academix.Tests.Unit.QuestionValidationTests.RejectsTrueFalseIncorrectLiteral
+    Academix.Tests.Unit.QuestionValidationTests.RejectsInvalidPointsPrecision
+    Academix.Tests.Unit.QuestionValidationTests.RejectsDuplicateTagsIgnoringCase
+    Academix.Tests.Unit.QuestionValidationTests.RejectsShortTextWithoutAcceptedAnswers
+    Academix.Tests.Unit.RecordsPolicyTests.PrerequisitesRejectCyclesAndSelfReferences
+    Academix.Tests.Unit.RecordsPolicyTests.PrerequisiteMustBePassedAndMeetMinimum
+    Academix.Tests.Unit.RecordsPolicyTests.StandingHonorsFailuresAndMissingData
+    Academix.Tests.Unit.RecordsPolicyTests.DropAndWithdrawHaveDifferentWindows
+    Academix.Tests.Unit.RecordsPolicyTests.ReasonsMustBeMeaningful
+    Academix.Tests.Unit.RubricPolicyTests.ValidRubricHasBoundedDistinctPositions
+    Academix.Tests.Unit.RubricPolicyTests.DuplicatePositionsAreRejected
+    Academix.Tests.Unit.RubricPolicyTests.EmptyOrOversizedRubricIsRejected
+    Academix.Tests.Unit.RubricPolicyTests.CompleteCriterionScoresMustMatchRubricMaximums
+    Academix.Tests.Unit.RubricPolicyTests.CrossRubricCriterionRejected
+    Academix.Tests.Unit.TeachingRolePolicyTests.StudentOrAdministratorRolesAloneDoNotGrantTeachingAssignments
+    Academix.Tests.Unit.TeachingRolePolicyTests.InstructorCanOnlyUseInstructorAssignment
+    Academix.Tests.Unit.TeachingRolePolicyTests.TeachingAssistantCanOnlyUseTeachingAssistantAssignment
+    Academix.Tests.Unit.TeachingRolePolicyTests.BothActiveRolesAllowTheirMatchingAssignments
+    Academix.Tests.Unit.WorkspacePolicyTests.PaginationIsDeterministicAndBounded(page: 1, expectedOffset: 0)
+    Academix.Tests.Unit.WorkspacePolicyTests.PaginationIsDeterministicAndBounded(page: 2, expectedOffset: 20)
+    Academix.Tests.Unit.WorkspacePolicyTests.PaginationIsDeterministicAndBounded(page: 10000, expectedOffset: 199980)
+    Academix.Tests.Unit.WorkspacePolicyTests.InvalidPagesAreRejected(page: 0)
+    Academix.Tests.Unit.WorkspacePolicyTests.InvalidPagesAreRejected(page: -1)
+    Academix.Tests.Unit.WorkspacePolicyTests.InvalidPagesAreRejected(page: 10001)
+    Academix.Tests.Unit.WorkspacePolicyTests.CalendarRejectsUnboundedRanges(days: 0)
+    Academix.Tests.Unit.WorkspacePolicyTests.CalendarRejectsUnboundedRanges(days: 61)
+    Academix.Tests.Unit.WorkspacePolicyTests.CalendarRangeUsesUtcAnchor
+    Academix.Tests.Unit.WorkspacePolicyTests.InstitutionInputIsNormalizedAndValidated
+    Academix.Tests.Unit.WorkspacePolicyTests.PublicStudentAndPerformanceContractsCannotExposeAnswerKeys
+    Academix.Tests.Security.AdvancedLearningContractsTests.AdvancedLearningEndpointsRequireAuthentication(controller: typeof(Academix.Api.Controllers.AdvancedDiscussionsController))
+    Academix.Tests.Security.AdvancedLearningContractsTests.AdvancedLearningEndpointsRequireAuthentication(controller: typeof(Academix.Api.Controllers.AdvancedGroupLearningController))
+    Academix.Tests.Security.AdvancedLearningContractsTests.StudentFacingDtosDoNotContainOtherStudentsGradesOrUnreleasedAnswerKeys
+    Academix.Tests.Security.CommunicationContractSecurityTests.EveryCommunicationRouteRequiresAuthentication
+    Academix.Tests.Security.CommunicationContractSecurityTests.StudentNotificationPayloadDoesNotContainAuthOrGradeData
+    Academix.Tests.Security.CommunicationContractSecurityTests.MessagesUseClientGeneratedIdempotencyKey
+    Academix.Tests.Security.ControllerAuthorizationTests.ProtectedControllersRequireAuthorization
+    Academix.Tests.Security.ControllerAuthorizationTests.OnlyLoginAndRefreshAreAnonymousIdentityActions
+    Academix.Tests.Security.ControllerAuthorizationTests.CredentialIssuingActionsRemainRateLimited(methodName: "Login")
+    Academix.Tests.Security.ControllerAuthorizationTests.CredentialIssuingActionsRemainRateLimited(methodName: "Refresh")
+    Academix.Tests.Security.ControllerAuthorizationTests.PublicCatalogIsExplicitlyAnonymous
+    Academix.Tests.Security.CurriculumContractsTests.ControllerRequiresAuthenticatedUser
+    Academix.Tests.Security.CurriculumContractsTests.StudentGradeReportOnlyContainsDerivedGradesNotPrivateExamAnswers
+    Academix.Tests.Security.ExamAttemptContractTests.StudentDtosHaveNoAnswerKeysExplanationsOrGrades
+    Academix.Tests.Security.ExamAttemptContractTests.ExamTakingRequiresAuthentication
+    Academix.Tests.Security.GradebookContractsTests.GradebookControllerRequiresAuthentication
+    Academix.Tests.Security.GradebookContractsTests.PublishedResultDtoDoesNotContainAuditOrPrivateGrades
+    Academix.Tests.Security.GradeContractSecurityTests.StudentResultHasNoAnswerKeyOrSubmittedAnswer
+    Academix.Tests.Security.GradeContractSecurityTests.AllNewEndpointsRequireAuthorization
+    Academix.Tests.Security.InstitutionalDocumentContractTests.DocumentControllerRequiresAuthorizationExceptPublicVerification
+    Academix.Tests.Security.InstitutionalDocumentContractTests.PublicVerificationDoesNotLeakStudentIdentityOrTranscript
+    Academix.Tests.Security.LifecycleContractsTests.LifecycleRoutesRequireAuthentication
+    Academix.Tests.Security.LifecycleContractsTests.StudentCredentialHasNoExamAnswerKeysOrPrivateGradeDetails
+    Academix.Tests.Security.Phase19CompletionSecurityTests.ApplicantCapabilitiesRequireOpaqueTokensAndAreRateLimited
+    Academix.Tests.Security.Phase19CompletionSecurityTests.NewRegistrarActionsHaveNoAnonymousBypass
+    Academix.Tests.Security.Phase19CompletionSecurityTests.KeyAndApplicantViewsNeverExposeProtectedSecrets
+    Academix.Tests.Security.Phase20AccessTests.StaffAccessRequiresCurrentRoleAndAssignment(role: "Instructor", assigned: True, expected: True)
+    Academix.Tests.Security.Phase20AccessTests.StaffAccessRequiresCurrentRoleAndAssignment(role: "Instructor", assigned: False, expected: False)
+    Academix.Tests.Security.Phase20AccessTests.StaffAccessRequiresCurrentRoleAndAssignment(role: "TeachingAssistant", assigned: True, expected: False)
+    Academix.Tests.Security.Phase20AccessTests.StaffAccessRequiresCurrentRoleAndAssignment(role: "Student", assigned: True, expected: False)
+    Academix.Tests.Security.Phase20AccessTests.StaffAccessRequiresCurrentRoleAndAssignment(role: "InstitutionAdministrator", assigned: False, expected: True)
+    Academix.Tests.Security.Phase20AccessTests.CrossInstitutionAccessDeniedEvenWithAssignment(role: "Instructor")
+    Academix.Tests.Security.Phase20AccessTests.CrossInstitutionAccessDeniedEvenWithAssignment(role: "InstitutionAdministrator")
+    Academix.Tests.Security.Phase20AccessTests.CrossInstitutionAccessDeniedEvenWithAssignment(role: "Student")
+    Academix.Tests.Security.Phase20AccessTests.StudentCanReadOwnPublicProgressButNotPrivateStaffDataOrAnotherStudent
+    Academix.Tests.Security.Phase20AccessTests.OrdinaryStudentSessionContractContainsNoInternalNotes
+    Academix.Tests.Security.Phase20AccessTests.CompletedStudyPlanRevisionsCannotBeReviewedAgain(status: "Approved")
+    Academix.Tests.Security.Phase20AccessTests.CompletedStudyPlanRevisionsCannotBeReviewedAgain(status: "Rejected")
+    Academix.Tests.Security.Phase20AccessTests.CompletedStudyPlanRevisionsCannotBeReviewedAgain(status: "Acknowledged")
+    Academix.Tests.Security.Phase20AccessTests.StudyPlanApprovalAcknowledgementAndVersionsAreExplicit
+    Academix.Tests.Security.Phase20AccessTests.InvalidGraduationApprovalTransitionsFail(status: "Approved")
+    Academix.Tests.Security.Phase20AccessTests.InvalidGraduationApprovalTransitionsFail(status: "Rejected")
+    Academix.Tests.Security.Phase20AccessTests.InvalidGraduationApprovalTransitionsFail(status: "Issued")
+    Academix.Tests.Security.Phase20AccessTests.ConfiguredDepartmentReviewCannotBeBypassed
+    Academix.Tests.Security.Phase21FinanceSecurityTests.FinancialGrantCannotOverrideCurrentInstitutionalRole(role: "Student")
+    Academix.Tests.Security.Phase21FinanceSecurityTests.FinancialGrantCannotOverrideCurrentInstitutionalRole(role: "Instructor")
+    Academix.Tests.Security.Phase21FinanceSecurityTests.FinancialGrantCannotOverrideCurrentInstitutionalRole(role: "TeachingAssistant")
+    Academix.Tests.Security.Phase21FinanceSecurityTests.AdministratorStillNeedsExplicitFinancePermission
+    Academix.Tests.Security.Phase21FinanceSecurityTests.CrossInstitutionFinancialGrantsDoNotConferAccess
+    Academix.Tests.Security.Phase21FinanceSecurityTests.RoleRevocationInvalidatesPreviouslyGrantedFinanceAuthority
+    Academix.Tests.Security.Phase21FinanceSecurityTests.StudentFinancialVisibilityRequiresOwnIdentityAndInstitution
+    Academix.Tests.Security.Phase21FinanceSecurityTests.WaiverAndRefundApprovalsCannotBeSelfGranted
+    Academix.Tests.Security.Phase21FinanceSecurityTests.OnlyProofVerificationIsAnonymousOnFinanceController
+    Academix.Tests.Security.Phase21FinanceSecurityTests.AssessmentRequestsCannotSupplyAnAuthoritativeTuitionTotal
+    Academix.Tests.Security.Phase21FinanceSecurityTests.PaymentContractsDoNotAcceptCardCredentials
+    Academix.Tests.Security.RecordsContractsTests.RecordsControllerRequiresAuthenticationAndUsesContracts
+    Academix.Tests.Integration.ApiTests.Catalog_ReturnsSeededActiveCourses
+    Academix.Tests.Integration.ApiTests.Readiness_UsesRealPostgreSql
+    Academix.Tests.Integration.ApiTests.Liveness_DoesNotDependOnDatabaseProbes
+    Academix.Tests.Integration.AssignmentDeadlineConcurrencyTests.ClosedAssignmentDuringRowLockWaitRejectsNewWork(submitExistingDraft: False)
+    Academix.Tests.Integration.AssignmentDeadlineConcurrencyTests.ClosedAssignmentDuringRowLockWaitRejectsNewWork(submitExistingDraft: True)
+    Academix.Tests.Integration.FinalMigrationUpgradeTests.PopulatedPhase24UpgradePreservesEvidenceAndEnforcesRemediationGuards
+    Academix.Tests.Integration.FinalRemediationIntegrationTests.ExamAppealRequiresReconciliationBeforeRecordsAndDegreeAuditAndPreservesManualOverride
+    Academix.Tests.Integration.FinalRemediationIntegrationTests.IssuedGraduationPdfBecomesSourceChangedAndReissuanceRetainsOriginalArtifact
+    Academix.Tests.Integration.FinalRemediationIntegrationTests.ExistingPhysicalSeatsAndTimetablesConstrainLaterIndividualAndBatchEnrollment
+    Academix.Tests.Integration.FinalRemediationIntegrationTests.WaitingProtectedMutationRevalidatesAuthorityAfterInstitutionLock(operation: "Reservation", revocation: "Role")
+    Academix.Tests.Integration.FinalRemediationIntegrationTests.WaitingProtectedMutationRevalidatesAuthorityAfterInstitutionLock(operation: "Reservation", revocation: "Disabled")
+    Academix.Tests.Integration.FinalRemediationIntegrationTests.WaitingProtectedMutationRevalidatesAuthorityAfterInstitutionLock(operation: "Reservation", revocation: "Membership")
+    Academix.Tests.Integration.FinalRemediationIntegrationTests.WaitingProtectedMutationRevalidatesAuthorityAfterInstitutionLock(operation: "Building", revocation: "Role")
+    Academix.Tests.Integration.FinalRemediationIntegrationTests.WaitingProtectedMutationRevalidatesAuthorityAfterInstitutionLock(operation: "Grant", revocation: "Role")
+    Academix.Tests.Integration.FinalRemediationIntegrationTests.FailureDuringSourceInvalidationRollsBackTheAssessmentAndAllDependentMarkers
+    Academix.Tests.Integration.FinalRemediationIntegrationTests.ConcurrentReservationAndEnrollmentCannotCommitInsufficientSeats
+    Academix.Tests.Integration.FinalRemediationIntegrationTests.LearningCleanupIntentSurvivesRollbackAndNeverDeletesReferencedUploads
+    Academix.Tests.Integration.FinalRemediationIntegrationTests.IdenticalTimetableAndRoomCodesInDifferentInstitutionsRemainIndependent
+    Academix.Tests.Integration.Phase10CommunicationsTests.AuthorizedMessagingInboxPreferencesAndAnnouncements
+    Academix.Tests.Integration.Phase11GovernanceTests.StaffApprovalRequiresIndependentAdministratorAndRejectsRoleEscalation
+    Academix.Tests.Integration.Phase11GovernanceTests.EnrollmentBatchesPreviewCommitIdempotentlyAndRespectCapacity
+    Academix.Tests.Integration.Phase12AnalyticsTests.InstitutionAndStudentAnalytics_RespectCurrentRolesAndTenantBoundaries
+    Academix.Tests.Integration.Phase12AnalyticsTests.SectionMetrics_DenyUnassignedTeachersAndOtherStudents
+    Academix.Tests.Integration.Phase13AdvisingTests.Cases_ProtectInternalNotes_AndTrackStudentActions
+    Academix.Tests.Integration.Phase14AcademicRecordsTests.Prerequisites_Enrollment_Transcript_Standing_RespectTenantBoundaries
+    Academix.Tests.Integration.Phase15CurriculumTests.PlanPublishAssignmentGpaAndTenantIsolation
+    Academix.Tests.Integration.Phase16LifecycleTests.AdmissionApprovalIsSingleUse_TransferIsIsolated_GraduationNeedsAudit
+    Academix.Tests.Integration.Phase17InstitutionalDocumentsTests.SubmitApproveIssueVerifyRevoke_EnforcesOwnershipAndVersion
+    Academix.Tests.Integration.Phase19CompletionWorkflowTests.ApplicantAcceptanceProvisionsExactlyOnceAndRejectsPrematureOrCrossTenantAccess
+    Academix.Tests.Integration.Phase19CompletionWorkflowTests.RejectedApplicantAndConflictingEmailNeverGainStudentPrivileges
+    Academix.Tests.Integration.Phase19CompletionWorkflowTests.PdfIssueSurvivesKeyRotationAndChecksStorageOwnershipRevocationAndSupersession
+    Academix.Tests.Integration.Phase19CompletionWorkflowTests.StorageFailureRollsBackIssuanceAndCorruptionCannotPassVerification
+    Academix.Tests.Integration.Phase19CompletionWorkflowTests.AttendanceExcuseCompletesOnlyWhenItsSingleBusinessEffectCommits
+    Academix.Tests.Integration.Phase19CompletionWorkflowTests.MissingAttendanceAndCrossTenantExecutionNeverCompleteAnApprovedRequest
+    Academix.Tests.Integration.Phase19CompletionWorkflowTests.CurriculumTransitionRetainsHistoryAndRecognizesEachAchievementOnlyOnce
+    Academix.Tests.Integration.Phase19CompletionWorkflowTests.OutboxRecoversExpiredLeasesAndConcurrentWorkersPublishOneDurableReceipt
+    Academix.Tests.Integration.Phase19CompletionWorkflowTests.GradeCorrectionInvalidatesIssuedTranscriptUntilAReviewedReissuance
+    Academix.Tests.Integration.Phase19CompletionWorkflowTests.EnrollmentExceptionGrantsOnlyItsApprovedRuleAndNeverBypassesHoldsOrCapacity
+    Academix.Tests.Integration.Phase19CompletionWorkflowTests.ScheduledOutboxRetriesAfterPermissionFailureAndNeverDuplicatesNotifications
+    Academix.Tests.Integration.Phase19CompletionWorkflowTests.LegacyProofCaptureAndNewKeyRevocationAreIndependentOfJwtRotation
+    Academix.Tests.Integration.Phase19CompletionWorkflowTests.ImportDatabaseFailureRollsBackMembershipProfileAndCheckpointThenResumesOnce
+    Academix.Tests.Integration.Phase19CompletionWorkflowTests.ImportNewIdentityWaitsForVerifiedActivationThenResumesWithoutDuplicateAccounts
+    Academix.Tests.Integration.Phase19CompletionWorkflowTests.ApprovedImportReusesAnIndependentlyAcceptedApplicantWithoutASecondIdentity
+    Academix.Tests.Integration.Phase19CompletionWorkflowTests.RenewedInvitationRejectsOldTokensAndExpiredInvitationsNeverActivate
+    Academix.Tests.Integration.Phase19CompletionWorkflowTests.AuthorizationDoesNotReuseAnAccountTrackedBeforeDeactivation
+    Academix.Tests.Integration.Phase19CompletionWorkflowTests.PdfTransientDatabaseFailureRetriesWithFreshTrackedStateAndOneIssuance
+    Academix.Tests.Integration.Phase19CompletionWorkflowTests.WorkerIsolatesPoisonAttemptsDeliversOutboxAndRetriesWithoutDuplicateAudits(count: 3, failures: 1)
+    Academix.Tests.Integration.Phase19CompletionWorkflowTests.WorkerIsolatesPoisonAttemptsDeliversOutboxAndRetriesWithoutDuplicateAudits(count: 103, failures: 100)
+    Academix.Tests.Integration.Phase19CompletionWorkflowTests.PdfDatabaseRollbackLeavesDurableCleanupThatRetriesAndPreservesCommittedReissuance
+    Academix.Tests.Integration.Phase19MigrationExecutionTests.FullHistoryAppliesToPostgreSqlAndPreservesPrePhase19Data(upgrade: False)
+    Academix.Tests.Integration.Phase19MigrationExecutionTests.FullHistoryAppliesToPostgreSqlAndPreservesPrePhase19Data(upgrade: True)
+    Academix.Tests.Integration.Phase19RegistrarTests.RegistrationHistoryDoesNotExposeLegacyCrossInstitutionStudentLinks
+    Academix.Tests.Integration.Phase19RegistrarTests.PolicyPublicationRequiresIndependentReviewerAndPreventsOverlap
+    Academix.Tests.Integration.Phase19RegistrarTests.StudentAndOtherInstitutionCannotChangePolicy
+    Academix.Tests.Integration.Phase19RegistrarTests.EnrollmentAndBulkEligibilityRespectClosedTermAndAcademicHolds
+    Academix.Tests.Integration.Phase19RegistrarTests.DecisionSnapshotsRemainHistoricalWhenHoldIsReleased
+    Academix.Tests.Integration.Phase19RegistrarTests.ImportInvalidStudentDryRunCannotBeApprovedOrApplied
+    Academix.Tests.Integration.Phase19RegistrarTests.ImportAppliesThroughAcademicServicesAndConcurrentResumeDoesNotDuplicate
+    Academix.Tests.Integration.Phase19RegistrarTests.PostgreSqlRejectsPublishedPolicyMutationAndCrossInstitutionHold
+    Academix.Tests.Integration.Phase1ConcurrencyTests.LastAvailableSeat_IsNotOversubscribedUnderConcurrentRequests
+    Academix.Tests.Integration.Phase1ConcurrencyTests.CapacityReduction_RechecksActiveEnrollmentsAfterWaitingForSectionLock
+    Academix.Tests.Integration.Phase1EndpointsTests.AdministrativeEndpointsRejectAnonymousRequests
+    Academix.Tests.Integration.Phase1EndpointsTests.InvalidCredentialsAreRejected
+    Academix.Tests.Integration.Phase1EndpointsTests.InstitutionAdminCanCreateAcademicHierarchyButStudentCannot
+    Academix.Tests.Integration.Phase1EndpointsTests.EnrollmentCannotBypassAuthentication
+    Academix.Tests.Integration.Phase1EndpointsTests.PhaseZeroCatalogRemainsPublic
+    Academix.Tests.Integration.Phase20AcademicProgressTests.AdvisorWorkloadReassignmentHistoryAndCurrentRoleAuthorization
+    Academix.Tests.Integration.Phase20AcademicProgressTests.SessionsKeepNotesPrivateAndRequireStudentAcknowledgement
+    Academix.Tests.Integration.Phase20AcademicProgressTests.StudyPlanRevisionsRetainHistoryAndNeverCreateEnrollments
+    Academix.Tests.Integration.Phase20AcademicProgressTests.GraduationRequiresDepartmentReviewIndependentApprovalAndConcurrentFinalizationIsIdempotent
+    Academix.Tests.Integration.Phase20AcademicProgressTests.RejectedGraduationsCanResubmitAndChangedRecordsPreventFinalization
+    Academix.Tests.Integration.Phase20AcademicProgressTests.ExemptionsRequireIndependentApprovalAndNeverGrantInventedCredit
+    Academix.Tests.Integration.Phase21FinanceTests.BillingCashAllocationRefundAndReversalsReconcileWithVerifiableReceipts
+    Academix.Tests.Integration.Phase21FinanceTests.RepeatedConcurrentPostingAndDuplicateReferencesCannotCollectMoneyTwice
+    Academix.Tests.Integration.Phase21FinanceTests.SimultaneousRefundRequestsReserveOnlyAvailableCash
+    Academix.Tests.Integration.Phase21FinanceTests.PaidInvoiceScholarshipsCreditNotesRevocationAndReschedulingUseCorrectingEntries
+    Academix.Tests.Integration.Phase21FinanceTests.FailureAfterJournalWriteRollsBackLiabilityOutboxAndIdempotencyTogether
+    Academix.Tests.Integration.Phase21FinanceTests.FinancialHoldsRespectPolicyDueDatesStudentAccessAndApprovedRescheduling
+    Academix.Tests.Integration.Phase21FinanceTests.ReportingKeepsCurrenciesSeparateAndReconciliationNeverCreatesCashOrBankConfirmation
+    Academix.Tests.Integration.Phase21FinanceTests.FinancialPermissionRevocationAndInstitutionOwnershipApplyEvenToIdempotentRetries
+    Academix.Tests.Integration.Phase22PhysicalVenueTests.MaintenanceIsIdempotentBlocksOverlapsAndCanBeCancelled
+    Academix.Tests.Integration.Phase22PhysicalVenueTests.ReservationCannotBeReadFromAnotherInstitution
+    Academix.Tests.Integration.Phase23ServiceDeskTests.GrantsProtectAssignmentAndRevocationInvalidatesCurrentStaffAccess
+    Academix.Tests.Integration.Phase23ServiceDeskTests.ReferralAndSlaReportFollowCurrentQueueWithoutChangingOriginalServiceDefinition
+    Academix.Tests.Integration.Phase23ServiceDeskTests.ForeignInstitutionCannotReadOrMutateAnotherServiceQueue
+    Academix.Tests.Integration.Phase23ServiceDeskTests.StaffOnlyAttachmentAndNotesCannotBeReadByStudent
+    Academix.Tests.Integration.Phase24QualityCompletionIntegrationTests.SealedEvidencePackRetainsVerifiedSourceAndRejectsLaterAttachments
+    Academix.Tests.Integration.Phase24QualityCompletionIntegrationTests.ImprovementActionsRecordAppendOnlyStateHistory
+    Academix.Tests.Integration.Phase24QualityCompletionIntegrationTests.RevokedInstitutionAdminCannotReadSealedQualityEvidence
+    Academix.Tests.Integration.Phase24QualityCompletionIntegrationTests.ConcurrentEvidenceAttachmentsAndSealingHaveOneDurableOutcome
+    Academix.Tests.Integration.Phase24QualityCompletionIntegrationTests.SerializationFailureRetriesTheWholeAttachmentWithFreshTracking
+    Academix.Tests.Integration.Phase2LearningTests.AnonymousRequestsCannotReadLms
+    Academix.Tests.Integration.Phase2LearningTests.StaffAndEnrolledStudentCompleteLearningWorkflow
+    Academix.Tests.Integration.Phase3ExamBuilderTests.PublishedSnapshotIsImmutableAndDoesNotLeakAnswerKeys
+    Academix.Tests.Integration.Phase3QuestionBankTests.StaffCanCreateReviseAndArchiveWithoutMutatingHistoricalRevisions
+    Academix.Tests.Integration.Phase3QuestionPoolTests.PoolOnlyExamPublishesDistinctFrozenQuestionsAndCannotBeEdited
+    Academix.Tests.Integration.Phase4ExamExecutionTests.StudentCanStartResumeAutosaveAndSubmitWithoutSeeingAnswerKey
+    Academix.Tests.Integration.Phase4ExamExecutionTests.ExpiredAttemptsRejectLateAnswersAndSubmission
+    Academix.Tests.Integration.Phase4ExamExecutionTests.TimeoutFinalizationPreservesAnswersIsIdempotentAndEntersGrading
+    Academix.Tests.Integration.Phase5GradingResultsTests.GradePublishResultAppealAndCorrectionPreservePermissionsAndAudit
+    Academix.Tests.Integration.Phase6WorkspacesTests.StudentIsRestrictedToOwnEnrolledSectionAndCannotReadAdministrativeData
+    Academix.Tests.Integration.Phase6WorkspacesTests.GlobalCanProvisionInstitutionAndAdminOnlySeesOwnInstitution
+    Academix.Tests.Integration.Phase6WorkspacesTests.RevokingInstructorRoleRemovesWorkspaceAccessEvenWithOldJwt
+    Academix.Tests.Integration.Phase7AcademicOperationsTests.StudentCannotReadForeignAttendanceAndAdminCannotAccessOtherTenant
+    Academix.Tests.Integration.Phase7AcademicOperationsTests.StudentRequestAdministrativeDecisionAndHistory
+    Academix.Tests.Integration.Phase7AcademicOperationsTests.StaffAttendanceIsScopedToActiveSectionEnrollment
+    Academix.Tests.Integration.Phase7AcademicOperationsTests.StaffTimetableRejectsOverlappingSlots
+    Academix.Tests.Integration.Phase8AdvancedLearningTests.DiscussionPermissionsLockingAndHiddenReplies
+    Academix.Tests.Integration.Phase8AdvancedLearningTests.TeamProjectAndRubricGradingLifecycle
+    Academix.Tests.Integration.Phase9GradebookTests.DraftPreviewPublicationStudentVisibilityCorrectionAndAudit
+    Academix.Tests.Integration.RealMinioIntegrationTests.RealProviderPreservesCommittedUploadsAndRecoversDurableCleanupAfterOutage
+    Academix.Tests.Integration.TeachingRoleRevocationTests.RevokedInstructorRoleBlocksTeachingAccessDespiteStaleAssignment
+    Academix.Tests.Integration.TeachingRoleRevocationTests.AssignmentOfDifferentTeachingKindDoesNotConferStaffPrivileges

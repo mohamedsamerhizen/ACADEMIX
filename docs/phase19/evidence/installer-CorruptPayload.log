@@ -1,0 +1,9 @@
+Release status: INCOMPLETE. Read PHASE19_IMPLEMENTATION_REPORT.md for unimplemented requirements.
+C:\Users\lenovo\Documents\ChatGPT\ACADEMIX\phase19-work\installer-tests\corrupt-package\apply.ps1 : Package integrity 
+check failed: payload/Academix.Api/Controllers/AcademicPoliciesController.cs
+At C:\Users\lenovo\Documents\ChatGPT\ACADEMIX\phase19-work\test-installer.ps1:44 char:1
++ & (Join-Path $package 'apply.ps1') -ProjectRoot $fixture
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,apply.ps1
+ 

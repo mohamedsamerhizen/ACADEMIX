@@ -1,0 +1,30 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+**/secrets.json
+**/appsettings.*.local.json
+**/*.pfx
+**/*.p12
+**/*.pem
+**/*.key
+**/key-*.xml
+**/keyring/
+# Generated outputs and developer state
+**/bin/
+**/obj/
+**/TestResults/
+.vs/
+.idea/
+*.user
+*.suo
+# Local packaging and review output (preserved verification evidence stays visible)
+*.zip
+*.7z
+/migration-review.sql
+
+# Local remediation safety copies; final report and execution evidence remain visible.
+/verification/release-closure/source-before/
+
+# Preserve local runtime-verification fixture backups without publishing them.
+/verification/runtime-closure/source-before/

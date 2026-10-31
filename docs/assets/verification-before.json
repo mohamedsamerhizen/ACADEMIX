@@ -1,0 +1,2702 @@
+[
+  {
+    "Path": "verification\\completion-migrations.sql",
+    "SHA256": "6D4516FA056026EAE69D4CEF7A08B5B423CEF738CC282687744B09B2558A7167"
+  },
+  {
+    "Path": "verification\\docker-completion.stderr",
+    "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "verification\\docker-completion.stdout",
+    "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "verification\\FINAL_RELEASE_ACCEPTANCE.md",
+    "SHA256": "B39DC2128B9EE5D722F37E8448367EAD8BD89B32A4EDB2EB4E6D72A6AE8D26EE"
+  },
+  {
+    "Path": "verification\\FINAL_RELEASE_CLOSURE.md",
+    "SHA256": "042F5EA57D67C6BDD106597049C5D60D3147B61078EA1BAB3CC1605FDB438AD5"
+  },
+  {
+    "Path": "verification\\final-build.log",
+    "SHA256": "188176C19EFFCC9226AFCB2261777121C9433D71426E599834059C7D33FDDE9A"
+  },
+  {
+    "Path": "verification\\final-model.log",
+    "SHA256": "C924DA1693AD60EB6A78717DDD333946A8A61A056C2CE2868AE514384F01C866"
+  },
+  {
+    "Path": "verification\\final-sql-generation.log",
+    "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "verification\\final-tests.log",
+    "SHA256": "2EB70CBD2C9438C190BEC056B866D638C1A891B466AE8A3DD5D294A5F81B9A3C"
+  },
+  {
+    "Path": "verification\\phase19-local.trx",
+    "SHA256": "60ECE87670FF41A0A98096384CD4312D94D4C2C0C98CE7DC27D1E6A9A4894DB8"
+  },
+  {
+    "Path": "verification\\phase19-migrations.sql",
+    "SHA256": "BD83AAF3142F5A88B46DE1A038901D242E519A556E7AF4067B6471B6DA1BC96E"
+  },
+  {
+    "Path": "verification\\phase24-final-migration.sql",
+    "SHA256": "3EB531EF09C96E8C1B7E420518DE24836CC7A229209D12749EB50DDC508D295C"
+  },
+  {
+    "Path": "verification\\final-audit\\ACADEMIX_FINAL_ENGINEERING_AUDIT.md",
+    "SHA256": "2E4771ECFF204295B0A385838738F014A09EE3A00F97F958D1FDD1442D23308F"
+  },
+  {
+    "Path": "verification\\final-audit\\audit-checks.json",
+    "SHA256": "2FAC1777E42BBEF7468FD6D9F3D013FDC6830C47A34E5FB440ADB318BD729C3D"
+  },
+  {
+    "Path": "verification\\final-audit\\authorization-probe.log",
+    "SHA256": "9296ECC5CEDEC8B81BB7FAA9DD4796C95C3738572EA31DF1FE04BA753DBEE3B5"
+  },
+  {
+    "Path": "verification\\final-audit\\engine-probe.log",
+    "SHA256": "C339F244C2777AA01A7CC20AAD97B6AD7FF4B787E528FD9D244970380D081372"
+  },
+  {
+    "Path": "verification\\final-audit\\probe-build.log",
+    "SHA256": "8564BCAE77D5AF89322AFA399769A0DADE2CFB7F21E0490E50DABCE947944374"
+  },
+  {
+    "Path": "verification\\final-audit\\probe-runtime.log",
+    "SHA256": "2DC428BAEA768B5150A2F8CED951D0804C13DED4B3D0F2B53803F74F6FC073DA"
+  },
+  {
+    "Path": "verification\\final-audit\\secret-pattern-check.json",
+    "SHA256": "CBE8D2529CDBFDC09E5161A57F84DC4311BF38E23B92DDC5BE75E2ED15F8B7B0"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\AuditProbes.csproj",
+    "SHA256": "AE56A09FDBBCC2D69321140B35FE0AC4529AC04A594356385DB3299EA0C50C53"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\NoDatabaseAuthorizationProbes.cs",
+    "SHA256": "22D9ABB14ACAD94426EA325C0CDE06B6656AEE0D5CCBFC161AD3C5DDD1669D3A"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\Program.cs",
+    "SHA256": "C93401BBE11DFBABAF0192688D7462FADEB255D4F1C6F05CD3ADA38F10CAB51B"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Academix.Api.deps.json",
+    "SHA256": "33CA9747F84B3E66C50199CBEEC0D36AA3CC7BC654010D99BBDCF92C4F68831D"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Academix.Api.dll",
+    "SHA256": "14D5EABB4A07B54388ED2FA847B4F17730A1526DFF2A8ECBED7CF4C65EE80587"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Academix.Api.exe",
+    "SHA256": "0C474EC943DEFB4CC31BA2724C0EC4EE2088F036AE6B68B743596D7AFBB5DFC1"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Academix.Api.pdb",
+    "SHA256": "D4F9FC9BBA931FA8D050CDAD4F77DF085D9229ED70CC506E164316A3039E315D"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Academix.Api.runtimeconfig.json",
+    "SHA256": "94B92D437D5BE753FF0BA94AF9064DBD50F8BF1A7459DEBBEDF6CB5699910D50"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Academix.Api.staticwebassets.endpoints.json",
+    "SHA256": "EB6525C892AFDA953A2560F151F9C5E5BC6E79EF6741D886488AC450262C91E3"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Academix.Tests.deps.json",
+    "SHA256": "F7C09725156539429443E002FB557569E494D9AF854680B4C0E6E0EE47855770"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Academix.Tests.dll",
+    "SHA256": "0CD57763D04FCCD50847F34D18F56626BD3EFF047452857788419DAB2D87EA07"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Academix.Tests.pdb",
+    "SHA256": "BA3F7AD602BD3B7018FF14E8A6F6BC1FE8C452EFD56FDA1FDC76410694866F03"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Academix.Tests.runtimeconfig.json",
+    "SHA256": "7E93382DE2B379B3D84E112C452EEB2ED5F955A261DFFCEDB4B12E7796DE0D58"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\appsettings.Development.json",
+    "SHA256": "C7760B2CD71C2903E6C9939086D7D248F907C1962ABD3E14303D628040407162"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\appsettings.json",
+    "SHA256": "CE16EC6B9618790A7B5260444074773F4C4822D84D2869B7300DA3F972362393"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\AuditProbes.deps.json",
+    "SHA256": "5C4E2F1FA6B26FA77F6DAF1DCCE0881DAE934FCD0228285F32707D16A021D3D4"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\AuditProbes.dll",
+    "SHA256": "22BA7DA69BF1A0B869EC6A285C1D5BB3E7A7D79829198354DF5674C2F79B30B9"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\AuditProbes.exe",
+    "SHA256": "E62B5BA38442E7C140A0823D75CB4B98FD06BD9ED1AED2F1605834F935E18EA7"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\AuditProbes.pdb",
+    "SHA256": "10FACB9446DCD5CF4C5CE99F34D12863D9150D686BC9D0E3468999F8A96D01B5"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\AuditProbes.runtimeconfig.json",
+    "SHA256": "8CFBA0672DBFCED94E75AB40BC1BCF26868DFCE981AA96FC1739BDB81478E2CA"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\BouncyCastle.Cryptography.dll",
+    "SHA256": "EF92FC661E8D7BA8EC4D39A7CDFCDBA41F14CB327F0D24FE79D0B5BB428899B5"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\CommunityToolkit.HighPerformance.dll",
+    "SHA256": "F8E5787B02EC9FE8A27B9DEA5F4317DD2CDCE3E32680E3E8A26673C534549DBC"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Docker.DotNet.dll",
+    "SHA256": "00A8A4AF181137CCCD815F9C06CC4B4DDD6D8FB8A367B0630A2E51307F2F7C1E"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Docker.DotNet.Handler.Abstractions.dll",
+    "SHA256": "020151A5729F4C05FD0DDCE04E11D7D05F5A0317D00742DC112B99C43BA714C9"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Docker.DotNet.LegacyHttp.dll",
+    "SHA256": "B2DCADE7FD991C63E8628222170BFD0D8F6CA7479D25F687EA55A283AD24021F"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Docker.DotNet.NativeHttp.dll",
+    "SHA256": "419CB6B91178711705FCA2B0ADBCBAA0460CC129647EB941B13421DE08F0E8AD"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Docker.DotNet.NPipe.dll",
+    "SHA256": "DD366E86F1AD474E390E98B01B4A93582FC2BEC30191BD9098FC8B346D213CAE"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Docker.DotNet.Unix.dll",
+    "SHA256": "DC24E10DC567492DA12C48A45B6963CACEFDC245A3C7C74DC0C5E4897FF197F6"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Docker.DotNet.X509.dll",
+    "SHA256": "17F423BAE61E2B7677B608E83673E9140E69AB6B503D96BE73E4B9C5666B1FA8"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\ICSharpCode.SharpZipLib.dll",
+    "SHA256": "32EA2D0CE3512E74F1C7AD82591FE67E6B8939D76A8A4FF9C93EAD030131E71C"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Microsoft.AspNetCore.Authentication.JwtBearer.dll",
+    "SHA256": "4BC97A9720D1ABA6891D02F856A8E49B380D1BB30173E8170376FAF936E3BBC4"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll",
+    "SHA256": "D0CD02441DE2C704789E91830E0718465284C3C41131F273222F45E01394C92B"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Microsoft.AspNetCore.Mvc.Testing.dll",
+    "SHA256": "60269196DD39520A21F5061911BF89F36F88A5FBD5483829AA4E4453E8AF737C"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Microsoft.AspNetCore.OpenApi.dll",
+    "SHA256": "80CDDE352EC3BB7BD0B5E94F5C72AE05F7D43F62502A8C286FCAAEDCE5031E2E"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Microsoft.AspNetCore.TestHost.dll",
+    "SHA256": "B82E90A9E26B997EACD890487B2E95C9BBBA0F7FB9CCC0208BD6B6556D8C7F3D"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Microsoft.EntityFrameworkCore.Abstractions.dll",
+    "SHA256": "01D8C8B085B9120E0153FCBE5C97256859F284006E204E83D5267B66FD5122A9"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Microsoft.EntityFrameworkCore.dll",
+    "SHA256": "D54CBC2DD6541A153F77F474C6EFB8001CD0AFD49DAC416596FE1E6786975D28"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Microsoft.EntityFrameworkCore.Relational.dll",
+    "SHA256": "DEF209BF3DEADB59543C43D484C7E6C6F00E46BE5508F0AD3F913ADBC2B7171F"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Microsoft.Extensions.DependencyModel.dll",
+    "SHA256": "3F94DDE7F68B1C10B99D154D72CCBE6228ADF597D1D27BB0F5148600C46DB65D"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll",
+    "SHA256": "6CD250306CAB1B21FFEDCFB61591092C52FF5BDFFE5E9F0D5C7C6A313DDABB22"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Microsoft.IdentityModel.Abstractions.dll",
+    "SHA256": "C3B97D1B1C42FAA95BB92EABB7511CA61E89075388F122197040FCFDFB492013"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Microsoft.IdentityModel.JsonWebTokens.dll",
+    "SHA256": "E85D3D751B4254771F59FF8A14444EF701BA65EFB84E312281D675C44536DA71"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Microsoft.IdentityModel.Logging.dll",
+    "SHA256": "32EBEEB2163DB6AA0A81659FF0B590894D78350C50C459196B6CC33C98BA21F3"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Microsoft.IdentityModel.Protocols.dll",
+    "SHA256": "7C8702A7F6C019D962FAF4B8AF2DA751DC32AF9B6BE998688E774394FB5F8730"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+    "SHA256": "D1F7DBBB71CBF69F5242A74E43B632610FF5DCA913F164D1DCF53B2F6E0046AC"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Microsoft.IdentityModel.Tokens.dll",
+    "SHA256": "B2DACC5120971EFCEB60F6FEBFE9685FE5A509DDB803C45956A63FC36E67631B"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Microsoft.Net.Http.Client.dll",
+    "SHA256": "65743129C2B8A72E8B3841E3813F5B3D129034585A04CA6FD955C043290859E3"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Microsoft.OpenApi.dll",
+    "SHA256": "64497B0A954493014D15494BB89F09DBED059B13EFE64CDF008D5F0F6BF197E5"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Microsoft.TestPlatform.CommunicationUtilities.dll",
+    "SHA256": "E38A359AA502BB1867D6092DCA9ABA5C130DD6F9111DECEA8156AA746B2C69E6"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Microsoft.TestPlatform.CoreUtilities.dll",
+    "SHA256": "F6E2495C44640D8915B2AEFC938F391C970300266DA014350FF35512A448EE84"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Microsoft.TestPlatform.CrossPlatEngine.dll",
+    "SHA256": "D55399BC66DC5B451D60AD82662452CA4A5F735918135DFC91CA9B5E3E38A6AB"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Microsoft.TestPlatform.PlatformAbstractions.dll",
+    "SHA256": "7B919CE4429C3B7B8FA2C36FD641B70B2F459A30ECB7C65FD80F437673CEC930"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Microsoft.TestPlatform.Utilities.dll",
+    "SHA256": "01FFD64D25A4BD905AEF9594D2AA700E020273A90A77A8720AF6BEC8B4FD5444"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Microsoft.VisualStudio.CodeCoverage.Shim.dll",
+    "SHA256": "A753BC15F23A957F4F91A059376E4472C6BACD1503622DE4B9B2B079AD8EA289"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Microsoft.VisualStudio.TestPlatform.Common.dll",
+    "SHA256": "059AA2F335C3F7B14AC3FB7CAA1625BC2767581B9548E9FF53A246C7F2F94D6A"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll",
+    "SHA256": "F83E38EE9020BAA42E284E2299E233070FFA86CE4B10213583F9B7C8A521BCD0"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Minio.dll",
+    "SHA256": "728F6B4750B633CBAD055B1A9F6F3D74373C5BAE571612EF5CFA4ACB32C58BF6"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\MvcTestingAppManifest.json",
+    "SHA256": "A81BD9E2880DAEF68C28AE81FE704EE3B962F69194A87F6A8642FF3FBE98A602"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Newtonsoft.Json.dll",
+    "SHA256": "22C649F75FCE5BE7C7CCDA8880473B634EF69ECF33F5D1AB8AD892CAF47D5A07"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Npgsql.dll",
+    "SHA256": "9D8DB086E9EDA5FF20C4A7F83FA3EAE7689198F57277FF9CEEA1EE3526F5FCF8"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Npgsql.EntityFrameworkCore.PostgreSQL.dll",
+    "SHA256": "0B8CA4484E12F1CD119FC6B4711015BA6CE2364F9890504F6F4F13036C2075BF"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\QuestPDF.dll",
+    "SHA256": "FB9AED0E30C849CC37070A4BA91DCAAFE4464C78295BB345DC8F62F44A05C241"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\QuestPDF.Fonts.Lato.br",
+    "SHA256": "2C00E7A826E5074B993B963887F534438345F3BB08B0BB5B92962031C402F352"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Renci.SshNet.dll",
+    "SHA256": "1EEA433E249E328D60512B72A134961074E059C22CFDF5427D03A893CA46FF1E"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\System.IdentityModel.Tokens.Jwt.dll",
+    "SHA256": "83218E29958E265B4EEBCE62CDA6D69D41E7BF1898B7FA21ED52102675F6DFE3"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\System.IO.Hashing.dll",
+    "SHA256": "A1CA98ABDF21EF16E4A8A1C2B9F8B3819957BDE39495BC6D4EDDAF0453407853"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\System.Reactive.dll",
+    "SHA256": "626B01D9A0A19EDAF345F2FB1CBF549D4F8CB725C06EA7898133F0BCD65449C3"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Testcontainers.dll",
+    "SHA256": "794D76FAA2E8F4A636F905AE7066091F3FCD9DBA6C0CA0A3905A6524687039D7"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\Testcontainers.PostgreSql.dll",
+    "SHA256": "FE0E30046DAFD97B923785AA50420B96DBD357A06E9CBC3A495DE68DCDEE9457"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\testhost.dll",
+    "SHA256": "92CBDF52DB5249112F9F53F1FCDAF9F9AA3FCE467141C688A31A7FE095E4D304"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\testhost.exe",
+    "SHA256": "FB63EB314F25584A532683DE7ABF4CA8A0B43103F3699F5D5D87317338EEDA76"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\xunit.abstractions.dll",
+    "SHA256": "3166DC70323FB30CCF1CEDB0FE86F2AD122C46D254542342D90386EFC4C9285C"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\xunit.assert.dll",
+    "SHA256": "BCD9711B22D227AC8CD4C1568E72433A0F576D2EC8AAE64AC508081892015B1D"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\xunit.core.dll",
+    "SHA256": "2F7FEEEC8C6DEC7DF684C25FB80AADB292B963D09723460F03D53C5AD2088ACC"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\xunit.execution.dotnet.dll",
+    "SHA256": "E70FEBE547C15F8155DB3E2D95C3BA4445A59CBC21A3E7541AB22ED49D3DCF7B"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\xunit.runner.visualstudio.testadapter.dll",
+    "SHA256": "98A7395CD6ABD03D0AC8EEB82D720C24DB00602F047CA49BD6E88E77FC6D1153"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\cs\\Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
+    "SHA256": "B983773DC5112854FE411FA22223E929C7FA230A1A843FCC58023237ACA326F4"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\cs\\Microsoft.TestPlatform.CoreUtilities.resources.dll",
+    "SHA256": "26BE9BB3A8932BA04014E4AE9B8F20A0222A3E2C1A1B41CEC11D49BFF609CE72"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\cs\\Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
+    "SHA256": "2F776BF0E946FFCD3F8A38AF2653137785EB55DB3CDB0C5A392BBE07D2CCC082"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\cs\\Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
+    "SHA256": "CD637384E1B3973BE3C18409ED886F8234E2E3C3A65EDF7D721D154E26AA64F3"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\cs\\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+    "SHA256": "12B0829D24F6F53F0E22FCBE370D3F91B67BBCACA7F0D82323D08CD7752F4519"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\de\\Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
+    "SHA256": "D11F2A5262947FC1B6D426A6E1828325CEDF40FEE28E29ED856804EC9EF3F15C"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\de\\Microsoft.TestPlatform.CoreUtilities.resources.dll",
+    "SHA256": "403E0EAF8528656C0B47C31CD5FE9A25B8FD733ADCCB8E6D47A09F28658B5283"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\de\\Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
+    "SHA256": "7AD3C45F58AA4D030FD5D65D9D4AC9CABBC06D79D071C29727B5376CD3459D77"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\de\\Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
+    "SHA256": "CA308A5D314FA7D7E9CAE94083CC1F62375AC225094D289961D9BCE49B564B65"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\de\\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+    "SHA256": "E91489BB7EC3E2E97D19CF32BC5E3F7FC57E994E0315F0870FD2024CCB2CF337"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\es\\Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
+    "SHA256": "DDBDD3BF9AFE6DDD3BABD4F0358AB2F4697FC5D5EC72B60CB772085AF9BF9859"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\es\\Microsoft.TestPlatform.CoreUtilities.resources.dll",
+    "SHA256": "7EC8E83494A8A50F1158C85D29B98E87C85D74AD5C4D94E2E9656E1CF60B0DFF"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\es\\Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
+    "SHA256": "67063A36CFCAE95B3EA4646B88C3CF3642F0914DFC06ECC5FC4D3F77E0E97E64"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\es\\Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
+    "SHA256": "B5340851BD9CB979D497F67123D09F91BA20AC9D2B3E0E17076FD2ABD615C933"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\es\\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+    "SHA256": "F19C11474E9074D5407F9B5A78CFB0BC1B4AEB90FFEC819A676F63509CEC443A"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\fr\\Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
+    "SHA256": "044CF1373CC4527FFF78ADB5AD70489532303B58BA0DE2C059C422926AF46C4B"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\fr\\Microsoft.TestPlatform.CoreUtilities.resources.dll",
+    "SHA256": "78D675CBAB45A56CC8916466BA13F16FAB18A44FD3AD4481C8F5F4E13B1F8B5D"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\fr\\Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
+    "SHA256": "3FE869C312793444F9509AF17CA0B14F444CBDDEF60A47251F441A5D7859A05F"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\fr\\Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
+    "SHA256": "5A8F4F4EA8B5A332883A67202877BD19100B21D766BF0443FFEC21610DFB2ECF"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\fr\\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+    "SHA256": "BA030AF725DEA6BCEB72C4EB49CCC3520222A97EA0FAE812E16B7BA78450B98A"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\it\\Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
+    "SHA256": "B023B85F510D1E5C6D5183BA51614EA1B6DEE5C25AB287773BEBC8CDB36E3168"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\it\\Microsoft.TestPlatform.CoreUtilities.resources.dll",
+    "SHA256": "A1AC732615A7DC5C59E01A1570DA23210EDE65EF24D5BB101294CF68481FE984"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\it\\Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
+    "SHA256": "B6B4B25E77F51F4EF5252512D1EA2CD8025FF388852EA93897B136BCC33BB5E0"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\it\\Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
+    "SHA256": "B9F6BE59CC1C05594F9B19DB9E72ADD58D6B37661397F81A62D4FEE37E7BE621"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\it\\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+    "SHA256": "93911F7A3C20CECD88DDB85DFDAAA9BF768E72A0FA5F745F3F3AE40DC78DA66B"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\ja\\Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
+    "SHA256": "5DB61A11E8C40176F0293658E48BC955EBED6A3DD46D3808AACC762F71732544"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\ja\\Microsoft.TestPlatform.CoreUtilities.resources.dll",
+    "SHA256": "1DED53CDFDE469BBB90D12F371891D3789A835E976557541C43166F027F7F111"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\ja\\Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
+    "SHA256": "F6D2748EE250F131374C306D7DC8A905464DBDA3F75E857D333946C7FF89494C"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\ja\\Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
+    "SHA256": "C55083E71E3A5BB8DBE36E10EB12B301CCFD809E8FE1187350BEB6774C7F794B"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\ja\\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+    "SHA256": "C2C077136E3CCFD8A249758979C0F754FE3C8A35B0C6478AA7A87EA38A817690"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\ko\\Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
+    "SHA256": "7026D9D93B3FB7B521FC4A35FCB8348020FE466C054309E8EC0D27E84A555CB9"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\ko\\Microsoft.TestPlatform.CoreUtilities.resources.dll",
+    "SHA256": "FDC5422BB6F99CB357515AC6EDD47C6F495DA1DA0ECA43B7F85FDB7FD1C2492A"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\ko\\Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
+    "SHA256": "E5231E879C215210CFE0B6D8F5740F8ECB2B08AFA98EE4055FFF6BA10DDAC96C"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\ko\\Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
+    "SHA256": "E90AC368F79EA0E99F44FE1133DB10AF08C3653749056362822B2C8F414CCD64"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\ko\\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+    "SHA256": "4F427ED5C7C78043C7A9A7C9DC659133D96F6100CA9BA8719857709832E4BB58"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\pl\\Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
+    "SHA256": "0D1C05F1C3DFA21FBACA7537910BEA9A54A52A9A800CAF1C7D46691FB3A41EAA"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\pl\\Microsoft.TestPlatform.CoreUtilities.resources.dll",
+    "SHA256": "4B7843359AEA21962C73C7474D374410FE8D039A30AC7902F5F09A19A52C778A"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\pl\\Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
+    "SHA256": "2F82D58FB67A8261AD060A2633B872C7867F48608368144DB3A93BF4DEBE2444"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\pl\\Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
+    "SHA256": "911EF37EE7D78EB7132581AEAEB7753E81589600535C3C2244B1C447B61E1A5A"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\pl\\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+    "SHA256": "88993B0056F183385A9E9E67931932BCE0E564D288164AD43B2CC1BF6CACFB1C"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\pt-BR\\Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
+    "SHA256": "F2292EF0DD72F1A95892714F17E5D49259452E27332D54DBFF308236A50D7D40"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\pt-BR\\Microsoft.TestPlatform.CoreUtilities.resources.dll",
+    "SHA256": "119F896F964CE17DA4558C72B728D832FA19ABC2DCF12BBED7CC386B741EDD6B"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\pt-BR\\Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
+    "SHA256": "EA5D8ECFFCB9371D3E559E1D477EBDF5E7C3BD0663746FDCCEBD9330DF2B9008"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\pt-BR\\Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
+    "SHA256": "B33E6B979805FA9047EBFB7722C4C3B07B1D3706ACC108883B8C30D77D10DB72"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\pt-BR\\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+    "SHA256": "976FAE7C172B9170340633A3FE1A3F0EC6FC0731F4BF089DDAF611D60D446F40"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Antiforgery.dll",
+    "SHA256": "85008E64B464BB32DED4BFC902268D6EAE0960CDFE7FA3188B48232606DA3EA3"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Authentication.Abstractions.dll",
+    "SHA256": "E05DB5B70EBCD20985B6A83A3C9234D94BE970A1927907973D7B0C751AD9CAE1"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Authentication.BearerToken.dll",
+    "SHA256": "2DD051C858DC333C36AD713B4DFEC4CC02EBB4CA20D2007D21F73C301F99092C"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Authentication.Cookies.dll",
+    "SHA256": "F072D5ACB21F6D6B136C8B807B5237E1686F8DEE7B0F6A6690386B4059C70425"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Authentication.Core.dll",
+    "SHA256": "A39354876F1B53CE261A1DF6BDEF85EDB29A5549AD99E52CE610A7B230E911AB"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Authentication.dll",
+    "SHA256": "25A3E3997FB1673FE317002D94CEA0030C98F23EC428DF34FFD3D48C6D86F9A8"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Authentication.OAuth.dll",
+    "SHA256": "4D9AE9E192B5AAF98445021BDF353D7E76D965A0BA6BED9729595E6FE28E8E41"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Authorization.dll",
+    "SHA256": "9DF1F002A780F3F0B495326656F635D9EC0BCDFE84809E9CC86FA5C89F5DD991"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Authorization.Policy.dll",
+    "SHA256": "0A4655C18EAEFD915897808D1B9A237C2B12B042C852E66E44D4A926E2851254"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Components.Authorization.dll",
+    "SHA256": "9AA8236C495D04E000CC92AE4C16B4DCBA8CFFAA3E1F6A3834B8EAA6372C1681"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Components.dll",
+    "SHA256": "C17DECE8DEE01155D7A3419A71A5D2BC671EA24D160EC1A5C8F63E33E5503047"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Components.Endpoints.dll",
+    "SHA256": "F7E6469AE28299E8F41C3AF63621D9219653FD052CF608C1DE1C9B4E1F0501F8"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Components.Forms.dll",
+    "SHA256": "C7B8996327003AF0C651CD374723D884BE5750A4CB34A2890EFFCB1D0D8F2335"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Components.Server.dll",
+    "SHA256": "A28F415FBC23C3DD4383032B732FFFC090D0F367112F72BEA8B55FDA3EEF6953"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Components.Web.dll",
+    "SHA256": "CB09DC343F22B61D37607CB9B27D658A2EDABFF225CF443ABD232DB792DE7795"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Connections.Abstractions.dll",
+    "SHA256": "DA539A33C82EA1837C50858DA8B3F40E3556B199E2C7542FAA15684477C6F040"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.CookiePolicy.dll",
+    "SHA256": "E091FD0BEBE38BDD8AC6EE405076DDCAB6FC0FA77607D73CFCB2E16F87402E0A"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Cors.dll",
+    "SHA256": "43EABAAF07481042C174E4456BA69DA900B3EB5EA878C0D73DE3F3E925412034"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Cryptography.Internal.dll",
+    "SHA256": "5CCEC94884F64F0252D98F29C02831C0E7CD70B945C87F1EABFC10FBBA61A4ED"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll",
+    "SHA256": "4F8F4DA1E7F448BD36DB4D3D38F36DA04F77DB62D994080F3361CABC76984035"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.DataProtection.Abstractions.dll",
+    "SHA256": "68C5D91C94B82F5B9C2D8DA58D20B5B79F80256CD5F01D767A398081517B0457"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.DataProtection.dll",
+    "SHA256": "09C61D2A19DD4D1E0B2C57B7EF6A8B0BDDB19E40D278EB7E67E98C2138990FD8"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.DataProtection.Extensions.dll",
+    "SHA256": "FBEA958B8C8A924DFA9924C5AAA568424F251DFFC088B9FF2F3B772E81640EA3"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Diagnostics.Abstractions.dll",
+    "SHA256": "846E0F38364A0D339CD8F5ED573C052F9B3B9B62844B8A6AA20BAD37A43B1CAD"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Diagnostics.dll",
+    "SHA256": "EDA1A89798B8FFDCFBF3C8B293A0AD3A26C65D10EFC0799955E07A05AEB4A889"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Diagnostics.HealthChecks.dll",
+    "SHA256": "C8BB33BCC1A7E169E0CEA7217C8CF1456FC04F4650DA89AC69BD80D959220B16"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.dll",
+    "SHA256": "3178A1ED742581B47D5BA8D4BD5F1D7347E8AC020FC484747F46C0DF9346A2D1"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.HostFiltering.dll",
+    "SHA256": "54DB2529080A45F8FDED8FE35329EB1DC0D6D4E23DBD18942D9EB0C9692DE944"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Hosting.Abstractions.dll",
+    "SHA256": "47BE64A6C69F6180204C94CF18360CD42342D84B2161D52593C57D9DAB1A931C"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Hosting.dll",
+    "SHA256": "99FDF99A6BF11496A4B8A8B3527D9AD4325B228169312EF9DC427154A72A2759"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
+    "SHA256": "EB997086020295AB2B6B76BBB76BFBB484933387D0DC9BE837922B40323E583E"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Html.Abstractions.dll",
+    "SHA256": "21BE72562198B2142A08D2113DAB14BD1CF00CD3D2774A318CF806FF7BE0B0A8"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Http.Abstractions.dll",
+    "SHA256": "B6DEBF23851EA85A1454CB56D7DA1B4797AD3768D412339998A1A067DD3E3182"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Http.Connections.Common.dll",
+    "SHA256": "C5EDC0C95852E89338B3C1E7BC6109B7F80A0DD5B343516E380FF7372B68921E"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Http.Connections.dll",
+    "SHA256": "A1FE1B906F529F76F2B26A7A55FF9C2C4807E7381443245B1B2D6D81B25CCD09"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Http.dll",
+    "SHA256": "F4E1C49B405BBB8F221A5DEA94B9477D9B0105002543F1EE3166CD89A882117F"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Http.Extensions.dll",
+    "SHA256": "9FF9C54C22C7983FA5E3F6205291D8C9A0118B27CBB9FD5767C3ECDDE70D0BF8"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Http.Features.dll",
+    "SHA256": "8EA92A30D4DE3CC4CBC533117090A73364696F0EF6B1CE744487F8030D361DFB"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Http.Results.dll",
+    "SHA256": "AD6479DF81564179308FFAB0367964835D64A5362C8DC5FE56358F4D432D9A91"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.HttpLogging.dll",
+    "SHA256": "6339C733D72EB3C0BD80779C2029696199FE6F4803CAAE9912E0C7D121D681A0"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.HttpOverrides.dll",
+    "SHA256": "9DD1FE2BD5E8BAAC2A9A4CF2C59234D98F20037954E06FA9323C64CF9DB03D37"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.HttpsPolicy.dll",
+    "SHA256": "66ED2B84DB062930F0C4F31131DC4089A49C6BE416FBED5AE2DB8F4C5C12AFE2"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Identity.dll",
+    "SHA256": "2C9B8D311C293061206F922E5A35605D1D4A4E2BA706AC8D5E7A73D50E03D48F"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Localization.dll",
+    "SHA256": "749478919BB50BB10AC9A713802CF9B4ABB74EAC53CC0FDCBCFEBA9292543C2A"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Localization.Routing.dll",
+    "SHA256": "7DD28E1C4461BF991857D0BBE1D03B614700C9066CBF89984D2148FCD8C674E7"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Metadata.dll",
+    "SHA256": "F79B9E2558F0DDF86F9C29125BCC8B3520F3F032BED49355D3BA07E1B6E3298E"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Mvc.Abstractions.dll",
+    "SHA256": "8F2355E940A2E89CBAA9ABBD88BB501774F24A8E8357FA4776608798664C2A2D"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Mvc.ApiExplorer.dll",
+    "SHA256": "12D7CAC3AA3E2E93E87ADEBA7B56EE3EA59B0B0A6AC9B229AF41321E9271E742"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Mvc.Core.dll",
+    "SHA256": "96C004695FB8C74E1B87E0A0BA5342C56858CCB5D98B95E455F66C20FDEDD22F"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Mvc.Cors.dll",
+    "SHA256": "00ADA8D1211D8B654DA757723392281F5C66557C588C5103AAA5F911041A260E"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Mvc.DataAnnotations.dll",
+    "SHA256": "7DBA748B3973F8D287A38DE27C2958ED617B0A9C8BC73E68636E3E34576ACC18"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Mvc.dll",
+    "SHA256": "F06E9E0394B8E693E26A0254B470DA5ECF1867D653B29B2285BF0C473C5140EB"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Mvc.Formatters.Json.dll",
+    "SHA256": "C128E0A1DC910AD0057686145D64F8762EA4AC38795260235C0CEC289D078759"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll",
+    "SHA256": "376E1876F69214BB06A19ED6C572937C34F4A7038FEEB0C582F5CFBC6D65303C"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Mvc.Localization.dll",
+    "SHA256": "C457E6727B235776C9897B7CFC117459D2E6FCAC693BBAD3EBDE1F608CED2005"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Mvc.Razor.dll",
+    "SHA256": "E6CC97FC4D95EBDA44FBA94653E45AEBF98F2039ABE6373DE2F2D9546592A2F4"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Mvc.RazorPages.dll",
+    "SHA256": "47C4422D27F5112E704F2283E8093E805B5B165EF417BD6E5A94F05291F885D0"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Mvc.TagHelpers.dll",
+    "SHA256": "4290152B2F56726685CB8E9876E8FF3DAFE2276D61ACAFF8586880AB6FBEBD41"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Mvc.ViewFeatures.dll",
+    "SHA256": "5D920240313EDF146D49FB26A3FB2DACFE88CB78A7EFCEC46D383376DB17E9EF"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.OutputCaching.dll",
+    "SHA256": "44A035201AC6D2BB1DFBB13CC9325D6703C2B332C01426C6EDD5E75B5ADB096F"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.RateLimiting.dll",
+    "SHA256": "0A51AF6A095F58355343DAE18C3EBE3962150D261C265C69E14916167C7E1202"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Razor.dll",
+    "SHA256": "A326EC93CAAA649E47EBD7906C9E8FF128E5E82F6C360A166D75965911A3BC19"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Razor.Runtime.dll",
+    "SHA256": "A0C952AE556C212703D10CD67ACF63FCCD06583C8F2834B674264FA6A4D1492A"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.RequestDecompression.dll",
+    "SHA256": "B0BD66EA37E0ABD089AB9661AA1048A6A26037989F5CA37EAB4335EC0458CFFA"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll",
+    "SHA256": "1F7336417CB77886D707443F564A5E643CE3454B03C94C54FF4ED122EC998A91"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.ResponseCaching.dll",
+    "SHA256": "E80FABC2E6CB65CFB92FA6FC047390A7D2197F6199BBD1965CFDA522BDFCBF0A"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.ResponseCompression.dll",
+    "SHA256": "32150E60F454C4269C1378C89BFF3183A278316CE77857B0BBE2C29C3D8E0364"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Rewrite.dll",
+    "SHA256": "257C46863AA1898EEC043EF1B738378BB5B5E9CC7E013640E2EAF31DFE4AEC1F"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Routing.Abstractions.dll",
+    "SHA256": "97A855008CAA2DDB45BF1C9A0063E3422907CD4E7EDB7C87C7EA6E8779645140"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Routing.dll",
+    "SHA256": "04CA257BD9977D6A6FA2E58F420E9A7B17160015EB09FC9714B5436A014EFADD"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Server.HttpSys.dll",
+    "SHA256": "5B539BC11CE3151437131F45F3B9F1F70A6D0464122DA0ACC32C4E277C6B3529"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Server.IIS.dll",
+    "SHA256": "15F497593240101273F1DE6B8CAE0544D0F466FCE4E5EBC5ED995AD865FCEC30"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Server.IISIntegration.dll",
+    "SHA256": "E09EF551EB3CD16C83F489FCD9B7AA30FCEC3AC8C47B95FDBFB459E7A19F0547"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Server.Kestrel.Core.dll",
+    "SHA256": "216DDE3FD11CFBF312260FBEDA037299DB4D59F1EEB02B1A9730BDA141809683"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Server.Kestrel.dll",
+    "SHA256": "D238863AA7CB45486A68FFD039A27F13F76CBD41B91D91877B51EC109488357F"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.dll",
+    "SHA256": "F95C6089F6EB0FE2EA2E2C5EEA641B151910B016BF444084DA66C1FD4040D3EC"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll",
+    "SHA256": "CABC88A5567DE7885D2A9411D1F44E70E661767AA5EB185A5A7593CCA647D138"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll",
+    "SHA256": "3655AB8A22A15F94373BF7B7CDBB5ECEC62345110FC648FFCD43FED3D8D0E08E"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.Session.dll",
+    "SHA256": "368D0C55F5800F09A2FDAB7908D1A6B173CA583ADBBF85CAD8B99E86BF885B6A"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.SignalR.Common.dll",
+    "SHA256": "A44C24FEC0F56D0A6C4CD45AC549598298D9E466F32DC290800C11007020D157"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.SignalR.Core.dll",
+    "SHA256": "2AC18FCE4984E8FCA384D00FA5B61C4F95B68B4AB65A924E7F539F1BBF0669B8"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.SignalR.dll",
+    "SHA256": "8841BDE63E997B830BF188839136C43AC36651A6B1F84B3C5D74AF24CE21B297"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
+    "SHA256": "5E65486EFF49D36F479E7A95A76D2CB9794B5351ABE2151E86ECBB8C6487E86B"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.StaticAssets.dll",
+    "SHA256": "1FBB16EBC97E897E5AC6F87A0D006AF215F51BF8D1D3B8BBA54ABA139C394BFE"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.StaticFiles.dll",
+    "SHA256": "64A81F918BBFAC696F42CB353C57361B00B919D78773B065BB6EEF1F7848443E"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.WebSockets.dll",
+    "SHA256": "3A6098C6B981D4CE05B986F6AF3EE24E6CC4692474C43F218A77791323DDFA68"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.AspNetCore.WebUtilities.dll",
+    "SHA256": "1DD39DE40A416CD71F9F07C68972809FE494AD3F74C4BDD7FAE9815560C3771B"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.CSharp.dll",
+    "SHA256": "EEC2A71B4986D4F0370568ED66AF817C21B9B566A3A58ABAD72AE757A0B69CD4"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Caching.Abstractions.dll",
+    "SHA256": "4F16E6564D37CE0A1D3BFA398B05C883F023E7DD4FAA09B0BFCB62BF55BB9611"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Caching.Memory.dll",
+    "SHA256": "4D11F4F9334DC06C39590CA6414757A9571F8D8201CE6CE5E33754CCCDFF11DE"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Configuration.Abstractions.dll",
+    "SHA256": "37516E6578FFEAB0F703D51D6F24FEB055A6783838F3234A283EDE61D837BB13"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Configuration.Binder.dll",
+    "SHA256": "479F81049F27DD7E9C7D19EB40BF23A32774E58C9BAFF0F4B9AFC16ACC9E205A"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Configuration.CommandLine.dll",
+    "SHA256": "5BF01DC166ED1EAA16DABD5A8AB117DF36A748A86628946FD06E133695895939"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Configuration.dll",
+    "SHA256": "EBE4FFA6968AA10CE5F8C0497B6571EA4487DD9D9C73FEF5735C86E648A06B92"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
+    "SHA256": "26C204085B5F82CB5F44AA9ED67F29718D629F730B423F1893A2E960BDCF61D2"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Configuration.FileExtensions.dll",
+    "SHA256": "97A6993F0D34866123F980806F0D200F5B3A7083C2C97D1B13733529A979BB92"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Configuration.Ini.dll",
+    "SHA256": "8D1806F25DE5A10476A441421D022ABE8A2C7316C445BFA9DD90917ED081A218"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Configuration.Json.dll",
+    "SHA256": "A5668C3F30C7EA98390EA42A02D2772E90AA6FBAB4C4230CDBC76F75A2FE8724"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Configuration.KeyPerFile.dll",
+    "SHA256": "1568716137666FD631D61A3F6C4AE2537CC898DF8EE3B62EFBF2F8BF64E4333A"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Configuration.UserSecrets.dll",
+    "SHA256": "0B5014DAD08F0BCE66FAA2EF6610FE18D6BF3572DEB719E0E160B03120E3F031"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Configuration.Xml.dll",
+    "SHA256": "B46CF58DC04492C52D21C9BF512CE909DA1303C1B40E1CB08D89B1D9CAC36E4F"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+    "SHA256": "877CC213EC5E27BA0C7A8DEA827F8A9A85E18D11983FCDAAC67B734A9B675420"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.DependencyInjection.dll",
+    "SHA256": "7AF461AAA9B3BE2231D586ED494F23B03A31C3B29AEC29A27FFA1222A6DCE031"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Diagnostics.Abstractions.dll",
+    "SHA256": "ABDEABD8201EBDAFBB12113351805FE43F2BE08814D44FD99C80D78D17CCEB56"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Diagnostics.dll",
+    "SHA256": "EC2A3D46EE488BEA5261DAAD2774A166F8EEA2BBEDDEFDF04E476EC0544202EC"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll",
+    "SHA256": "C6495C4F50456E3888B5F2EC18FFE5097A1024EC8820C16D5A115ED4A29ED4D2"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Diagnostics.HealthChecks.dll",
+    "SHA256": "D1491BEF44267BA417511D745E79980B404AC2B8950053427F6B00492990F1E0"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Features.dll",
+    "SHA256": "4B406FE911DAB39E08C380FE5BABFB51A4C49F997FDD65E8F7B164E49A9AA26C"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.FileProviders.Abstractions.dll",
+    "SHA256": "297FEC2DB7E789A7020717FCA106B58BAC05D5D681E66798D5FCB25917DBC15B"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.FileProviders.Composite.dll",
+    "SHA256": "C9F43B51EB54349E2E4E03029A2E6AABC923F778F866E09EB88460D6452880FF"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.FileProviders.Embedded.dll",
+    "SHA256": "ED9C5C805B30A32B3DFB753741E406B0554D94C7564CE923E05A4D6BB4FC67C5"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.FileProviders.Physical.dll",
+    "SHA256": "3D0993E82B113B7A28F278492839EF77F501DEAFC7676885ADFB136E390EDB03"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.FileSystemGlobbing.dll",
+    "SHA256": "40461BDD02A0EC50C9883CD805BCEF69B7AA19477ED291ABDFD5801FF0A2342D"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Hosting.Abstractions.dll",
+    "SHA256": "775242B4B6BCFEBF5BA61A80F71636B0707F8E246127438B14A47C2161C50864"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Hosting.dll",
+    "SHA256": "B36081AF2223DF0B1354554EAF6A8145C9C33755C5873532B775D8A65D48809B"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Http.dll",
+    "SHA256": "E4DCCE8815B995237D5FC46C2BDE050C09A49A2FFD44546052B0D4D7306B681B"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Identity.Core.dll",
+    "SHA256": "03B8ED9C4CBF95777FEA5D1470343DCBA5A16F39A99DFE9BB4C8847E7742197E"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Identity.Stores.dll",
+    "SHA256": "04A775F7CB57F89E227C1DA5E3B4C5ACF16F205E12E27EECBE33095A6F32F338"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Localization.Abstractions.dll",
+    "SHA256": "D4403BC64B3B9CF4C39DCD1587C7BA475B07C1F0E48A9D0991571B6C8E5ECDFA"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Localization.dll",
+    "SHA256": "88B9F28855F170B7DAEECDC2A42EC2F28E37474EA6A85805EE44A92CBEA91108"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Logging.Abstractions.dll",
+    "SHA256": "5ED5D3B048FE8A1676FEE217A258274DD676DBA3BCC1E04F7B3E0EC32AD33F3D"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Logging.Configuration.dll",
+    "SHA256": "520E08AA3BBF3799FFF8D112579C1B3EF97C76F05178457B0593B30E0CCDC35F"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Logging.Console.dll",
+    "SHA256": "FFAE63BB1068C0BB259925C18F1D31A243297E8146323B3804B92198CA252E2C"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Logging.Debug.dll",
+    "SHA256": "0D3476DB3D3054BC539623743C0309838371FC4FB47868F5074E50BBB4FAE652"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Logging.dll",
+    "SHA256": "ECB0A5432373FCC99F4239354D05F40A3C6D703373C2A4FCCCDE624A877872F0"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Logging.EventLog.dll",
+    "SHA256": "643DE5EC6247D16C5AAC3ED8144878CD11FF4777CACF8524794613B419077A3E"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Logging.EventSource.dll",
+    "SHA256": "DEE77A08DDAB1AD00D3F90BF1573D1909CF7E2AA7C88F0F1680976C38F6E39E3"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Logging.TraceSource.dll",
+    "SHA256": "6E1D0BAFCEF0ED32C7A74EE23EFA7200B78E45475C888FE6E0D6059D4BA2ECF4"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.ObjectPool.dll",
+    "SHA256": "6817E0E5B7D8170D622DD24CB83F2D847AB126E19C64E8E9F170A673FE452982"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Options.ConfigurationExtensions.dll",
+    "SHA256": "CBC4384BB1B939EE7C4B1661C80ACE889A371A3D7041B400659D46E70D2AEC70"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Options.DataAnnotations.dll",
+    "SHA256": "BC8A950A6F1BA52DCE0A0A33AF7329B501A2DED7F0D70F114FC89B5AB39F7B95"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Options.dll",
+    "SHA256": "E1CB448733F922CC78037972EFF7D6D5F16EFA26A302954E11270D9CEB0CA160"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Primitives.dll",
+    "SHA256": "21D9E1605CDC595F8107DEE3C9A692AB90FA445C978C7E7802C89F2ADDA20679"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.Validation.dll",
+    "SHA256": "616B238C8AE8B9AFEFD31F4D3F2027B2C21FF3D0C6403CD42E0DDB9E74DFB0AD"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Extensions.WebEncoders.dll",
+    "SHA256": "1B59AA87D23C7740A2657CFCFDE8A94B01AFBC417880C05D669E0CB4980505BD"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.JSInterop.dll",
+    "SHA256": "E068E3F00AC6832862B0B68A68512B10FD35B2E4F4AE2182275987DF42360BF6"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Net.Http.Headers.dll",
+    "SHA256": "DC4196DB9BAEF2BBB696A34B0EC93D5575989C3EA4379E394A22C7051C094DFC"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.VisualBasic.Core.dll",
+    "SHA256": "5105332192F4A935D9E6317DE5FA6E085326B7B33E3D8880839BFA1A5EEB9421"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.VisualBasic.dll",
+    "SHA256": "CA05CDC9345E48FA8AC0BDED7881C5EA379017B4453368861B13A1E394B137B4"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Win32.Primitives.dll",
+    "SHA256": "13D7B372C00512FEE28EFA950CEEE485C5AAAE023E64CF97102EC0B400FFB944"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\Microsoft.Win32.Registry.dll",
+    "SHA256": "F63688A6F386615335BB3827839C9444DFBE744D9680A409064579BABBEA3E56"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\mscorlib.dll",
+    "SHA256": "3D272C88D289A11BD38E5BD1DF6A08AC1D7B67AEC8BC775D191ACA9517BC5E5F"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\netstandard.dll",
+    "SHA256": "9A0296FAF333AF31A73D1527F4EFB82A60E14F7C23A43A3C37477EB258253E53"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.AppContext.dll",
+    "SHA256": "D319CE70962156446D58D8EBE52F15F7370C5B3B09EE165E2592991B98020D88"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Buffers.dll",
+    "SHA256": "EF4A2F0B2D839595466D74179293BAF9322DC0D5A2D655C342892A11B4BD993E"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Collections.Concurrent.dll",
+    "SHA256": "640A35EB0CB5CFCF828078BD46D6489BBAE14395A2173F97EC5E4FB0BAC09B9B"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Collections.dll",
+    "SHA256": "A7C5B431E40A32E5CF3D6C84371823BF09F82D577B33C22F962FFC19C051FF5A"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Collections.Immutable.dll",
+    "SHA256": "B7D90DED08C5E08420E5BD3E62F675179FA8FE7E2D1C2AB44AB09DC5F325EE0F"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Collections.NonGeneric.dll",
+    "SHA256": "E539C3B661CF52B8309C0B08AF0EB87EA3B3F096219BF7A8DD7FA702CDEFA65E"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Collections.Specialized.dll",
+    "SHA256": "4A3EF40D69523F6D3E0D438C5DDCB7F073D4A3ACAFEEE843FA9FC3AA9D4082BE"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.ComponentModel.Annotations.dll",
+    "SHA256": "1EC4FB2ED3627066C8B14857E11F49463F3FA70A11B2D90DE7A3E8020DA4DA52"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.ComponentModel.DataAnnotations.dll",
+    "SHA256": "439AC1415E7B89B41B994103CC121CB9D31238C153843F5388BD46EF55B4A10F"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.ComponentModel.dll",
+    "SHA256": "F72BC27E7C20DB3139A3D0CEC7A1967800A002A1E901282A9DE06734B2E510EE"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.ComponentModel.EventBasedAsync.dll",
+    "SHA256": "84507C6B10DE6A9C654AE503B92D38F199B43D4F4E26E7ED228906927816E7CE"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.ComponentModel.Primitives.dll",
+    "SHA256": "027E7A617430D64B63C3506C593C58B737AADDF93B2CA14DB89E0954C24E2D8A"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.ComponentModel.TypeConverter.dll",
+    "SHA256": "C56FECFAF34FBE0CA3856635B2FBF3C15CF16AFA8C129E03C2E2FB5BF518A435"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Configuration.dll",
+    "SHA256": "9106CD87CB41AD9B870D4D2550FC06959B2CF4502D6E98A08C5D7EB0BBBD9E34"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Console.dll",
+    "SHA256": "8CF5D62D5E7FB4924E06004BFDE2656ECE81420DAAD0CE1A0762F9EAE51DC4E3"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Core.dll",
+    "SHA256": "A136D37FCED8B46DE6669C6EDAFB1DEAD493DD3CCF5B463882BD34AFD57E5216"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Data.Common.dll",
+    "SHA256": "3D8112880E9AAC13BC7D42DF615C909C3629E1D2300A977AB3A53424758BB865"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Data.DataSetExtensions.dll",
+    "SHA256": "F1910A67074393F5D5422D5775173FF4C92CF4F058614F0BC62FF50927A62F98"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Data.dll",
+    "SHA256": "8919D334F7E2EB6200E73786EE4303FC3F97CD40FB38F1C9B7C9553E7F1D7388"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Diagnostics.Contracts.dll",
+    "SHA256": "33F787A126D0BB58A37B7FAD344C129EFA920CD91C5FBDBE420F8E9BA2F65913"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Diagnostics.Debug.dll",
+    "SHA256": "34D4F249333A0A4A0E451042FE92E510E2CCF4839011BDC7DF26BEB025CE18C2"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Diagnostics.DiagnosticSource.dll",
+    "SHA256": "766CBC65DF8AAB41A43A6737A8FF82A6FA51D7C618F920163B7E3018A3CACC23"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Diagnostics.EventLog.dll",
+    "SHA256": "78163F5CC160CBFAA51CC40CFD8B0440FB8251FEE1E0BEDF78D9111125E13C9E"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Diagnostics.FileVersionInfo.dll",
+    "SHA256": "157E42C40FFDF7BE750703219F90003A707FB82A568D7C449D031A7925C51668"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Diagnostics.Process.dll",
+    "SHA256": "58D7CF7EFD6588E856629343184C4DB60083ED6B32FED16A142700CF1EEF1C74"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Diagnostics.StackTrace.dll",
+    "SHA256": "53C4852CF0015CFB95539C254E1E4FAD01C63E725DAABB3100F3FF0DFDAE9AE2"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Diagnostics.TextWriterTraceListener.dll",
+    "SHA256": "08B5F731372B8D909953EE5B7DF09FD16DE272579DA2D2A30F14F0F440ACB8B1"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Diagnostics.Tools.dll",
+    "SHA256": "979D594E5F1996A202EEBA8B0FDDBE79650E63D05562C64B87D14C53A6036DB6"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Diagnostics.TraceSource.dll",
+    "SHA256": "91177B947C94BD28CFCE2E8E7E0D83683CB227829DB9D9F696C31A657BC82590"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Diagnostics.Tracing.dll",
+    "SHA256": "38F653ACDBF30229122719E08069C7E9BFB61C36E2E6B9EDDAB7A10108B8689C"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.dll",
+    "SHA256": "B032741DB97010A4BAE072947ED5F169BEA4434B26489410974AE39D7F75F6A4"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Drawing.dll",
+    "SHA256": "4E8E38FFD52BEA42D6258D5B139EC8AC94B85C35BD4E55BBD52805F06EDBE971"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Drawing.Primitives.dll",
+    "SHA256": "ED17B6CF9FA9EDD5391EBCFB9C1D5CA71B36B96AE1FF9E4312DAE77B4279C7F6"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Dynamic.Runtime.dll",
+    "SHA256": "B434398C7B0DABB8A1CF14E3CFF684242F455355ECEE9EF077B6DEDE1F238DD3"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Formats.Asn1.dll",
+    "SHA256": "2A46EF1D43B628B3D5DA8388FA4993471BF8E30554FC3711C4173A6602DF7581"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Formats.Cbor.dll",
+    "SHA256": "43EE07E929AB2BC75EECB9F7083A28DEE342C62130935901FD77584E61D74BB9"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Formats.Tar.dll",
+    "SHA256": "0AFCB36E520E67BC5C413C498A047B0C834070C5859F8687B893157180357A72"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Globalization.Calendars.dll",
+    "SHA256": "9F9180BD387BAC7F71B017FD76415255162230A7E476F0308910B9E8E2FBC56C"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Globalization.dll",
+    "SHA256": "8B3C72D3AF107F7273F83775E1A3B5631C70AF58BA924DD0B572DD63E18CE538"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Globalization.Extensions.dll",
+    "SHA256": "E5204E673F75CAE92CCF9B58D29A31F9418E05C502EBD657E95868735F66ED87"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.IO.Compression.Brotli.dll",
+    "SHA256": "EEDFAB936098A419C1185A0E9E2E6FD68D585E51964CBF2F8CCDBC0DD184DF4D"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.IO.Compression.dll",
+    "SHA256": "710D88C50311FF169AFB2883A497B724B6F9F70B8667589048A4CE2C3CD0AA8B"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.IO.Compression.FileSystem.dll",
+    "SHA256": "1EBD365DA74E9F1412C8422AD386C8AAE328B0D47206E99745BC78C43EF01DDE"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.IO.Compression.ZipFile.dll",
+    "SHA256": "F29F53D9521F92BDC612CA6A2B71C185FDC7400AD511FBBF60ABC287176F5115"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.IO.dll",
+    "SHA256": "531117E87794D1F9F8847D63D2F591CD8AFF90EDBD551BA3BA1E51B3A33F63DE"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.IO.FileSystem.AccessControl.dll",
+    "SHA256": "6C4149F0BAF96BFA48D2A155A910DB98A1B24FE30169E10585B92F4EE1E5FC74"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.IO.FileSystem.dll",
+    "SHA256": "B5E42F3E6C3BC9A87B3A854B3EB3C5027131BB5FE4F4724B5A9DF6E8A67861BE"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.IO.FileSystem.DriveInfo.dll",
+    "SHA256": "F7FA180D91CEA3871661372D1E83CA36132B3BB5A58546699A671F0063DB5B79"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.IO.FileSystem.Primitives.dll",
+    "SHA256": "C4B656F10B9CF0DA51342495D0F830EF6CFAC4C83384E84BC47B3A76253A42CE"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.IO.FileSystem.Watcher.dll",
+    "SHA256": "7635EBE850BCC7489BF47EFED2AD77DE413AB40934718986F77F280A0534CEB6"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.IO.IsolatedStorage.dll",
+    "SHA256": "0B3168CB63956E4BCB2E9311DBA01F12559CA17D4FD87A687CDC6A2474A9CFBE"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.IO.MemoryMappedFiles.dll",
+    "SHA256": "2ED9317FB3908947790533C5C8A2C1C476A1B369EE2119E0A2CAACFAC9B21CDA"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.IO.Pipelines.dll",
+    "SHA256": "719F9B2CB5EAB2EAF9A03AF7DE3C83DB3D5D04A8F78617ECEC752568E46166A6"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.IO.Pipes.AccessControl.dll",
+    "SHA256": "70826369D77A63F029649F4FA731A82CB8D7F8F0BC52354CEC287F87A1888CEB"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.IO.Pipes.dll",
+    "SHA256": "9EEB6D3EE12A0047E7E8B67B723846E38B476DF570A27339E362003055225C1B"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.IO.UnmanagedMemoryStream.dll",
+    "SHA256": "3336F23C45AEEFD29C4990E59B1736C3C61A8D5E18002A03BDC8952F642E8E15"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Linq.AsyncEnumerable.dll",
+    "SHA256": "E8536F2AF8C93A71ADE9664F8F46C853CD4A84E7DD324580E04332BC7EF8A5AA"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Linq.dll",
+    "SHA256": "5BAB6B7620C2ED193E7D8F898813077FB058A7881234198380F498C6CCEAD340"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Linq.Expressions.dll",
+    "SHA256": "81BEC4BE253DD1B4E85006683024201C3E78DFEEBDEA3A75FFFCACDCBA261E09"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Linq.Parallel.dll",
+    "SHA256": "3C78F34A8FEAC83E56CA0692F306FE93EC52A3831F24ED57338AAEB9964F57BD"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Linq.Queryable.dll",
+    "SHA256": "7E2436D3DC459B6730EFCAB0AF1FA0CF65C669F5346AEA5E72D0CF9D4BB621F8"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Memory.dll",
+    "SHA256": "B7B5B1777AA3647B1864834651DD57047003337EA4AAE60D0E65AD9A24FB66F9"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Net.dll",
+    "SHA256": "FBEB2C210C5B5CA269B1783850997954ADABB615FBFF77E4D9F2CAE56FC8EE47"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Net.Http.dll",
+    "SHA256": "CCCECE80E06E152E66EAD4CB844573427FAC2E404066F18330B7B639C65ACAEC"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Net.Http.Json.dll",
+    "SHA256": "5EB262DC5C0FE65A1E53B0B46B9120DE08D6097EF41A2CF166BBA2E52DCDC00D"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Net.HttpListener.dll",
+    "SHA256": "C7DA9360432F2FF0EB6437D7C326C716A909B8384A3E1FA84323236C095C792B"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Net.Mail.dll",
+    "SHA256": "5B7983295094F5F88558A49A6BDDB5A0C6A6FD28B3B785072BF8D009F4CB9AEE"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Net.NameResolution.dll",
+    "SHA256": "34BF07D5C007F5D410BD0BFB5A6B3AC17F8A67D7D4A52F4722DEE337679C6100"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Net.NetworkInformation.dll",
+    "SHA256": "EBC30B14720C9D4D2523C554B6CDF7286A172765CD4B29DD76548D4877F139F8"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Net.Ping.dll",
+    "SHA256": "9A6D202550074341763050F22A630CE7CF4A31992F3DABCD02797F5394E66F7A"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Net.Primitives.dll",
+    "SHA256": "06CAC6C09DA7F962FF3741B5F6419AC6277E7EA714050FC80820ABCD6BBA0F82"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Net.Quic.dll",
+    "SHA256": "63AF81899A58A831553BF4AFF3F9F227FD4EB7794A002CFDA122B38F75544DCA"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Net.Requests.dll",
+    "SHA256": "537C0715B8C5E673FEFC4A7CA2F9F32DF40AB5D6697F0A1B3714444DD26FC757"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Net.Security.dll",
+    "SHA256": "F02F1D075554F4820BAAF2F280DF58CBA565E8E9185A4DFFCCFA44BE5663938A"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Net.ServerSentEvents.dll",
+    "SHA256": "1AE820DD484FA17AF7F6507D03A1614AD2CDA36F12CF085F5A98C04F0B2A4757"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Net.ServicePoint.dll",
+    "SHA256": "4BEEBA0FF380FDAC5D46A29AAFC45CAB9CE1718FE2668C4605AD603E93A198A5"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Net.Sockets.dll",
+    "SHA256": "900BDC2518F279FAFCFFD352C7B22D5009C287F8B6187FF6EF2FA5620B14FC44"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Net.WebClient.dll",
+    "SHA256": "4958B5248241F217317760257489A5D244592A57F6339511576474E75DF33704"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Net.WebHeaderCollection.dll",
+    "SHA256": "B13113A718307EA60029C30E07B49F8A1CA6568E0EE3D33B6C59E054B941CA81"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Net.WebProxy.dll",
+    "SHA256": "BD62401B634581D0408380F202DE08D12FFFA9EE47A302587344E7C0F679FF38"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Net.WebSockets.Client.dll",
+    "SHA256": "6DEA0690F049637CC167D150610951C8FA5400AEEE7F38F5F508B3544F8DD51E"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Net.WebSockets.dll",
+    "SHA256": "48B317403B5D5F3A1B9897FCEFF979BCA6A78C2C1A28A84627863279A68D8FB2"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Numerics.dll",
+    "SHA256": "274DD43137065429C27CE320090F451AE7FC4904FE3A49E08B1F3EFF119B281E"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Numerics.Vectors.dll",
+    "SHA256": "A4A6DE45EAE098D6801535882C9EC3D12CF7C8771F972DD95DDB28232F62C0CF"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.ObjectModel.dll",
+    "SHA256": "E935A52D122F9467A02D2D9F58D90DF67BACA59F2A56E96E84F597C8136DE1D9"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Reflection.DispatchProxy.dll",
+    "SHA256": "ED6A69C569BDC58611201BBFE80C1E8529BB696541CCDE0AAFD5EBA02050CA24"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Reflection.dll",
+    "SHA256": "FDB791B852A5BE164CF419DADCFB69FC033137E2E80630C4A2F8BA23A713726A"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Reflection.Emit.dll",
+    "SHA256": "5E137D7F8DF8DDE5C9CFD231D831FBC814C2D0454F9C1C7CF5C06F7A76BEAC75"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Reflection.Emit.ILGeneration.dll",
+    "SHA256": "DC97750BB83850680F2429A312947F0A07E2F4EE3DF1A4527771077BEC052EDD"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Reflection.Emit.Lightweight.dll",
+    "SHA256": "B5FCBD32EEF3372FA069B8AD6FB2A4542A2217C84C44F7E2F6E6B2F1CF6342B3"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Reflection.Extensions.dll",
+    "SHA256": "67496F231C17E87483B1A70547656FCF4E3DB1B1285BF8AC21FADF0F97B38B59"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Reflection.Metadata.dll",
+    "SHA256": "61EE72B6EA7AC3829D24ABCF486BB6EFE3C7451FC666D6252F1E5734C07FAFF1"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Reflection.Primitives.dll",
+    "SHA256": "88FEAB51552C8CAE7D7C6AA6DAFED821D589CA6C1826958BBC4FA2D5E560168C"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Reflection.TypeExtensions.dll",
+    "SHA256": "F049ED9ACA4F6D4501B96E1D99138DDD57E6F0F2BDE34610FBF0EE77D920379B"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Resources.Reader.dll",
+    "SHA256": "99A87DE22257F3881BA282C9F54789227845DC235A4C6AAB9C66D96C666D5585"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Resources.ResourceManager.dll",
+    "SHA256": "0A02188B166EB86CD352DCBE205BF077212BBA823A2D2EF75AED99966A22F02C"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Resources.Writer.dll",
+    "SHA256": "D00FB51DF09162B2073E38C91BD31708BC651B22B3C69E1A3200E500BEF72703"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Runtime.CompilerServices.Unsafe.dll",
+    "SHA256": "7CB7038275C7DBC335E6753B895482A0CEE2375738AF0F55F447E5897473EC21"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Runtime.CompilerServices.VisualC.dll",
+    "SHA256": "8F9D97664AF0969C4C743EA5E32B90CCB3A9CF9C3FEC5CC5A33DA2B2EBC5608A"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Runtime.dll",
+    "SHA256": "D0261125D3D7D7A11D404B9165B87591B73D26C004FBE8EB007B5B44E6494ACC"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Runtime.Extensions.dll",
+    "SHA256": "6CE27F4BEB0A5F8DBFF7A67FE4FEAD7235DC9F817BD630379C84BBFEB85C627C"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Runtime.Handles.dll",
+    "SHA256": "575BCA72423EFF5B8628C8095FEAEDB0119CEE4C8AF7030FAD77163617BD1111"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Runtime.InteropServices.dll",
+    "SHA256": "AE24D8DBEE946DF34B1C185F818A2AD1E2BDBB5501CC22255D7CDA4055358A2F"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Runtime.InteropServices.JavaScript.dll",
+    "SHA256": "9554B562672F18C25D8AD045B19D21F78A995106AAD02C794A992340659DCDFB"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Runtime.InteropServices.RuntimeInformation.dll",
+    "SHA256": "7FEA5B9EC50D25C62FBAB2607C0352D3D560586FF996654FDA0CCA8916542CE4"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Runtime.Intrinsics.dll",
+    "SHA256": "8DE41F802D24079705FE062C7777F52B9D6AFD8EEC44D246ECAEC501BE3BD4C4"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Runtime.Loader.dll",
+    "SHA256": "A0FE20DA9789327F28BF82AE12AF5C868EB97BADE5E6B2ACE339A9B0BBDB578C"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Runtime.Numerics.dll",
+    "SHA256": "C8EBAB1A9A7B9E94E9CC2380A626CF03015193CDEFFF41DF0DB1E0F8C58BE165"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Runtime.Serialization.dll",
+    "SHA256": "051A82D770F5A2CA035B6F44DD4DFBA4841622FA29BB186A23B060E845D44363"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Runtime.Serialization.Formatters.dll",
+    "SHA256": "096A00CFF5447AD1725E5D3540D14C2ED8E0CBD73D34157E10DD6CBACFC9E169"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Runtime.Serialization.Json.dll",
+    "SHA256": "81445022D992B94D43D21B78C7EDF90F1BCE18800D25E630CE9D362A686B14FB"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Runtime.Serialization.Primitives.dll",
+    "SHA256": "566C3B94AC1C95A459BCB51A3515B2AF62F9CD5D55997210DF5728E336B8AD90"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Runtime.Serialization.Xml.dll",
+    "SHA256": "ACEB4807CC65E2AE4BD215A9AD982873330F67BB16AE763920EC23066E4EE3F5"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Security.AccessControl.dll",
+    "SHA256": "E466F85635B3A405BB6E358792C3D07786C8A55634FBF43F97B790FB791ED117"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Security.Claims.dll",
+    "SHA256": "4BA3C9BEA3E2F39E6FE95AA1A6E28EE2F261CC4032D9022A0C8B16DB9894B074"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Security.Cryptography.Algorithms.dll",
+    "SHA256": "983D238AC3AAD778EDDF542A4520FB724BDD9AF10C46A167E0CE8EF8FC2C2320"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Security.Cryptography.Cng.dll",
+    "SHA256": "49BBF17B13DFCF6CFE2D315A347A4209FD32904A9253AC62F09EE5CA324B64F1"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Security.Cryptography.Csp.dll",
+    "SHA256": "11E464C97217C5BEAA4963987FA3E84A50F3505C60AD189769D6E95F6BBEFF7D"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Security.Cryptography.dll",
+    "SHA256": "FFB2861B797F4982C4CA5A9AF19F70AED4DFEF90E4C9085A9D87FB168D16BD5C"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Security.Cryptography.Encoding.dll",
+    "SHA256": "54A398501FDAC11ED967F6A68EF337B1119A19137C173A45C343A260D2BAB5EE"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Security.Cryptography.OpenSsl.dll",
+    "SHA256": "1037EE990129850AC41682ECF6E6B3789CAAB374658A29A9BF12F2BB7C044C12"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Security.Cryptography.Primitives.dll",
+    "SHA256": "57BEEDBB501A85B48591C9FE7DFF19A25A1E3F959BE6A7F917979DF0B1F9C8A3"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Security.Cryptography.X509Certificates.dll",
+    "SHA256": "BA4E996D3FC9687935FCE64152CA134BB86D77A4A3B2F3F06B9F3B8C9A416BC6"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Security.Cryptography.Xml.dll",
+    "SHA256": "2C7210108D3DD5ABD8A87776EA6E8E4F1AD32205F873ED84CDF5B3617B6366A9"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Security.dll",
+    "SHA256": "15A582A9A2987F9E1A0EAFA86B32D68CF8B56F4ED56600C429C8AAAD64A2B0D1"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Security.Principal.dll",
+    "SHA256": "2D1AAD38C087728FC76DEEFEFDC7C4CBC6577AE9587AC0041056041A1A6726B5"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Security.Principal.Windows.dll",
+    "SHA256": "CF1356DDDFBA90FE2C2CCF498AB2866DB147481BE8427A74B2623514C9FE6953"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Security.SecureString.dll",
+    "SHA256": "A121B60E29F8A00F8156FE54DEBB467A4C44E286DC61315E612F87486F99F630"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.ServiceModel.Web.dll",
+    "SHA256": "F99A3AFE77F1B7FDEE3A097A8717FD9CB0D6FEE373FC60281055F756916B5848"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.ServiceProcess.dll",
+    "SHA256": "C0C98F752964AA5352432CE64DD7188B8D1415C257596BDCB12F5042D9C0FDE1"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Text.Encoding.CodePages.dll",
+    "SHA256": "3B897F02E36502086EDCD67903C796898EB7CE2DFEE96497AF19673EE719A39E"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Text.Encoding.dll",
+    "SHA256": "CE4583A80A852F7F43EC390DF7B8C06E6B76BBA1E6A8447607A57BB7E2714AE4"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Text.Encoding.Extensions.dll",
+    "SHA256": "CF1CF4D2F70D2E8432306C6A6809CE8057FF0B3E2D9F01CC68FB11010CA55975"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Text.Encodings.Web.dll",
+    "SHA256": "57A07166D93CAB24398D7E486703789DC93B279FB49BC82412C11D17A3A9C3A0"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Text.Json.dll",
+    "SHA256": "1B82BEBFC5BB14EBA5CF0C97AC568220E0482452BA19502419D033A4A2D287EF"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Text.RegularExpressions.dll",
+    "SHA256": "5BE63C481EEAF46BCDF13D85A71CF17C18D51C01667FCFED29F0C010953E8732"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Threading.AccessControl.dll",
+    "SHA256": "11AFC6B0B9B78828D20DA819B6538BA9C22C4C597D4103400FA5BB0000BFCA5D"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Threading.Channels.dll",
+    "SHA256": "B9334E9E50DB80160DAE12668640F11D2355A6393A043163D0C0F518C43BF219"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Threading.dll",
+    "SHA256": "EFEF6689B82A4D24AB46501FCA728172BB2723B0BA9D7050BBD8CCE83F258C78"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Threading.Overlapped.dll",
+    "SHA256": "810CB219016DB7E2214560EDE8DC01A1BFEB6EC94E2E33E09C55445393AA38FC"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Threading.RateLimiting.dll",
+    "SHA256": "D0367A5CB6A085F796290A9B0436AE5269055BAF991D0AF494E0697E1DDF7118"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Threading.Tasks.Dataflow.dll",
+    "SHA256": "C1105461F54A9D740ADC022AB6421AE68E37BC4580126B7914B194164D330D19"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Threading.Tasks.dll",
+    "SHA256": "BB271A61438C326EE41CC0D3A7B52C120AC754D0C32DB4A83A26968D4AB0B2D9"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Threading.Tasks.Extensions.dll",
+    "SHA256": "CDE6CA2790293F5183E53E4051CF6BBF07B99B5E7B84DD6BF4C4161FC3A2B274"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Threading.Tasks.Parallel.dll",
+    "SHA256": "28A993B34EA1A52EEE25626847CE892F62F35213B1BDF1952A2A60951D4E992E"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Threading.Thread.dll",
+    "SHA256": "46B855441E2BEF4ABB78C1E40E022EF881B39077356011ADC4836A8B49EB62E5"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Threading.ThreadPool.dll",
+    "SHA256": "2DA09A7666C69495EEF6E622D3E24EADB16BCC641B9C24860847A571E311C056"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Threading.Timer.dll",
+    "SHA256": "F5119EF1F9709591B70B4CC16D8DEB616AEE854E55B13BE65153B7F5477949C0"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Transactions.dll",
+    "SHA256": "423866A4539CF428799D9B5E955803877E5F14557A42B2F75FA8184597B69BC0"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Transactions.Local.dll",
+    "SHA256": "33900E31D0EE75367ACF0C6AA6A38E054E5E033E10C19C2076A8603E1852DBFB"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.ValueTuple.dll",
+    "SHA256": "A1DDA8BDF5D0EFE97129B873602A00C89E2A92F4E4FBE991968CFE697C5A374A"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Web.dll",
+    "SHA256": "39A2646CE3EF7A45085679DF2A974B20FEF7513716EFE299ECE636A07B6A6C1A"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Web.HttpUtility.dll",
+    "SHA256": "8B7F3D2085F54607D0624BF830FF0CB3EE955E539C1F6C4DE07622B77F77B69A"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Windows.dll",
+    "SHA256": "1B3C546084E493186929A1490750EFA786ABD7E4914874F43F6697ADF73258EA"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Xml.dll",
+    "SHA256": "F56C957FD278915E1F45121853375ACFBC330C98C50DC8A7B968B4979B999EDD"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Xml.Linq.dll",
+    "SHA256": "435F851C5713A37FF82CE767492E2118957145ABBFC57D20291680FD46DA08BA"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Xml.ReaderWriter.dll",
+    "SHA256": "906ADDFBF35DB632D29F588B2037A40AABC4FAB8D317FE5D99EBC0E5F7C3A1AF"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Xml.Serialization.dll",
+    "SHA256": "F5C1A6464374196A45DF23471856B6F6408D5D2F0292E603865619E823330F48"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Xml.XDocument.dll",
+    "SHA256": "DD9B4230D76BEECD6683632F8E36A8A8107B731B24D6E6E0B82997F8C4926386"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Xml.XmlDocument.dll",
+    "SHA256": "F1254CE2EB6F89403B1CB5A7FCDB9B576BFD33B5F1E6DF8963403AFDA69011F4"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Xml.XmlSerializer.dll",
+    "SHA256": "4C61BD2F4DC3743B8DAB3D628EB3623513A961BBA8DBEA950E0CD98DA55113A5"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Xml.XPath.dll",
+    "SHA256": "1B373DE3BD88912FDB618908E5F9329C51B30E6E75716534EC0DB90FDD851397"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\System.Xml.XPath.XDocument.dll",
+    "SHA256": "CFC0B8E7D17A0BB4FB4AD6B12A1B4C9CCD028CE74A48C3E67C53E5E7C0B558A2"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\refs\\WindowsBase.dll",
+    "SHA256": "9A2D1AE8CFC31F7BAACEE78818228F7A5A99EC8B2773CB937A916F678665B798"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\ru\\Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
+    "SHA256": "4B29D6FADB5B709C5C90F25A8934E6C3C58027CF35AA28C6EF7100AB30F9CD39"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\ru\\Microsoft.TestPlatform.CoreUtilities.resources.dll",
+    "SHA256": "67820043048CCA339E29B563B1ED9DA9F7D702B67C0CADD0B643F5781BC78789"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\ru\\Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
+    "SHA256": "4970C26BED952ECCEA42FBD3C7064BDD690EB5A7E538A77CE78FFED487877D9B"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\ru\\Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
+    "SHA256": "FCAEDB770D94BE752A6C9BEFE5D2B8219BB8D1BFCE83F2DC9011FA4B7EEBD00A"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\ru\\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+    "SHA256": "F7084DF5889CD4A8D141F73BE63B267519AE4DAA75C6394CF39C4A96FBA35D68"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\runtimes\\linux-arm64\\native\\libqpdf.so",
+    "SHA256": "C81E90346297CF37B72BE677084A0CA39355E8B743ABB35CAD9B5FC772556A69"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\runtimes\\linux-arm64\\native\\libQuestPdfSkia.so",
+    "SHA256": "3253B4DD4CC7901E0B4E698FD56798796CCF76635EAD3896AFD05064E5CF8941"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\runtimes\\linux-musl-x64\\native\\libqpdf.so",
+    "SHA256": "F91E4F572094383BD9E989E7CEFDE963D96F573529260D4EF5F4E802DA1DE62E"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\runtimes\\linux-musl-x64\\native\\libQuestPdfSkia.so",
+    "SHA256": "FDB62A0FCEAA866D0F697A565307FC698FFE09BED3AF3A2210EA0C6357885D5B"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\runtimes\\linux-x64\\native\\libqpdf.so",
+    "SHA256": "327276D39D9866202EB25236BF04F0F03123F84D798871B1D387C0F8DEC1DE9E"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\runtimes\\linux-x64\\native\\libQuestPdfSkia.so",
+    "SHA256": "914ED7873CB592D6D418309B5B09D12614213126B89C743F6F5E14F4BDE57498"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\runtimes\\osx-arm64\\native\\libqpdf.dylib",
+    "SHA256": "F9A37B1C6BB9EAB3192B233B8910AB4DC886C2728FF80B5BC8C537C1ECCB6DEF"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\runtimes\\osx-arm64\\native\\libQuestPdfSkia.dylib",
+    "SHA256": "BDB65BECEF3D4764C27C9D3E4F0273BE678AEFF2F82053113B8B288345D8FA30"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\runtimes\\osx-x64\\native\\libqpdf.dylib",
+    "SHA256": "6F27D73182B8391A98C72B3A2FC74B4857428FB6BC5FCD0A557145F9FAC9D1A8"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\runtimes\\osx-x64\\native\\libQuestPdfSkia.dylib",
+    "SHA256": "FCEEF51904D3E9C13F0534F9363A26CC5E8E7935FF26BE0ED1E73DFD4ECBBA68"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\runtimes\\win-arm64\\native\\qpdf.dll",
+    "SHA256": "E03DAB4A7DDE7127626B9165FC8DB418D5A6AF315D0028A904D364604FDD7A1D"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\runtimes\\win-arm64\\native\\QuestPdfSkia.dll",
+    "SHA256": "A5EF8358B289CDACFCFF5E4BB0923759D2627900A501EB0FBD24A1780CBC8FC0"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\runtimes\\win-x64\\native\\qpdf.dll",
+    "SHA256": "36BBAE314B28791275A72DE85B3F2951CD2EC91FA47E1C6E02B0C85EAE3A6829"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\runtimes\\win-x64\\native\\QuestPdfSkia.dll",
+    "SHA256": "5F0CFB375F8320CEF7CB6DA6D22090A832AABD9550483B1A51FD68FFCDA96434"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\runtimes\\win-x86\\native\\qpdf.dll",
+    "SHA256": "C25FCEC229098F0DCD1656AE29A392DCC70F7BBD772651C7B6188AF8A54FD56F"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\runtimes\\win-x86\\native\\QuestPdfSkia.dll",
+    "SHA256": "27EE144852003F9E2238B39ABEAA55C51930E1385BE193F3D8F51C58214B53A9"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\tr\\Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
+    "SHA256": "EF6BF78A0FD4613B1FFE8DC560B0F2F5CF2C05724FC8AED314F9CED18A90CF03"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\tr\\Microsoft.TestPlatform.CoreUtilities.resources.dll",
+    "SHA256": "A4D0C1D36F10425E39CDAADE487220A9808E6F6954998644C57011FBEB3A33A0"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\tr\\Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
+    "SHA256": "6AD665B04F30253B05ACDBCF02196AF45332A95091E112E55D2F2379273D9CAC"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\tr\\Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
+    "SHA256": "96EFBCB535B02AD348598505210AE60B3D24BA7B8D364547EC89D353E891FAE2"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\tr\\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+    "SHA256": "5A392FBA8650B4B574E5E7C42615F5C6D2A879C3838CF5B5219856185B33C8F5"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\zh-Hans\\Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
+    "SHA256": "61E5B362940CA90E3B89A452218FB1D3882AEA679A1B73E6AD868D0AC1BB88FC"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\zh-Hans\\Microsoft.TestPlatform.CoreUtilities.resources.dll",
+    "SHA256": "4A8C0EF1C60069942082FA7493DBE683033E14E15DFF09C8BA8C230E2A4443C6"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\zh-Hans\\Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
+    "SHA256": "0B12A586CD3759757F641A6219F491AFF7C5FBDF603A6339B98FAA57CE6EB7C0"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\zh-Hans\\Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
+    "SHA256": "8FB34ECF4343A77647006F0AD1FB41E8C4DD48CF38FE97B93C345B743F538908"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\zh-Hans\\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+    "SHA256": "396CC3C959CFC9F24BBE7A2D38846DFB97B696A9610EB95234306CBCDEBD4F06"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\zh-Hant\\Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
+    "SHA256": "B411FE26D281EC982D0432F1B0BCE2C1C86F200D17E837BBBE91086F8E38270F"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\zh-Hant\\Microsoft.TestPlatform.CoreUtilities.resources.dll",
+    "SHA256": "A9012F419D3B66A730D635760F63FEA1721A63B2105A4146C2D1309BB6F31B14"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\zh-Hant\\Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
+    "SHA256": "540BEE11C69534FC48BB4A9626683A6203E9F1F4BAE15FF72069EAF9F65F5E81"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\zh-Hant\\Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
+    "SHA256": "D69E7127DE46141B6406FD968D4A66271DDA99271701F912D56CE6813AF48CF2"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\bin\\Release\\net10.0\\zh-Hant\\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+    "SHA256": "B90F264A4D72987FD0AA0D11FC51DD248F831740BCD72D281045E16936FDA16B"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\obj\\AuditProbes.csproj.nuget.dgspec.json",
+    "SHA256": "53CA46E3F6D3E7D7A839DD6FEE66B9B054274BC49EED7A67B5D13F8596C46619"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\obj\\AuditProbes.csproj.nuget.g.props",
+    "SHA256": "0144AC09ADF4AD3334CD12F31BD0EC5350110E5C7FB369496813F5796B5E9E25"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\obj\\AuditProbes.csproj.nuget.g.targets",
+    "SHA256": "906542399B477E0AF01689F485D3CE22E6AFA64E78B96391F07698B64C60546B"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\obj\\project.assets.json",
+    "SHA256": "367DDC8F7CDD8E429CCBEDF4F5225394AB0E99ED3C1068243ED6D8CC1B41A120"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\obj\\project.nuget.cache",
+    "SHA256": "E0C53D4679B5634C2610AC542448B04DB39A24A1886A56F4CD45C1722AE1C676"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\obj\\Release\\net10.0\\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+    "SHA256": "93D67476196EBFC80D1D7D8844B91146CFD678D105F5CE635EB900CA40610C9B"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\obj\\Release\\net10.0\\apphost.exe",
+    "SHA256": "E62B5BA38442E7C140A0823D75CB4B98FD06BD9ED1AED2F1605834F935E18EA7"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\obj\\Release\\net10.0\\AuditPro.F2C68028.Up2Date",
+    "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\obj\\Release\\net10.0\\AuditProbes.AssemblyInfo.cs",
+    "SHA256": "0D0BDFA451E84DCB37E96B4659646496EBA2A81040FB88F6C196AEF338E7E51E"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\obj\\Release\\net10.0\\AuditProbes.AssemblyInfoInputs.cache",
+    "SHA256": "CADE73FB072ABAA2F2A3D78952AAE8158BC1277D5150AA3DA4C787EC9F6D5E8E"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\obj\\Release\\net10.0\\AuditProbes.assets.cache",
+    "SHA256": "EE9F2C53AC0D5B671735483D575B1AF63BC634FC9DD66D162BAE7D3CE2868493"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\obj\\Release\\net10.0\\AuditProbes.csproj.AssemblyReference.cache",
+    "SHA256": "DC454D44D27A7EBCBAC06AD1BC72F9E08321E44C6F30CC3BAFF10F5D806B6420"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\obj\\Release\\net10.0\\AuditProbes.csproj.CoreCompileInputs.cache",
+    "SHA256": "C5C2C750A7025B1186F8C8FCD99E975421B07C6327851936956E740640819FE5"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\obj\\Release\\net10.0\\AuditProbes.csproj.FileListAbsolute.txt",
+    "SHA256": "F304666245C633477DA9550014950C58AE8DACA6C7184B8DC77754C411AC40B9"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\obj\\Release\\net10.0\\AuditProbes.dll",
+    "SHA256": "22BA7DA69BF1A0B869EC6A285C1D5BB3E7A7D79829198354DF5674C2F79B30B9"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\obj\\Release\\net10.0\\AuditProbes.GeneratedMSBuildEditorConfig.editorconfig",
+    "SHA256": "699CFF911A335A2FC07682F8435F015CCBD938DDC963F0BE13406784EDE24D9F"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\obj\\Release\\net10.0\\AuditProbes.genruntimeconfig.cache",
+    "SHA256": "5438930A0F7CE59F6CD87202CF5120B50E7E69CE966401D44FC093D4EC2DA976"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\obj\\Release\\net10.0\\AuditProbes.GlobalUsings.g.cs",
+    "SHA256": "A3C6048BB4D922B1799A9977F84362A3787B68810CAC67AA86AC3AA23295F227"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\obj\\Release\\net10.0\\AuditProbes.pdb",
+    "SHA256": "10FACB9446DCD5CF4C5CE99F34D12863D9150D686BC9D0E3468999F8A96D01B5"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\obj\\Release\\net10.0\\MvcTestingAppManifest.json",
+    "SHA256": "A81BD9E2880DAEF68C28AE81FE704EE3B962F69194A87F6A8642FF3FBE98A602"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\obj\\Release\\net10.0\\ref\\AuditProbes.dll",
+    "SHA256": "F507936A25BB2EFD4B0C030B04FD1F763D522AE1079BFAC11116780690F7D43D"
+  },
+  {
+    "Path": "verification\\final-audit\\probes\\obj\\Release\\net10.0\\refint\\AuditProbes.dll",
+    "SHA256": "F507936A25BB2EFD4B0C030B04FD1F763D522AE1079BFAC11116780690F7D43D"
+  },
+  {
+    "Path": "verification\\final-integration\\build-final-pg-fixes.log",
+    "SHA256": "B579D696111BE1A8A04D3701904917CD7F38B5536ACDC9584A4FE4B78CDBDC34"
+  },
+  {
+    "Path": "verification\\final-integration\\build-final.log",
+    "SHA256": "4D70C7F9412920DC94877C9879D14669F3CA518022CA7370AA3E6062B66C6D80"
+  },
+  {
+    "Path": "verification\\final-integration\\build-fixture.log",
+    "SHA256": "1A32050A53158381E4208D3B5EC3910491D07E643E6345088C059630D291EF92"
+  },
+  {
+    "Path": "verification\\final-integration\\build-migration-delimiter.log",
+    "SHA256": "FB088F143366B1C2E03D802671D4FE03F3C6ABD4B632AC1871F24632C83A5EA9"
+  },
+  {
+    "Path": "verification\\final-integration\\build-migration-fix.log",
+    "SHA256": "2FC96CCEA06130DDF175CCC63F63E539CB3D3C33E7EB8D02C17FF574D5D72195"
+  },
+  {
+    "Path": "verification\\final-integration\\build-minio.log",
+    "SHA256": "6DBC19D015DD910CE3030864F67432D71FB98C97BF17D876DD8D02BADA5AA186"
+  },
+  {
+    "Path": "verification\\final-integration\\build-replay-fixes.log",
+    "SHA256": "4A126AFBD54C0A66BEDB99957A8446E7013DDC96B15BB1EC8EFE660B7A49B35B"
+  },
+  {
+    "Path": "verification\\final-integration\\build-runtime-fixes.log",
+    "SHA256": "166C7E67C0C22929877E5224704591B715B1F8A651C57FE624AC43394A4FE51A"
+  },
+  {
+    "Path": "verification\\final-integration\\build.log",
+    "SHA256": "4D99989F191B0D70BB5E0D062AD9006C9B1C58BF6B4A6F8FB86B73E1B52F1D32"
+  },
+  {
+    "Path": "verification\\final-integration\\docker-startup-error.log",
+    "SHA256": "CCC3232992C37465DE70F063613451F19BE8EC3E565A0131AF4D897C8B371DC8"
+  },
+  {
+    "Path": "verification\\final-integration\\failure-summary.json",
+    "SHA256": "1D00F04D38536036ED4E0C773255631948DD4E5C93224DE1BDED2F480AF07EBA"
+  },
+  {
+    "Path": "verification\\final-integration\\FINAL_INTEGRATION_REPORT.md",
+    "SHA256": "8A7D690B602CD5DC563B7758D4EE3E07C8CEBC16A1A467DD34AE957AF56A055B"
+  },
+  {
+    "Path": "verification\\final-integration\\final-counts.json",
+    "SHA256": "4EC8817E0B6336CE9BF63EF59E68A14107308B388E3F8125AB2B090E8CABC59C"
+  },
+  {
+    "Path": "verification\\final-integration\\FinalEngineeringRemediation.before.cs.txt",
+    "SHA256": "D5BDDA8733AEE3A7902EFD28369995D86AEF58DC3D62C76F955AE935DAD7F817"
+  },
+  {
+    "Path": "verification\\final-integration\\finance-migration-scaffold.log",
+    "SHA256": "B74AF21E5D043AB82589A1812652A383B57CA549614073097ED722405FB2A36B"
+  },
+  {
+    "Path": "verification\\final-integration\\fixture-check.log",
+    "SHA256": "C7F5684CE650BBFB6EF32DD7CE36A7A0B00E1E9F344B31F84E4574DA96A149C8"
+  },
+  {
+    "Path": "verification\\final-integration\\fixture-check.trx",
+    "SHA256": "ECD06D2666CB48C690F1C5B16BB6B869583F3737EEEFFA419935D3085E91303C"
+  },
+  {
+    "Path": "verification\\final-integration\\full-migration-final.sql",
+    "SHA256": "D133F5D5D10EF546011C479FC0B70683604922EA16295493AD7A3BC2B73DCB93"
+  },
+  {
+    "Path": "verification\\final-integration\\full-migration.sql",
+    "SHA256": "4DD64AD2DDAA4478AF2AC417722A2D9D05DA6A6BBE480AC1E5A664C78C349F12"
+  },
+  {
+    "Path": "verification\\final-integration\\infrastructure-final.log",
+    "SHA256": "9DCA1FDC9ECCFC90CD2508D2ECC458A0AA162B11F314042D83BB2B30A40E423B"
+  },
+  {
+    "Path": "verification\\final-integration\\infrastructure-final.trx",
+    "SHA256": "28852397173DDCEC53021E8882AB28ECAC8F1E107B4ECCABA99E769BDC290E8F"
+  },
+  {
+    "Path": "verification\\final-integration\\integration-after-migrations.log",
+    "SHA256": "4A66F7B9418A06C2AE42E0794A4665168AD9073E2D024C8BD291115E1463863D"
+  },
+  {
+    "Path": "verification\\final-integration\\integration-after-migrations.trx",
+    "SHA256": "79A2557417A75795205A716249B6E980DF5947897ED9834F91043D23B25C2FA2"
+  },
+  {
+    "Path": "verification\\final-integration\\integration-discovery.log",
+    "SHA256": "6513A20A638E99A6BDF25C87346C09B6BECB18C737FA8F71EE0187912DA56D6F"
+  },
+  {
+    "Path": "verification\\final-integration\\integration-initial.log",
+    "SHA256": "93BD81D5B0D65292359B71773E6EE4617EB3639DDB2FDACEA72E39F027E995B4"
+  },
+  {
+    "Path": "verification\\final-integration\\integration-initial.trx",
+    "SHA256": "FCAE99E3E707CB1A526489550D25F32F09C2C33F5C39C6B72BE09AF39AAC5186"
+  },
+  {
+    "Path": "verification\\final-integration\\integration-stabilization.log",
+    "SHA256": "A0ED7C5A1BD77A54F84E562FD61AEE4B7E307B841C70EFD050259E651D7AD84D"
+  },
+  {
+    "Path": "verification\\final-integration\\integration-stabilization.trx",
+    "SHA256": "F1F606647C49BFE34A0861B238ED31806D75ED80CB3A46C657DBC7FF0888A29D"
+  },
+  {
+    "Path": "verification\\final-integration\\local-final.log",
+    "SHA256": "2B584165AE9B0E0B8DC6CBAB9F59894399AA1237DC782AF8E046ACED910949F1"
+  },
+  {
+    "Path": "verification\\final-integration\\local-final.trx",
+    "SHA256": "8080ED0ABAF202312DD840A8D9ED036C0148A71630A352F1140CCC835AB1D245"
+  },
+  {
+    "Path": "verification\\final-integration\\local.log",
+    "SHA256": "0059D518E8F1E63622F38AA2E62B6612B34DA4C5857DA29BAE7FCBD7AF2E17BF"
+  },
+  {
+    "Path": "verification\\final-integration\\local.trx",
+    "SHA256": "CFE822DF5437D0384809F3B65E36EF0EAB8D7B87914A8ECCFED5244130BBA0C6"
+  },
+  {
+    "Path": "verification\\final-integration\\migrations-after-phase23.log",
+    "SHA256": "34FBA4B7BDBCE7F752B0B154FB3169FAEEDCC468CEF5F78BAD118CA51D81B570"
+  },
+  {
+    "Path": "verification\\final-integration\\migrations-after-phase23.trx",
+    "SHA256": "D0B97B76A214B171615F9853033AAD93B8898596709D7BB28E8E6B489A04D3F8"
+  },
+  {
+    "Path": "verification\\final-integration\\migrations-final.log",
+    "SHA256": "864278BB67E02FC080AF21C80E72B8504B8B81FD8AF86C6C1C8A1E73E4C61B50"
+  },
+  {
+    "Path": "verification\\final-integration\\migrations-final.trx",
+    "SHA256": "7CBFD3DB58957B0F13F9B80A9F6A447F0813B2854F9BF863A9FF81DA4C4A56A0"
+  },
+  {
+    "Path": "verification\\final-integration\\migrations-initial.log",
+    "SHA256": "FD79E9AE77A697A9451A9C3C1133FDCA19B69FDF2ED950979A19A5B504683E45"
+  },
+  {
+    "Path": "verification\\final-integration\\migrations-initial.trx",
+    "SHA256": "6384A8FB9A768AAB6327EF0D0489161B4BA4A37914ED447039095842E3228D8C"
+  },
+  {
+    "Path": "verification\\final-integration\\minio-final.log",
+    "SHA256": "33996F85C8C344602E183FA4AF73676EA008AF0B521FBB4D8DCD18C7B832FC30"
+  },
+  {
+    "Path": "verification\\final-integration\\minio-final.trx",
+    "SHA256": "D14E634CBFD9690B1179C7EA14F2DD38AEEAAD85CE4B1DE22C8D5101A72E2EC9"
+  },
+  {
+    "Path": "verification\\final-integration\\minio.log",
+    "SHA256": "6F14B76C4C42549C4426F4ACF758886EAE2170FEA1D883A158371F90B3322418"
+  },
+  {
+    "Path": "verification\\final-integration\\minio.trx",
+    "SHA256": "2776D1B8B1B90C76BE5D064D2912EEF903F1E9261952E62E4C0C52B167A82AF0"
+  },
+  {
+    "Path": "verification\\final-integration\\model-final.log",
+    "SHA256": "C924DA1693AD60EB6A78717DDD333946A8A61A056C2CE2868AE514384F01C866"
+  },
+  {
+    "Path": "verification\\final-integration\\model.log",
+    "SHA256": "C924DA1693AD60EB6A78717DDD333946A8A61A056C2CE2868AE514384F01C866"
+  },
+  {
+    "Path": "verification\\final-integration\\Phase23ServiceDeskCompletion.before.cs.txt",
+    "SHA256": "F55CD376763C7A91A1881C40CB966E729802FE9E377AF13641AD970779D531B4"
+  },
+  {
+    "Path": "verification\\final-integration\\postgres-final.log",
+    "SHA256": "75E6E2D7A87DEA4A166421A798B7FD86357CF26D4CDE100231D904DDE957491D"
+  },
+  {
+    "Path": "verification\\final-integration\\postgres-final.trx",
+    "SHA256": "3377E969D0A3913889C3C04EA1465CB0290C29FC696C0AA208A8CEA173FF4204"
+  },
+  {
+    "Path": "verification\\final-integration\\priority-runtime.log",
+    "SHA256": "8D7B691D8466D80CA65EED6F3C41AFC47AA7E821E6B7984E27ACAD9D1E3F6B7D"
+  },
+  {
+    "Path": "verification\\final-integration\\priority-runtime.trx",
+    "SHA256": "934859B115DFC369546633175D86BDFD5A62B6CB6335FB1EC21BD1CF4FAC066F"
+  },
+  {
+    "Path": "verification\\final-integration\\remaining-pg-regressions.log",
+    "SHA256": "B5BCACBCBB965114CDB21754D4A700259BA088C9EA32D84EC8C15150FF438FF6"
+  },
+  {
+    "Path": "verification\\final-integration\\remaining-pg-regressions.trx",
+    "SHA256": "3FFCFD5533099D93139BA9C730DFE8668FF8AC0313BC2912AB7C0E33CB19F81B"
+  },
+  {
+    "Path": "verification\\final-integration\\restore-final.log",
+    "SHA256": "2AD9967F2280D0195AD457A92FE6A353A8492625846632386DF6DFC446EFE4BC"
+  },
+  {
+    "Path": "verification\\final-integration\\sql-final.log",
+    "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "verification\\final-integration\\sql-generation.log",
+    "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "verification\\final-remediation\\build.log",
+    "SHA256": "73C10306415D04CF32B80D88D05DBA6C564D15EE8611793C97730705BD2FED1E"
+  },
+  {
+    "Path": "verification\\final-remediation\\integration-discovery.log",
+    "SHA256": "6513A20A638E99A6BDF25C87346C09B6BECB18C737FA8F71EE0187912DA56D6F"
+  },
+  {
+    "Path": "verification\\final-remediation\\local.trx",
+    "SHA256": "901B009FC9AB74E16DD3D54264408C265FBCB2A8AC0F0478A376B3150FFFB9C0"
+  },
+  {
+    "Path": "verification\\final-remediation\\migration.sql",
+    "SHA256": "B27960EAC2B05B708F9F91E294BFCBA55450D9116519CF9FF3CE6843D66C76A5"
+  },
+  {
+    "Path": "verification\\final-remediation\\model.log",
+    "SHA256": "C924DA1693AD60EB6A78717DDD333946A8A61A056C2CE2868AE514384F01C866"
+  },
+  {
+    "Path": "verification\\final-remediation\\REMEDIATION_REPORT.md",
+    "SHA256": "F9D38E0FACEB82E750C23590D5BCD7AA994F906D882F7A078C9B66357F1451A3"
+  },
+  {
+    "Path": "verification\\final-remediation\\restore.log",
+    "SHA256": "2AD9967F2280D0195AD457A92FE6A353A8492625846632386DF6DFC446EFE4BC"
+  },
+  {
+    "Path": "verification\\final-remediation\\sql-generation.log",
+    "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "verification\\final-remediation\\tests.log",
+    "SHA256": "3EA8F6718EAAB572225F942FFAE8AB5D1C2CB5D94C54A9A9D92576AF1F33585A"
+  },
+  {
+    "Path": "verification\\phase20\\build.log",
+    "SHA256": "E1510B3D0F3ED843B0AA2A236FC210592F883D6ECBAA71A560909D7170EA0D80"
+  },
+  {
+    "Path": "verification\\phase20\\IMPLEMENTATION_REPORT.md",
+    "SHA256": "7AC9F72CD42F0A7DAD9AD373F39DB4373DF5ABDEAED103694B81B3B46AE5778D"
+  },
+  {
+    "Path": "verification\\phase20\\integration-discovery.log",
+    "SHA256": "6B5FDD3952E8AAEB4A3EA70E7FAED32156AEC7A735E68C313304972FD405EC50"
+  },
+  {
+    "Path": "verification\\phase20\\migrations.sql",
+    "SHA256": "BD016A298B8780AFC194F3BF3A40B62E9C6EBA571385C452B7C3ED7AC9B3317D"
+  },
+  {
+    "Path": "verification\\phase20\\model.log",
+    "SHA256": "C924DA1693AD60EB6A78717DDD333946A8A61A056C2CE2868AE514384F01C866"
+  },
+  {
+    "Path": "verification\\phase20\\phase20-local.trx",
+    "SHA256": "9AE9EDE604D8D6819344D39E8C2316C4ED572F3343A4B3CB670E1CD6239596B2"
+  },
+  {
+    "Path": "verification\\phase20\\restore.log",
+    "SHA256": "2AD9967F2280D0195AD457A92FE6A353A8492625846632386DF6DFC446EFE4BC"
+  },
+  {
+    "Path": "verification\\phase20\\sql-generation.log",
+    "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "verification\\phase20\\tests.log",
+    "SHA256": "E7772688E52B2077100CD52E3C9EE0B4FCA481ABF7122AB0A9A12850FC77F5A7"
+  },
+  {
+    "Path": "verification\\phase21\\build.log",
+    "SHA256": "94707FF1E54E8EF05A27A5955E1D90B815848A99E906E53122D633A49D7FADE6"
+  },
+  {
+    "Path": "verification\\phase21\\IMPLEMENTATION_REPORT.md",
+    "SHA256": "704FA051F1B62969222D05FCFB276C246491EAE4AC62FB3B6A64903FFFF04F8F"
+  },
+  {
+    "Path": "verification\\phase21\\integration-discovery.log",
+    "SHA256": "AD57FC3BBEC82588EEAE1717C8B5AA35282BD0AB46A274EDD531C888C238CD2C"
+  },
+  {
+    "Path": "verification\\phase21\\iso4217-list-one.xml",
+    "SHA256": "33139B438657D1CEE116BA737807EA71D19D6DE4B90F799A09C56F0CC6A1B0FF"
+  },
+  {
+    "Path": "verification\\phase21\\migrations.sql",
+    "SHA256": "8D1D42AFB0FD4DC0D7546E71798CD3EDE61CAA5E118B617CEB5997050728F39B"
+  },
+  {
+    "Path": "verification\\phase21\\model.log",
+    "SHA256": "C924DA1693AD60EB6A78717DDD333946A8A61A056C2CE2868AE514384F01C866"
+  },
+  {
+    "Path": "verification\\phase21\\phase21-local.trx",
+    "SHA256": "2BC2E40108E58F0CBA37A10781F47479A11E336C8BD8A17D31141971553C59E9"
+  },
+  {
+    "Path": "verification\\phase21\\restore.log",
+    "SHA256": "2AD9967F2280D0195AD457A92FE6A353A8492625846632386DF6DFC446EFE4BC"
+  },
+  {
+    "Path": "verification\\phase21\\sql-generation.log",
+    "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "verification\\phase21\\tests.log",
+    "SHA256": "CAB7C3FE72BE3FAE4FBAE26916829354CB6F147D1A6B455C671F4CA921F4B9ED"
+  },
+  {
+    "Path": "verification\\phase22\\IMPLEMENTATION_REPORT.md",
+    "SHA256": "9BA25EFE641DF5C0B8C883E7F5E1C9E53DA83660BA7E848B7657A9E63281A256"
+  },
+  {
+    "Path": "verification\\phase22\\PACKAGE02_NOTES.md",
+    "SHA256": "6A62BE375000AC292BD99D409F1442098AB0CB0FBA651190252AA7B4DC570E51"
+  },
+  {
+    "Path": "verification\\phase22\\PACKAGE03_NOTES.md",
+    "SHA256": "C2CE54E84A44ED2D318DC881E26EB01E6F93F659A2DA83A30B9E75CF6C482CE5"
+  },
+  {
+    "Path": "verification\\phase22\\PACKAGE04_NOTES.md",
+    "SHA256": "96954A2C5194A9833F5A02BA3B34A5F23438E8E5504ED2A585AD194D665DBB31"
+  },
+  {
+    "Path": "verification\\phase22\\VERIFY_LOCAL.ps1",
+    "SHA256": "B69BECA3FFB5A103260F7D027C87A698F0B7671FD3568E8A7E807CC8918E8EE6"
+  },
+  {
+    "Path": "verification\\phase23\\PACKAGE01_IMPLEMENTATION_REPORT.md",
+    "SHA256": "FE0FE0876866D483FEAD9BABAC655B781C3F6F2A8CCCC6504663E6A271E61BD8"
+  },
+  {
+    "Path": "verification\\phase23\\PHASE23_COMPLETE_IMPLEMENTATION_REPORT.md",
+    "SHA256": "6A143F8C0601BCAA233567ECD0D6FBC5C9EA319AB0C23FA51F45FC4F6EB0D2AF"
+  },
+  {
+    "Path": "verification\\phase24\\IMPLEMENTATION_REPORT.md",
+    "SHA256": "48E2AE9BD10E2E63E19E9057656163063E5CA09515EE9888E9EBB83782E19F72"
+  },
+  {
+    "Path": "verification\\release-acceptance\\build.log",
+    "SHA256": "070885A235E9EE27CA0A97A5BA51790602A83DDFDD2C948D5F7A79E93AC465EE"
+  },
+  {
+    "Path": "verification\\release-acceptance\\checks.json",
+    "SHA256": "76B565B1C98CEC2455734F22BE7455849761EB59938F4A1F0159664684199154"
+  },
+  {
+    "Path": "verification\\release-acceptance\\compose-config.log",
+    "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "verification\\release-acceptance\\discovery.log",
+    "SHA256": "8526F0DCB0175E0C8A5EB765CF57F36160CA0D8EFCD292A2A633504325825A6E"
+  },
+  {
+    "Path": "verification\\release-acceptance\\local.log",
+    "SHA256": "6D6254EE9F9E7BEE28F6FE9BC57B1FAC6D0FD81C5FC4492FB4E5399CD221B107"
+  },
+  {
+    "Path": "verification\\release-acceptance\\local.trx",
+    "SHA256": "5DD444DCC90A41EECBBBE08AD8D79D6A4EF84FD0EFB1AA7995C3582A88AD919B"
+  },
+  {
+    "Path": "verification\\release-acceptance\\model.log",
+    "SHA256": "C924DA1693AD60EB6A78717DDD333946A8A61A056C2CE2868AE514384F01C866"
+  },
+  {
+    "Path": "verification\\release-acceptance\\restore.log",
+    "SHA256": "2AD9967F2280D0195AD457A92FE6A353A8492625846632386DF6DFC446EFE4BC"
+  },
+  {
+    "Path": "verification\\release-acceptance\\source-sha256.csv",
+    "SHA256": "6B15CCA72832E93088FCE76E9BB65AA27C40DD63A2F925A8E29B6C017381FCDD"
+  },
+  {
+    "Path": "verification\\release-closure\\build-initial.log",
+    "SHA256": "192338FC2CFA23B130FCFF91A307DF3BAA0E7D5555A62DB7AA60CF9F4656D240"
+  },
+  {
+    "Path": "verification\\release-closure\\build-regressions.log",
+    "SHA256": "A64A7DD78D68F4BF0114F7049625B528D213D76C260A037B3427E0E71CC9B821"
+  },
+  {
+    "Path": "verification\\release-closure\\build-tests-1.log",
+    "SHA256": "F06429E1F41BCF42CA241BCED05CB671D2B1E007E583EC6E503FFD688465F293"
+  },
+  {
+    "Path": "verification\\release-closure\\build.log",
+    "SHA256": "67B64E6EAB304356D01F6B37A883C079F68D2AE029440570B2D11669B03BDFBA"
+  },
+  {
+    "Path": "verification\\release-closure\\discovery.log",
+    "SHA256": "6802D49E85695C7B38D2D3220619DBE056C72374FC0087D0CF0EE873DF889289"
+  },
+  {
+    "Path": "verification\\release-closure\\docker-recovery.log",
+    "SHA256": "B4612A020D5929109E5072E7FD1CF4DA528EDA2F055BBD033D9E41D493B9D5AE"
+  },
+  {
+    "Path": "verification\\release-closure\\docker-version-final.log",
+    "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "verification\\release-closure\\docker-version-final.stderr",
+    "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "verification\\release-closure\\docker-version.log",
+    "SHA256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B"
+  },
+  {
+    "Path": "verification\\release-closure\\docker-version.stderr",
+    "SHA256": "E9133CF10B02B0B91C8B119848513DB0AC541E7C3C19681266939E4B9952F7CC"
+  },
+  {
+    "Path": "verification\\release-closure\\Edit-Exact.ps1",
+    "SHA256": "FCB01C78BCD6F06D3CCE226D7D8873A9C97EE365DA251AA95FA70348C4393688"
+  },
+  {
+    "Path": "verification\\release-closure\\final-review.json",
+    "SHA256": "C8BAB8B251ECA72A154945BBB74DEEE85AC9486119F315B219F5FE36DEF63823"
+  },
+  {
+    "Path": "verification\\release-closure\\focused-local.log",
+    "SHA256": "2952D802AA89C45BE38D3FCEFA6F5997FBCCCE3EDE73BE2AE034F84D76DB2D75"
+  },
+  {
+    "Path": "verification\\release-closure\\focused-local.trx",
+    "SHA256": "E5B90C22C48DAC9A5EBD54D6C9BF20A7A82BA131D7C0D8350C600A3ACCBD5862"
+  },
+  {
+    "Path": "verification\\release-closure\\focused-postgres.log",
+    "SHA256": "25B706A24512A221FCD128400BC9EB547FEAF20D661C1FBCD9973B54D644084E"
+  },
+  {
+    "Path": "verification\\release-closure\\focused-postgres.trx",
+    "SHA256": "4FB6A267EF0D446F526F90A0E9525DE8FD8FBEDE24965E11FECED53999B6B2DE"
+  },
+  {
+    "Path": "verification\\release-closure\\local-final.log",
+    "SHA256": "2719DC65B83D37899DCF6E545A447B6A4B95701C2AD0E78FB278245916C7D338"
+  },
+  {
+    "Path": "verification\\release-closure\\local-final.trx",
+    "SHA256": "6EE9856A320B0F4DC59332B984765A7FED2BEAC4E87953619FFC6E2D39379B76"
+  },
+  {
+    "Path": "verification\\release-closure\\local.log",
+    "SHA256": "2BDF80E92129D1391E5C2B1CC36D7FED71A35CBF5FDBB221AC733B22F579A892"
+  },
+  {
+    "Path": "verification\\release-closure\\local.trx",
+    "SHA256": "46CC0FF35D7629091E07EEF8F24294D6D67149C79BF43678A3234D144BB57032"
+  },
+  {
+    "Path": "verification\\release-closure\\model-command-initial.log",
+    "SHA256": "39FD4DB5799EBB89722DD09568330145FF3391671A2EEC2722DD06D99D3AA04A"
+  },
+  {
+    "Path": "verification\\release-closure\\model.log",
+    "SHA256": "C924DA1693AD60EB6A78717DDD333946A8A61A056C2CE2868AE514384F01C866"
+  },
+  {
+    "Path": "verification\\release-closure\\restore.log",
+    "SHA256": "2AD9967F2280D0195AD457A92FE6A353A8492625846632386DF6DFC446EFE4BC"
+  },
+  {
+    "Path": "verification\\release-closure\\source-final-sha256.csv",
+    "SHA256": "1544B2BE2B20840564153E74C7313434E1247569178767261BB1B0C0085871DE"
+  },
+  {
+    "Path": "verification\\release-closure\\source.diff",
+    "SHA256": "0373F338AE22DEAE4BC37752D5C485EE93B52208788ABC29F4D9E0707C6949DE"
+  },
+  {
+    "Path": "verification\\release-closure\\verification-summary.json",
+    "SHA256": "F7D16280743EC9388A6CBE74AA4CB6F49734DC7FEBAD2FFEF2DFEFE29B9CAD98"
+  },
+  {
+    "Path": "verification\\release-closure\\source-before\\Academix.Api\\Services\\AcademicOperations\\CampusFacilitiesService.cs",
+    "SHA256": "9DD1B12100C2A6252415D7509EF5A9070666C3F7624705C866C90F9E99F99455"
+  },
+  {
+    "Path": "verification\\release-closure\\source-before\\Academix.Api\\Services\\AcademicOperations\\RegistrarOperationsService.cs",
+    "SHA256": "C0F0BCA74DA3B2205D892A12994C36DECB3B4FA82EBE264C15E5B7DA1C9F40F1"
+  },
+  {
+    "Path": "verification\\release-closure\\source-before\\Academix.Api\\Services\\Curriculum\\CurriculumService.cs",
+    "SHA256": "1050784B41B8D6352038411DD45A188E459FCA0FC8B8F2E9EF615E0DD4F1DB88"
+  },
+  {
+    "Path": "verification\\release-closure\\source-before\\Academix.Api\\Services\\Curriculum\\CurriculumTransitions.cs",
+    "SHA256": "E9C498E7789ACAF947287F7FD4EEA58D897DEF3F06834F4F204A26C89320FBEF"
+  },
+  {
+    "Path": "verification\\release-closure\\source-before\\Academix.Api\\Services\\Curriculum\\DegreeAuditEngine.cs",
+    "SHA256": "F585358A352C08134D359B6EB78F8F214330523E35792B51EDCB2AE6212D83D0"
+  },
+  {
+    "Path": "verification\\release-closure\\source-before\\Academix.Api\\Services\\Curriculum\\DegreeAuditService.cs",
+    "SHA256": "6FCBF54F3060A5652592E57B162F10845A13CA9EE31474753C05A475C4BA194A"
+  },
+  {
+    "Path": "verification\\release-closure\\source-before\\Academix.Api\\Services\\Curriculum\\RecognitionQualification.cs",
+    "SHA256": "0CF3D445348C2B18EE667FD63800CB8B84D39C084441DEDF8126178B1CE6377C"
+  },
+  {
+    "Path": "verification\\release-closure\\source-before\\Academix.Api\\Services\\Examinations\\ExamBuilderService.cs",
+    "SHA256": "35C8F12876F5F87DD44BB130511AE5AC0DABAEAC07B866F115F74A92A32C4220"
+  },
+  {
+    "Path": "verification\\release-closure\\source-before\\Academix.Api\\Services\\Finance\\FinanceAssistance.cs",
+    "SHA256": "85011EE3F9FEF56EA57C190F6C7210EEF7C07B5DEC3980352C5E2E13EA9911B5"
+  },
+  {
+    "Path": "verification\\release-closure\\source-before\\Academix.Api\\Services\\Infrastructure\\AcademicFreshness.cs",
+    "SHA256": "D94ADAD8A1B88625524EC5FBC14C5CA2A902CF7374521EFC1FE18B3D25CD7D64"
+  },
+  {
+    "Path": "verification\\release-closure\\source-before\\Academix.Api\\Services\\Lifecycle\\LifecycleService.cs",
+    "SHA256": "63732CD78B6FBDBB70ED4844E65F4927240F477E0302595D4F5A5E82943E64EB"
+  },
+  {
+    "Path": "verification\\release-closure\\source-before\\Academix.Api\\Services\\Records\\RecordsService.cs",
+    "SHA256": "4546EA63BB7CB116CB3092C57E28EC33508AB809F82C21C3F338663EFDF87BF0"
+  },
+  {
+    "Path": "verification\\release-closure\\source-before\\Academix.Tests\\Integration\\FinalAuditRevocationTests.cs",
+    "SHA256": "B63D7B96DC0C3CB8209449F3A96D75CE90FCE72E3F2D52CE878902E58154B7C1"
+  },
+  {
+    "Path": "verification\\runtime-closure\\build-final.log",
+    "SHA256": "AC9859B4DF5F9613A9A3F9958E42AB1673677BD77442DF20369E0A2BFED97511"
+  },
+  {
+    "Path": "verification\\runtime-closure\\build.log",
+    "SHA256": "336EB2D91D66AAF9C1F42D62C99A5C9DE6E8EB25A1BAF86CFC7B6963A0D56D04"
+  },
+  {
+    "Path": "verification\\runtime-closure\\complete-final.log",
+    "SHA256": "0309F4E8993151740EA5A941AB7D3F737EA672C6052ADE32EC18ECD9DD0D1711"
+  },
+  {
+    "Path": "verification\\runtime-closure\\complete-final.trx",
+    "SHA256": "FF531F9BB24D1CF6F0A7C332834247BB50FC36F019952605FAEEA0FCD6DFB4B2"
+  },
+  {
+    "Path": "verification\\runtime-closure\\docker-info-after-recovery.log",
+    "SHA256": "48443081722C17FCFDA47CC9D3A618A5B78B3F4A5C4DA58850220A06A12B91FF"
+  },
+  {
+    "Path": "verification\\runtime-closure\\docker-info-after-recovery.stderr",
+    "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "verification\\runtime-closure\\docker-info-final.log",
+    "SHA256": "C5786E6210A3F9631ED0465CADF13BDC02CF05424FC1623259E4BA30DE4D6282"
+  },
+  {
+    "Path": "verification\\runtime-closure\\docker-info.log",
+    "SHA256": "BA356D81664B04AFF0B1F8D17AAE05954E2FF210DE7A7248D888438AF9B593CC"
+  },
+  {
+    "Path": "verification\\runtime-closure\\docker-info.stderr",
+    "SHA256": "E9133CF10B02B0B91C8B119848513DB0AC541E7C3C19681266939E4B9952F7CC"
+  },
+  {
+    "Path": "verification\\runtime-closure\\docker-status.txt",
+    "SHA256": "B3E4A3A2C9AF37DB34FCAA08D63AD7B551586FAF5D22B60C33FA253871B45F8E"
+  },
+  {
+    "Path": "verification\\runtime-closure\\FINAL_RELEASE_CLOSURE.before-runtime.md",
+    "SHA256": "04F80FA3E00F2AE75A200AB4C8718EE3AC558ABBCE665BBB1BA3DF69868E3981"
+  },
+  {
+    "Path": "verification\\runtime-closure\\final-results.json",
+    "SHA256": "E02CFC703B82CD47555202DCE0BAEE13C754B9BD2E8BE26B0AC64BE2D58D77CE"
+  },
+  {
+    "Path": "verification\\runtime-closure\\final-review-line-ending-check.json",
+    "SHA256": "ED96F4FAEB58AEC30DC27B09B68A2C6E9B15D272EEF766128ED03420A15E0C6C"
+  },
+  {
+    "Path": "verification\\runtime-closure\\final-review.json",
+    "SHA256": "FFFD354A7680046183D43684A450505ED8904637D93CA02D535C97DBFC9E699A"
+  },
+  {
+    "Path": "verification\\runtime-closure\\fixture-corrections.diff",
+    "SHA256": "89BEAB25455DE1E243BA20134B20F5E15110300F67F74F1790D11B5594D0D878"
+  },
+  {
+    "Path": "verification\\runtime-closure\\initial-failures.json",
+    "SHA256": "93E0BC9168E8D7E417AB6E7945488ADE43CDF1166E3C7EF685B16DB5C201377E"
+  },
+  {
+    "Path": "verification\\runtime-closure\\integration-initial.log",
+    "SHA256": "B75F92D5E4CD19533AB31F3A848EB7522D6F94807AE6471753B37AA07C90BD2A"
+  },
+  {
+    "Path": "verification\\runtime-closure\\integration-initial.trx",
+    "SHA256": "AF3DC69F1B0ACFFA345319234EDF1939C436EB1A7F54BA4FBD5471F13A6FA01E"
+  },
+  {
+    "Path": "verification\\runtime-closure\\local.log",
+    "SHA256": "C0AADBF494A0A82312CC07553AED34CE77EEEFA4AA5D5671AC03362F6F92A7E1"
+  },
+  {
+    "Path": "verification\\runtime-closure\\local.trx",
+    "SHA256": "A46CF6E5EC30CEC5D05C0D979BA86B79B94E33EB6594575796A8613DB1CD42D7"
+  },
+  {
+    "Path": "verification\\runtime-closure\\model-final.log",
+    "SHA256": "C924DA1693AD60EB6A78717DDD333946A8A61A056C2CE2868AE514384F01C866"
+  },
+  {
+    "Path": "verification\\runtime-closure\\model.log",
+    "SHA256": "C924DA1693AD60EB6A78717DDD333946A8A61A056C2CE2868AE514384F01C866"
+  },
+  {
+    "Path": "verification\\runtime-closure\\recovery.log",
+    "SHA256": "55A48AD532F4D2EF5EAB9BC562581E2A37E747F37D20F0525F90863FE9FEFDB0"
+  },
+  {
+    "Path": "verification\\runtime-closure\\regressions.log",
+    "SHA256": "AEF28C0A13BE359AD51A7835A756BE55870AB32C0573380C088EA8B45956032B"
+  },
+  {
+    "Path": "verification\\runtime-closure\\regressions.trx",
+    "SHA256": "919755A4BBC81F7D654424672584291BF0A2211B675828621BAE99BE9F35619A"
+  },
+  {
+    "Path": "verification\\runtime-closure\\restore-final.log",
+    "SHA256": "2AD9967F2280D0195AD457A92FE6A353A8492625846632386DF6DFC446EFE4BC"
+  },
+  {
+    "Path": "verification\\runtime-closure\\restore.log",
+    "SHA256": "2AD9967F2280D0195AD457A92FE6A353A8492625846632386DF6DFC446EFE4BC"
+  },
+  {
+    "Path": "verification\\runtime-closure\\runtime-changed-files.json",
+    "SHA256": "1293BF3E3399FE9DD58602FACF940BBA08D3E239FBC9A60866DF81993357B97F"
+  },
+  {
+    "Path": "verification\\runtime-closure\\runtime-directory-backups.json",
+    "SHA256": "C1785CEDB7AC8274F7A9E6E66A4E01F2F0E6CF5D920EF17E7945A63AC4BE2166"
+  },
+  {
+    "Path": "verification\\runtime-closure\\verified-source-sha256.csv",
+    "SHA256": "FE8032A3EB8DAB9C92C28AD4609D4C7486AD5AE12155DE6A58671505D493BDA4"
+  },
+  {
+    "Path": "verification\\runtime-closure\\source-before\\Academix.Tests\\Integration\\FinalAuditAcademicTests.cs",
+    "SHA256": "DC526A0D3487559883DE1B219A0551708AD3B0DFFF3999777BB06F8421E02F31"
+  },
+  {
+    "Path": "verification\\runtime-closure\\source-before\\Academix.Tests\\Integration\\FinalAuditRevocationTests.cs",
+    "SHA256": "1E32FC90B1C9BFC2DCEF66EF9946071B18DED7109BB457702AFE28FD8D8F4699"
+  }
+]

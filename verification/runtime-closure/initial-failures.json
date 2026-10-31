@@ -1,0 +1,22 @@
+[
+  {
+    "Test": "Academix.Tests.Integration.Phase19CompletionWorkflowTests.FinalAuditChainedRecognitionPreservesExternalCreditButRevalidatesCorrectedLocalSources(external: True)",
+    "Outcome": "Failed",
+    "Message": "Academix.Api.Middleware.ApiFault : All target courses must belong to the active program."
+  },
+  {
+    "Test": "Academix.Tests.Integration.Phase19CompletionWorkflowTests.FinalAuditLegacyMutationRevalidatesAfterObservedResourceWait(operation: \"Transfer\", revocation: \"Membership\")",
+    "Outcome": "Failed",
+    "Message": "Academix.Api.Middleware.ApiFault : All target courses must belong to the active program."
+  },
+  {
+    "Test": "Academix.Tests.Integration.Phase19CompletionWorkflowTests.FinalAuditLegacyMutationRevalidatesAfterObservedResourceWait(operation: \"Transfer\", revocation: \"Disabled\")",
+    "Outcome": "Failed",
+    "Message": "Academix.Api.Middleware.ApiFault : All target courses must belong to the active program."
+  },
+  {
+    "Test": "Academix.Tests.Integration.Phase19CompletionWorkflowTests.FinalAuditLegacyMutationRevalidatesAfterObservedResourceWait(operation: \"Transfer\", revocation: \"Role\")",
+    "Outcome": "Failed",
+    "Message": "Academix.Api.Middleware.ApiFault : All target courses must belong to the active program."
+  }
+]

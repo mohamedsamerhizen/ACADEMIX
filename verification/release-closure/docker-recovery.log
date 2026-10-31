@@ -1,0 +1,9 @@
+Existing startup log confirms stopped engines and the known dockerInference socket failure.
+Socket backup: run.closure-backup-20261031-114152
+Single recovery restart requested with real host paths; all existing data/volumes preserved.
+Docker CLI exit code: 1
+[2026-10-31T08:42:24.747604200Z][com.docker.backend.exe.engines] all local engines stopped
+[2026-10-31T08:42:24.747604200Z][com.docker.backend.exe] backend crashed, dumping error to file and reporting to user: starting services: initializing Secrets Engine: listening on unix://<HOME>\AppData\Local\docker-secrets-engine\engine.sock: remove <HOME>\AppData\Local\docker-secrets-engine\engine.sock: The file cannot be accessed by the system. (listener: The filename, directory name, or volume label syntax is incorrect.)
+Final bounded socket step: preserved sole engine.sock in docker-secrets-engine.closure-backup-20261031-115019; no secret data or storage deleted.
+Docker final availability check timed out.
+[2026-10-31T08:50:52.401251300Z][com.docker.backend.exe] backend crashed, dumping error to file and reporting to user: starting services: initializing Inference manager: listening on unix://<HOME>\AppData\Local\Docker\run\dockerInference: remove <HOME>\AppData\Local\Docker\run\dockerInference: The file cannot be accessed by the system. (listener: The filename, directory name, or volume label syntax is incorrect.)

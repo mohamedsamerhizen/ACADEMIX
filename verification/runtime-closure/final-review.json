@@ -1,0 +1,10 @@
+{
+  "Date": "2026-10-31",
+  "BrokenCurrentDocumentationLinks": [],
+  "ChangedVerifiedSourceFiles": [],
+  "FixtureLinesAdded": 5,
+  "FixtureLinesRemoved": 0,
+  "ClosureSections": 7,
+  "FinalDecisionOccurrences": 1,
+  "FixtureDiffNormalization": "Ignore end-of-line whitespace only; fixture editing normalized CRLF. All verified source bytes remain unchanged after the final run."
+}

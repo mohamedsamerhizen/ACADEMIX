@@ -1,0 +1,22 @@
+namespace Academix.Api.DTOs.Registrar;
+
+public sealed record ApplicantInvitation(Guid ClientRequestId, string Email, string FullName, Guid ProgramId, Guid TermId, string Statement);
+public sealed record InvitationReceipt(Guid ApplicantId, string Token, DateTime ExpiresAtUtc);
+public sealed record ApplicantAccess(string Token);
+public sealed record ApplicantProfileUpdate(string Token, long ExpectedVersion, string FullName, string Statement);
+public sealed record ApplicantDecision(long ExpectedVersion, bool Accept, string Reason);
+public sealed record ApplicantActivation(string Token, string Password);
+public sealed record ApplicantView(Guid Id, string Email, string FullName, Guid ProgramId, Guid TermId, string Statement, string Status, long Version, Guid? StudentId);
+public sealed record ApplicantStatusView(string Status, DateTime AtUtc);
+public sealed record TemplateInput(string Kind, int Revision, string Heading, string Footer, string AccentColor, string FontFamily, bool RightToLeft);
+public sealed record TemplateView(Guid Id, string Kind, int Revision, string Heading, string Footer, string AccentColor, string FontFamily, bool RightToLeft, bool Published);
+public sealed record VerificationKeyView(Guid Id, DateTime CreatedAtUtc, DateTime? RetiredAtUtc, DateTime? RevokedAtUtc);
+public sealed record SupersedeDocument(Guid ReplacementId, long ExpectedVersion, string Reason);
+public sealed record ArtifactContent(byte[] Bytes, string Digest, string FileName);
+public sealed record CourseRecognition(Guid SourceCourseId, Guid TargetCourseId);
+public sealed record TransitionInput(Guid ClientRequestId, Guid FromPlanId, Guid ToPlanId, DateTime EffectiveAtUtc, string Reason, IReadOnlyList<CourseRecognition> Equivalencies);
+public sealed record TransitionView(Guid Id, Guid StudentId, Guid FromPlanId, Guid ToPlanId, DateTime EffectiveAtUtc, string Status, string Reason);
+public sealed record RequestExecutionData(Guid? SessionId, Guid? PolicyId, string? ExceptionRule, DateTime? ExpiresAtUtc, Guid? TargetSectionId = null);
+public sealed record FulfillAcademicRequest(long ExpectedVersion);
+public sealed record EventDeliveryView(Guid Id, string Kind, string Status, int Attempts, DateTime? NextAttemptAtUtc, string? LastError, DateTime? DeliveredAtUtc);
+public sealed record InstitutionalEventView(Guid Id, string Kind, string PayloadJson, DateTime ReceivedAtUtc);

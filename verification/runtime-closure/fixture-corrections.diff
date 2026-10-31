@@ -1,0 +1,27 @@
+diff --git a/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/verification/runtime-closure/source-before/Academix.Tests/Integration/FinalAuditAcademicTests.cs b/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/Academix.Tests/Integration/FinalAuditAcademicTests.cs
+index e9783b1..b6e6264 100644
+--- a/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/verification/runtime-closure/source-before/Academix.Tests/Integration/FinalAuditAcademicTests.cs
++++ b/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/Academix.Tests/Integration/FinalAuditAcademicTests.cs
+@@ -41,6 +41,9 @@ public sealed partial class Phase19CompletionWorkflowTests
+         else
+         {
+             await using var original=fixture.Services.CreateAsyncScope();var lifecycle=original.ServiceProvider.GetRequiredService<LifecycleService>();
++            var transferDb=original.ServiceProvider.GetRequiredService<AcademixDbContext>();
++            transferDb.ProgramCourses.Add(new(){InstitutionId=s.Inst,ProgramId=s.Program,CourseId=s.Course});
++            await transferDb.SaveChangesAsync();
+             var petition=await lifecycle.RequestTransfer(s.StudentUser,new("Origin College",[new(s.Course,"EXT101","External academic achievement",3)]),default);
+             await lifecycle.DecideTransfer(s.Admin,petition.Id,new(petition.Version,"Approve","Independent external achievement review"),default);
+         }
+diff --git a/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/verification/runtime-closure/source-before/Academix.Tests/Integration/FinalAuditRevocationTests.cs b/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/Academix.Tests/Integration/FinalAuditRevocationTests.cs
+index 01e4754..fbecfed 100644
+--- a/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/verification/runtime-closure/source-before/Academix.Tests/Integration/FinalAuditRevocationTests.cs
++++ b/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/Academix.Tests/Integration/FinalAuditRevocationTests.cs
+@@ -60,6 +60,8 @@ public sealed partial class Phase19CompletionWorkflowTests
+             }
+             case "Transfer":
+             {
++                db.ProgramCourses.Add(new(){InstitutionId=s.Inst,ProgramId=s.Program,CourseId=s.Course});
++                await db.SaveChangesAsync();
+                 var petition=await setup.ServiceProvider.GetRequiredService<LifecycleService>().RequestTransfer(s.StudentUser,new("External College",[new(s.Course,"EX101","External course achievement",3)]),default);
+                 stateTable="transfer_credit_petitions";stateColumn="Id";stateId=petition.Id;
+                 mutation=async(p,u)=>{await p.GetRequiredService<LifecycleService>().DecideTransfer(u,petition.Id,new(petition.Version,"Approve","Independent transfer decision"),default);};break;

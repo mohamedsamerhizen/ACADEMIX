@@ -1,0 +1,42 @@
+{
+  "Date": "2026-10-31",
+  "ModifiedExistingSourceFiles": [
+    "Academix.Api\\Services\\AcademicOperations\\CampusFacilitiesService.cs",
+    "Academix.Api\\Services\\AcademicOperations\\RegistrarOperationsService.cs",
+    "Academix.Api\\Services\\Curriculum\\CurriculumService.cs",
+    "Academix.Api\\Services\\Curriculum\\CurriculumTransitions.cs",
+    "Academix.Api\\Services\\Curriculum\\DegreeAuditEngine.cs",
+    "Academix.Api\\Services\\Curriculum\\DegreeAuditService.cs",
+    "Academix.Api\\Services\\Examinations\\ExamBuilderService.cs",
+    "Academix.Api\\Services\\Finance\\FinanceAssistance.cs",
+    "Academix.Api\\Services\\Infrastructure\\AcademicFreshness.cs",
+    "Academix.Api\\Services\\Lifecycle\\LifecycleService.cs",
+    "Academix.Api\\Services\\Records\\RecordsService.cs"
+  ],
+  "AddedSourceFiles": [
+    "Academix.Api\\Services\\Curriculum\\RecognitionQualification.cs",
+    "Academix.Tests\\Integration\\FinalAuditAcademicTests.cs",
+    "Academix.Tests\\Integration\\FinalAuditCampusTests.cs",
+    "Academix.Tests\\Integration\\FinalAuditRevocationTests.cs",
+    "Academix.Tests\\Unit\\FinalAuditRecognitionRulesTests.cs"
+  ],
+  "ChangedHistoricalMigrationFiles": [],
+  "ChangedExistingTests": [],
+  "Discovered": 696,
+  "Local": {
+    "Failed": 0,
+    "Passed": 540,
+    "Skipped": 0,
+    "Total": 540
+  },
+  "FocusedPostgres": {
+    "Failed": 43,
+    "Passed": 0,
+    "BodiesExecuted": false,
+    "AllFailuresMentionDocker": true,
+    "Total": 43
+  },
+  "FullPostgresGate": "Pending",
+  "ExpectedPostgresCases": 155,
+  "ExpectedRealMinioCases": 1
+}

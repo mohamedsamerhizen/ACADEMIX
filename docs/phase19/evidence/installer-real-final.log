@@ -1,0 +1,45 @@
+Release status: INCOMPLETE. Read PHASE19_IMPLEMENTATION_REPORT.md for unimplemented requirements.
+  Determining projects to restore...
+  Restored C:\Users\lenovo\AppData\Local\Temp\academix-phase19-edd788c1fa4049a2a135bf37f5ce049a\Academix.Api\Academix.Api.csproj (in 289 ms).
+  Restored C:\Users\lenovo\AppData\Local\Temp\academix-phase19-edd788c1fa4049a2a135bf37f5ce049a\Academix.Tests\Academix.Tests.csproj (in 289 ms).
+  Academix.Api -> C:\Users\lenovo\AppData\Local\Temp\academix-phase19-edd788c1fa4049a2a135bf37f5ce049a\Academix.Api\bin\Release\net10.0\Academix.Api.dll
+  Academix.Tests -> C:\Users\lenovo\AppData\Local\Temp\academix-phase19-edd788c1fa4049a2a135bf37f5ce049a\Academix.Tests\bin\Release\net10.0\Academix.Tests.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:10.02
+Test run for C:\Users\lenovo\AppData\Local\Temp\academix-phase19-edd788c1fa4049a2a135bf37f5ce049a\Academix.Tests\bin\Release\net10.0\Academix.Tests.dll (.NETCoreApp,Version=v10.0)
+VSTest version 18.0.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+Results File: C:\Users\lenovo\AppData\Local\Temp\academix-phase19-edd788c1fa4049a2a135bf37f5ce049a\.phase19-verification\local.trx
+
+Passed!  - Failed:     0, Passed:   245, Skipped:     0, Total:   245, Duration: 1 s - Academix.Tests.dll (net10.0)
+Release build and local tests: PASSED.
+PostgreSQL integration and database migration execution: NOT RUN.
+  Determining projects to restore...
+  Restored C:\Users\lenovo\Documents\ChatGPT\ACADEMIX\phase19-work\installer-tests\RealFinal\Academix.Tests\Academix.Tests.csproj (in 292 ms).
+  Restored C:\Users\lenovo\Documents\ChatGPT\ACADEMIX\phase19-work\installer-tests\RealFinal\Academix.Api\Academix.Api.csproj (in 292 ms).
+  Academix.Api -> C:\Users\lenovo\Documents\ChatGPT\ACADEMIX\phase19-work\installer-tests\RealFinal\Academix.Api\bin\Release\net10.0\Academix.Api.dll
+  Academix.Tests -> C:\Users\lenovo\Documents\ChatGPT\ACADEMIX\phase19-work\installer-tests\RealFinal\Academix.Tests\bin\Release\net10.0\Academix.Tests.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:09.73
+Test run for C:\Users\lenovo\Documents\ChatGPT\ACADEMIX\phase19-work\installer-tests\RealFinal\Academix.Tests\bin\Release\net10.0\Academix.Tests.dll (.NETCoreApp,Version=v10.0)
+VSTest version 18.0.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+Results File: C:\Users\lenovo\Documents\ChatGPT\ACADEMIX\phase19-work\installer-tests\RealFinal\phase19-installations\20261029T104456960Z-c32afb55a00e438897ac6c236beda8c6\verification\local.trx
+
+Passed!  - Failed:     0, Passed:   245, Skipped:     0, Total:   245, Duration: 2 s - Academix.Tests.dll (net10.0)
+Release build and local tests: PASSED.
+PostgreSQL integration and database migration execution: NOT RUN.
+INCOMPLETE Phase19 candidate installed. Local verification PASSED. PostgreSQL integration NOT RUN. Backup: C:\Users\lenovo\Documents\ChatGPT\ACADEMIX\phase19-work\installer-tests\RealFinal\phase19-installations\20261029T104456960Z-c32afb55a00e438897ac6c236beda8c6
+Staged source retained at: C:\Users\lenovo\AppData\Local\Temp\academix-phase19-edd788c1fa4049a2a135bf37f5ce049a

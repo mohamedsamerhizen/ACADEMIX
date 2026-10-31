@@ -1,0 +1,303 @@
+diff --git a/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/verification/release-closure/source-before/Academix.Api/Services/AcademicOperations/CampusFacilitiesService.cs b/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/Academix.Api/Services/AcademicOperations/CampusFacilitiesService.cs
+index 3b2a253..7f96e01 100644
+--- a/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/verification/release-closure/source-before/Academix.Api/Services/AcademicOperations/CampusFacilitiesService.cs
++++ b/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/Academix.Api/Services/AcademicOperations/CampusFacilitiesService.cs
+@@ -109,6 +109,7 @@ public sealed class CampusFacilitiesService(AcademixDbContext db, IdentitySecuri
+     public async Task<IReadOnlyList<CampusRoomSessionView>> RoomOccupancy(ClaimsPrincipal principal,
+         Guid institutionId, Guid roomId, DateTime fromUtc, DateTime toUtc, CancellationToken ct)
+     {
++        await WriteAccess(principal, institutionId, ct);
+         CampusSchedulingRules.OccupancyInterval(fromUtc, toUtc);
+         if (!await db.CampusRooms.AsNoTracking().AnyAsync(x =>
+             x.InstitutionId == institutionId && x.Id == roomId, ct)) throw ApiFault.NotFound();
+@@ -129,6 +130,7 @@ public sealed class CampusFacilitiesService(AcademixDbContext db, IdentitySecuri
+     public async Task<IReadOnlyList<CampusScheduleEntry>> InstitutionCalendar(ClaimsPrincipal principal,
+         Guid institutionId, DateTime fromUtc, DateTime toUtc, CancellationToken ct)
+     {
++        await WriteAccess(principal, institutionId, ct);
+         CampusSchedulingRules.OccupancyInterval(fromUtc, toUtc);
+         var sessions = await db.ClassSessions.AsNoTracking().Where(s =>
+             s.InstitutionId == institutionId && s.StartsAtUtc < toUtc && s.EndsAtUtc > fromUtc)
+@@ -147,6 +149,7 @@ public sealed class CampusFacilitiesService(AcademixDbContext db, IdentitySecuri
+     public async Task<IReadOnlyList<RoomView>> AvailableAt(ClaimsPrincipal principal,
+         Guid institutionId, DateTime fromUtc, DateTime toUtc, int requiredCapacity, CancellationToken ct)
+     {
++        await ReadAccess(principal, institutionId, ct);
+         CampusSchedulingRules.OccupancyInterval(fromUtc, toUtc);
+         if (requiredCapacity is < 1 or > 10000) throw ApiFault.Bad("Invalid room capacity.");
+         return await db.CampusRooms.AsNoTracking().Where(room =>
+diff --git a/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/verification/release-closure/source-before/Academix.Api/Services/AcademicOperations/RegistrarOperationsService.cs b/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/Academix.Api/Services/AcademicOperations/RegistrarOperationsService.cs
+index 1f1b687..a7db3c4 100644
+--- a/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/verification/release-closure/source-before/Academix.Api/Services/AcademicOperations/RegistrarOperationsService.cs
++++ b/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/Academix.Api/Services/AcademicOperations/RegistrarOperationsService.cs
+@@ -76,6 +76,7 @@ public sealed partial class RegistrarOperationsService(AcademixDbContext db, Ide
+         var req = await db.StudentAcademicRequests.FromSqlInterpolated(
+             $"SELECT * FROM student_academic_requests WHERE \"Id\" = {requestId} AND \"InstitutionId\" = {institutionId} FOR UPDATE")
+             .SingleOrDefaultAsync(ct) ?? throw ApiFault.NotFound();
++        actor = await security.RequireAdminAsync(principal, institutionId, ct);
+         if (req.Status is not ("Pending" or "UnderReview") || req.Version != input.ExpectedVersion)
+             throw ApiFault.Conflict("Request is already decided or its version changed.");
+         if(req.Status=="Pending"&&req.Kind!="General"&&req.ExecutionDataJson is not null)throw ApiFault.Conflict("Validate typed references in UnderReview before deciding this request.");
+diff --git a/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/verification/release-closure/source-before/Academix.Api/Services/Curriculum/CurriculumService.cs b/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/Academix.Api/Services/Curriculum/CurriculumService.cs
+index ac754ff..4d1e0be 100644
+--- a/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/verification/release-closure/source-before/Academix.Api/Services/Curriculum/CurriculumService.cs
++++ b/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/Academix.Api/Services/Curriculum/CurriculumService.cs
+@@ -89,6 +89,7 @@ public sealed partial class CurriculumService(AcademixDbContext db, IdentitySecu
+             var p = (await db.CurriculumPlans.FromSqlInterpolated(
+                 $"SELECT * FROM curriculum_plans WHERE \"Id\" = {planId} FOR UPDATE").ToListAsync(ct)).SingleOrDefault()
+                 ?? throw ApiFault.NotFound();
++            await security.RequireAdminAsync(principal, p.InstitutionId, ct);
+             if (p.Status != "Draft" || p.Version != request.ExpectedVersion)
+                 throw ApiFault.Conflict("Curriculum is published or has a stale version.");
+             var courseIds = request.Courses.Select(x => x.CourseId).ToArray();
+@@ -133,6 +134,7 @@ public sealed partial class CurriculumService(AcademixDbContext db, IdentitySecu
+             var p = (await db.CurriculumPlans.FromSqlInterpolated(
+                 $"SELECT * FROM curriculum_plans WHERE \"Id\" = {planId} FOR UPDATE").ToListAsync(ct)).SingleOrDefault()
+                 ?? throw ApiFault.NotFound();
++            await security.RequireAdminAsync(principal, p.InstitutionId, ct);
+             if (p.Status != "Draft" || p.Version != request.ExpectedVersion)
+                 throw ApiFault.Conflict("Curriculum is published or has a stale version.");
+             var old = await db.CurriculumGradeBands.Where(x => x.PlanId == p.Id).ToListAsync(ct);
+@@ -164,6 +166,7 @@ public sealed partial class CurriculumService(AcademixDbContext db, IdentitySecu
+             var p = (await db.CurriculumPlans.FromSqlInterpolated(
+                 $"SELECT * FROM curriculum_plans WHERE \"Id\" = {planId} FOR UPDATE").ToListAsync(ct)).SingleOrDefault()
+                 ?? throw ApiFault.NotFound();
++            await security.RequireAdminAsync(principal, p.InstitutionId, ct);
+             if (p.Status != "Draft" || p.Version != request.ExpectedVersion)
+                 throw ApiFault.Conflict("Curriculum is published or has a stale version.");
+             var courses = await db.CurriculumCourses.AsNoTracking().Where(x => x.PlanId == p.Id)
+@@ -202,6 +205,7 @@ public sealed partial class CurriculumService(AcademixDbContext db, IdentitySecu
+         var user = (await db.Users.FromSqlInterpolated(
+             $"SELECT * FROM identity_users WHERE \"Id\" = {studentId} FOR UPDATE").ToListAsync(ct)).SingleOrDefault()
+             ?? throw ApiFault.NotFound();
++        actor = await security.RequireAdminAsync(principal, plan.InstitutionId, ct);
+         if (!user.IsActive || user.InstitutionId != plan.InstitutionId)
+             throw ApiFault.Bad("Student does not belong to this institution.");
+         var membership = await db.StudentProgramMemberships.AsNoTracking().SingleOrDefaultAsync(x =>
+diff --git a/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/verification/release-closure/source-before/Academix.Api/Services/Curriculum/CurriculumTransitions.cs b/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/Academix.Api/Services/Curriculum/CurriculumTransitions.cs
+index 0669e5b..e2c4df5 100644
+--- a/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/verification/release-closure/source-before/Academix.Api/Services/Curriculum/CurriculumTransitions.cs
++++ b/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/Academix.Api/Services/Curriculum/CurriculumTransitions.cs
+@@ -57,12 +57,13 @@ public sealed partial class CurriculumService
+         if(await db.StudentEnrollments.AnyAsync(x=>x.StudentId==row.StudentId&&x.InstitutionId==row.InstitutionId&&x.Status=="Active",ct))throw ApiFault.Conflict("Resolve active section enrollments before transitioning.");
+         var oldCourses=await db.CurriculumCourses.AsNoTracking().Where(x=>x.PlanId==old.Id).ToDictionaryAsync(x=>x.CourseId,x=>x.CreditHours,ct);
+         var newCourses=await db.CurriculumCourses.AsNoTracking().Where(x=>x.PlanId==target.Id).ToDictionaryAsync(x=>x.CourseId,x=>x.CreditHours,ct);
+-        var passed=(await db.StudentTranscriptEntries.AsNoTracking().Where(x=>x.InstitutionId==row.InstitutionId&&x.StudentId==row.StudentId&&x.Passed).Select(x=>x.CourseId).ToListAsync(ct)).ToHashSet();
++        var passed=await RecognitionQualification.LocalSources(db,row.InstitutionId,row.StudentId,ct);
+         var transferred=await (from l in db.TransferCreditLines.AsNoTracking() join p in db.TransferCreditPetitions.AsNoTracking() on l.PetitionId equals p.Id
+             where p.InstitutionId==row.InstitutionId&&p.StudentId==row.StudentId&&p.ProgramId==old.ProgramId&&p.Status=="Approved" select l.TargetCourseId).ToListAsync(ct);
+         var graded=passed.ToHashSet();
+         passed.UnionWith(transferred);
+-        var recognized=await db.Set<RecognizedCourseCredit>().AsNoTracking().Where(x=>x.InstitutionId==row.InstitutionId&&x.StudentId==row.StudentId&&x.PlanId==old.Id).ToDictionaryAsync(x=>x.TargetCourseId,ct);
++        var recognized=(await RecognitionQualification.Load(db,row.InstitutionId,row.StudentId,old.Id,ct))
++            .ToDictionary(x=>x.Credit.TargetCourseId,x=>x.Credit);
+         passed.UnionWith(recognized.Keys);
+         var mappings=JsonSerializer.Deserialize<CourseRecognition[]>(row.MappingJson)!;CurriculumTransitionRules.ValidateMappings(mappings);
+         var results=new List<(Guid,Guid,decimal)>();
+diff --git a/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/verification/release-closure/source-before/Academix.Api/Services/Curriculum/DegreeAuditEngine.cs b/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/Academix.Api/Services/Curriculum/DegreeAuditEngine.cs
+index bff06af..0d505a0 100644
+--- a/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/verification/release-closure/source-before/Academix.Api/Services/Curriculum/DegreeAuditEngine.cs
++++ b/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/Academix.Api/Services/Curriculum/DegreeAuditEngine.cs
+@@ -52,7 +52,13 @@ public static class DegreeAuditEngine
+         {
+             if(completed.Contains(c.CourseId))continue;
+             foreach(var r in data.Recognitions.Where(x=>x.TargetCourseId==c.CourseId).OrderBy(x=>x.Source,StringComparer.Ordinal))
++            {
++                // Local transition credit cannot outlive the qualifying achievement.
++                // External transfer provenance is qualified by the shared loader.
++                if(r.Source.StartsWith("course:",StringComparison.Ordinal)&&
++                    (!Guid.TryParse(r.Source.AsSpan(7),out var sourceCourse)||!best.TryGetValue(sourceCourse,out var original)||!original.Passed))continue;
+                 if(consumed.Add(r.Source)){completed.Add(c.CourseId);evidence[c.CourseId]="Recognized:"+r.Source;break;}
++            }
+             if(completed.Contains(c.CourseId))continue;
+             var exception=data.Exceptions.SingleOrDefault(x=>x.TargetCourseId==c.CourseId&&x.Status=="Approved");
+             if(exception?.Kind=="Waiver")
+diff --git a/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/verification/release-closure/source-before/Academix.Api/Services/Curriculum/DegreeAuditService.cs b/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/Academix.Api/Services/Curriculum/DegreeAuditService.cs
+index fa284db..cd7164f 100644
+--- a/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/verification/release-closure/source-before/Academix.Api/Services/Curriculum/DegreeAuditService.cs
++++ b/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/Academix.Api/Services/Curriculum/DegreeAuditService.cs
+@@ -39,8 +39,8 @@ public sealed class DegreeAuditService(AcademixDbContext db,AcademicProgressAcce
+                 where petition.InstitutionId==inst&&line.InstitutionId==inst&&petition.StudentId==student&&petition.ProgramId==plan.ProgramId&&petition.Status=="Approved"
+                 select new{line.TargetCourseId,petition.OriginInstitution,line.OriginCourseCode}).ToListAsync(ct);
+             recognition.AddRange(transfers.Select(x=>new CreditRecognition(x.TargetCourseId,"transfer:"+x.OriginInstitution.Trim().ToUpperInvariant()+":"+x.OriginCourseCode.Trim().ToUpperInvariant())));
+-            var transitions=await db.Set<RecognizedCourseCredit>().AsNoTracking().Where(x=>x.InstitutionId==inst&&x.StudentId==student&&x.PlanId==plan.Id).ToListAsync(ct);
+-            recognition.AddRange(transitions.Select(x=>new CreditRecognition(x.TargetCourseId,"course:"+x.SourceCourseId)));
++            var transitions=await RecognitionQualification.Load(db,inst,student,plan.Id,ct);
++            recognition.AddRange(transitions.Select(x=>new CreditRecognition(x.Credit.TargetCourseId,x.Source)));
+         }
+         var exceptions=await db.Set<AcademicRequirementException>().AsNoTracking().Where(x=>x.InstitutionId==inst&&x.StudentId==student&&x.PlanId==plan.Id&&x.Status!="Rejected")
+             .Select(x=>new DegreeException(x.TargetCourseId,x.SourceCourseId,x.Kind,x.Status)).ToListAsync(ct);
+@@ -63,7 +63,7 @@ public sealed class DegreeAuditService(AcademixDbContext db,AcademicProgressAcce
+         if(policy.RequireGoodStanding&&membership is not null)
+         {
+             var standing=await db.StudentTermStandings.AsNoTracking().Where(x=>x.InstitutionId==inst&&x.StudentId==student&&x.TermId==membership!.CurrentTermId).SingleOrDefaultAsync(ct);
+-            var stale=standing is not null&&await db.StudentTranscriptEntries.AnyAsync(x=>x.InstitutionId==inst&&x.StudentId==student&&x.TermId==standing.TermId&&x.SyncedAtUtc>standing.CalculatedAtUtc,ct);
++            var stale=standing is not null&&await AcademicFreshness.StandingStale(db,inst,student,standing.TermId,standing.CalculatedAtUtc,ct);
+             conditions.Add(new("AcademicStanding",standing is null||standing.Status=="InsufficientData"||stale?"Pending":standing.Status=="GoodStanding"?"Satisfied":"Unsatisfied",1,standing?.Status=="GoodStanding"&&!stale?1:0,0,
+                 standing is null||stale?"Current-term standing needs calculation from the current academic record.":"Current-term institutional standing: "+standing.Status));
+         }
+diff --git a/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/verification/release-closure/source-before/Academix.Api/Services/Examinations/ExamBuilderService.cs b/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/Academix.Api/Services/Examinations/ExamBuilderService.cs
+index 27ba259..ceb1d4e 100644
+--- a/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/verification/release-closure/source-before/Academix.Api/Services/Examinations/ExamBuilderService.cs
++++ b/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/Academix.Api/Services/Examinations/ExamBuilderService.cs
+@@ -116,6 +116,7 @@ public sealed class ExamBuilderService(AcademixDbContext db, IdentitySecurity ac
+         {
+             await using var tx = await db.Database.BeginTransactionAsync(ct);
+             var exam = await LockExam(id, ct);
++            await RequireExam(principal, id, false, ct);
+             RequireDraft(exam, request.ExpectedVersion);
+             exam.Title = title;
+             exam.Description = description;
+@@ -144,6 +145,7 @@ public sealed class ExamBuilderService(AcademixDbContext db, IdentitySecurity ac
+         {
+             await using var tx = await db.Database.BeginTransactionAsync(ct);
+             var exam = await LockExam(id, ct);
++            await RequireExam(principal, id, false, ct);
+             RequireDraft(exam, request.ExpectedVersion);
+             if (exam.CourseId != context.CourseId || exam.InstitutionId != context.InstitutionId)
+                 throw ApiFault.Conflict("Exam scope changed.");
+@@ -209,6 +211,7 @@ public sealed class ExamBuilderService(AcademixDbContext db, IdentitySecurity ac
+         {
+             await using var tx = await db.Database.BeginTransactionAsync(ct);
+             var exam = await LockExam(id, ct);
++            await RequireExam(principal, id, false, ct);
+             RequireDraft(exam, request.ExpectedVersion);
+             var manual = await db.ExamDraftQuestions.AsNoTracking().Where(q => q.ExamId == id)
+                 .Select(q => q.Points).ToListAsync(ct);
+@@ -271,6 +274,7 @@ public sealed class ExamBuilderService(AcademixDbContext db, IdentitySecurity ac
+         {
+             await using var tx = await db.Database.BeginTransactionAsync(ct);
+             var exam = await LockExam(id, ct);
++            await RequireExam(principal, id, true, ct);
+             RequireDraft(exam, request.ExpectedVersion);
+             if (exam.ClosesAtUtc <= DateTime.UtcNow)
+                 throw ApiFault.Conflict("Cannot publish an exam whose window has already closed.");
+diff --git a/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/verification/release-closure/source-before/Academix.Api/Services/Finance/FinanceAssistance.cs b/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/Academix.Api/Services/Finance/FinanceAssistance.cs
+index dcd16d2..9626cfd 100644
+--- a/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/verification/release-closure/source-before/Academix.Api/Services/Finance/FinanceAssistance.cs
++++ b/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/Academix.Api/Services/Finance/FinanceAssistance.cs
+@@ -115,7 +115,7 @@ public sealed partial class FinanceService
+                     if(program.RequireGoodStanding)
+                     {
+                         var record=await s.db.StudentTermStandings.AsNoTracking().SingleOrDefaultAsync(x=>x.InstitutionId==account.InstitutionId&&x.StudentId==account.StudentId&&x.TermId==invoice.TermId,ct);
+-                        if(record is null||record.Status!="GoodStanding"||await s.db.StudentTranscriptEntries.AnyAsync(x=>x.InstitutionId==account.InstitutionId&&x.StudentId==account.StudentId&&x.TermId==invoice.TermId&&x.SyncedAtUtc>record.CalculatedAtUtc,ct))throw ApiFault.Conflict("Current authoritative good standing is required.");standing=record.Status;
++                        if(record is null||record.Status!="GoodStanding"||await AcademicFreshness.StandingStale(s.db,account.InstitutionId,account.StudentId,invoice.TermId,record.CalculatedAtUtc,ct))throw ApiFault.Conflict("Current authoritative good standing is required.");standing=record.Status;
+                     }
+                     row.ApprovalEvidenceJson=JsonSerializer.Serialize(new{ScholarshipId=program.Id,program.Code,program.Revision,program.MinimumGpa,program.RequireGoodStanding,Gpa=gpa,Standing=standing,CurriculumId=plan,
+                         InvoiceId=invoice.Id,PricingDigest=CanonicalDigest(invoice.PricingEvidenceJson),ReviewedBy=actor,AtUtc=DateTime.UtcNow});row.Status="Approved";
+diff --git a/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/verification/release-closure/source-before/Academix.Api/Services/Infrastructure/AcademicFreshness.cs b/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/Academix.Api/Services/Infrastructure/AcademicFreshness.cs
+index 99cb3ed..2caef06 100644
+--- a/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/verification/release-closure/source-before/Academix.Api/Services/Infrastructure/AcademicFreshness.cs
++++ b/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/Academix.Api/Services/Infrastructure/AcademicFreshness.cs
+@@ -15,6 +15,11 @@ public static class AcademicFreshness
+         await db.GraduationApplications.Where(x=>x.InstitutionId==institutionId&&x.StudentId==studentId&&x.Status=="Issued"&&x.SourceInvalidatedAtUtc==null)
+             .ExecuteUpdateAsync(s=>s.SetProperty(x=>x.SourceInvalidatedAtUtc,now),ct);
+     }
++    public static Task<bool> StandingStale(AcademixDbContext db,Guid institutionId,Guid studentId,
++        Guid termId,DateTime calculatedAtUtc,CancellationToken ct)
++        => db.StudentTranscriptEntries.AsNoTracking().AnyAsync(x=>x.InstitutionId==institutionId&&
++            x.StudentId==studentId&&x.TermId==termId&&x.SyncedAtUtc>calculatedAtUtc,ct);
++
+     public static async Task Ensure(AcademixDbContext db, Guid institutionId, Guid studentId, CancellationToken ct)
+     {
+         await AssessmentFreshness.Ensure(db,institutionId,studentId,ct);
+diff --git a/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/verification/release-closure/source-before/Academix.Api/Services/Lifecycle/LifecycleService.cs b/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/Academix.Api/Services/Lifecycle/LifecycleService.cs
+index 37bc544..84f66a2 100644
+--- a/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/verification/release-closure/source-before/Academix.Api/Services/Lifecycle/LifecycleService.cs
++++ b/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/Academix.Api/Services/Lifecycle/LifecycleService.cs
+@@ -105,6 +105,8 @@ public sealed partial class LifecycleService(AcademixDbContext db, IdentitySecur
+             var row = (await db.AdmissionApplications.FromSqlInterpolated(
+                 $"SELECT * FROM admission_applications WHERE \"Id\" = {id} FOR UPDATE").ToListAsync(ct)).SingleOrDefault()
+                 ?? throw ApiFault.NotFound();
++            actor = await security.RequireAdminAsync(principal, row.InstitutionId, ct);
++            LifecyclePolicy.DisallowSelfApproval(actor.Id, row.StudentId);
+             LifecyclePolicy.RequirePending(row.Status, row.Version, body.ExpectedVersion);
+             if (decision == "Approve")
+             {
+@@ -206,6 +208,8 @@ public sealed partial class LifecycleService(AcademixDbContext db, IdentitySecur
+             var p = (await db.TransferCreditPetitions.FromSqlInterpolated(
+                 $"SELECT * FROM transfer_credit_petitions WHERE \"Id\" = {id} FOR UPDATE").ToListAsync(ct)).SingleOrDefault()
+                 ?? throw ApiFault.NotFound();
++            actor = await security.RequireAdminAsync(principal, p.InstitutionId, ct);
++            LifecyclePolicy.DisallowSelfApproval(actor.Id, p.StudentId);
+             LifecyclePolicy.RequirePending(p.Status, p.Version, body.ExpectedVersion);
+             if (decision == "Approve")
+             {
+diff --git a/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/verification/release-closure/source-before/Academix.Api/Services/Records/RecordsService.cs b/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/Academix.Api/Services/Records/RecordsService.cs
+index e6d7e3b..4775663 100644
+--- a/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/verification/release-closure/source-before/Academix.Api/Services/Records/RecordsService.cs
++++ b/C:/Users/lenovo/Desktop/ACADEMIX/phase24-final/Academix.Api/Services/Records/RecordsService.cs
+@@ -101,6 +101,7 @@ public sealed class RecordsService(AcademixDbContext db, IdentitySecurity securi
+             var item = (await db.StudentProgramMemberships.FromSqlInterpolated(
+                 $"SELECT * FROM student_program_memberships WHERE \"StudentId\" = {studentId} AND \"InstitutionId\" = {inst} FOR UPDATE")
+                 .ToListAsync(ct)).SingleOrDefault() ?? throw ApiFault.NotFound();
++            actor = await Admin(principal, inst, ct);
+             if (item.Status != "Active" || item.Version != request.ExpectedVersion) throw ApiFault.Conflict("Stale program membership.");
+             var now = await db.AcademicTerms.AsNoTracking().SingleAsync(x => x.Id == item.CurrentTermId, ct);
+             var next = await db.AcademicTerms.AsNoTracking().SingleOrDefaultAsync(x => x.Id == request.NextTermId && x.InstitutionId == inst, ct)
+@@ -220,7 +221,9 @@ public sealed class RecordsService(AcademixDbContext db, IdentitySecurity securi
+         if(activePolicy.Rules.AllowEquivalency)
+         {
+             var plan=await db.StudentCurriculumAssignments.AsNoTracking().Where(x=>x.StudentId==studentId&&x.InstitutionId==section.InstitutionId).Select(x=>(Guid?)x.PlanId).SingleOrDefaultAsync(ct);
+-            equivalent.UnionWith(await db.Set<Academix.Api.Domain.Registrar.RecognizedCourseCredit>().AsNoTracking().Where(x=>x.StudentId==studentId&&x.InstitutionId==section.InstitutionId&&x.PlanId==plan).Select(x=>x.TargetCourseId).ToListAsync(ct));
++            if(plan is Guid assignedPlan)
++                equivalent.UnionWith((await Academix.Api.Services.Curriculum.RecognitionQualification.Load(
++                    db,section.InstitutionId,studentId,assignedPlan,ct)).Select(x=>x.Credit.TargetCourseId));
+         }
+         var checks = required.Select(p =>
+         {
+@@ -341,16 +344,21 @@ public sealed class RecordsService(AcademixDbContext db, IdentitySecurity securi
+         return new TranscriptSyncResult(sectionId, inserted, updated, unchanged);
+     }
+ 
+-    public async Task<TranscriptView> Transcript(ClaimsPrincipal principal, Guid studentId, CancellationToken ct)
++    public Task<TranscriptView> Transcript(ClaimsPrincipal principal, Guid studentId, CancellationToken ct)
++        => retry.ExecuteAsync<RecordsService,TranscriptView>(s=>s.TranscriptCore(principal,studentId,ct),ct);
++
++    private async Task<TranscriptView> TranscriptCore(ClaimsPrincipal principal, Guid studentId, CancellationToken ct)
+     {
++        await using var tx=await db.Database.BeginTransactionAsync(System.Data.IsolationLevel.RepeatableRead,ct);
+         var inst = await StudentInstitution(principal, studentId, ct);
+-        await AssessmentFreshness.Ensure(db,inst,studentId,ct);
++        await AcademicFreshness.Ensure(db,inst,studentId,ct);
+         var items = await db.StudentTranscriptEntries.AsNoTracking().Where(x => x.InstitutionId == inst &&
+             x.StudentId == studentId).OrderBy(x => x.TermId).ThenBy(x => x.CourseCode).ToListAsync(ct);
+-        return new TranscriptView(studentId, items.Select(x => new TranscriptLine(x.SectionId, x.CourseId, x.TermId,
++        var result = new TranscriptView(studentId, items.Select(x => new TranscriptLine(x.SectionId, x.CourseId, x.TermId,
+             x.CourseCode, x.CourseTitle, x.Percentage, x.Letter, x.Passed, x.Version)).ToArray(),
+             items.Count == 0 ? null : decimal.Round(items.Average(x => x.Percentage), 2),
+             items.Count, items.Count(x => x.Passed));
++        await tx.CommitAsync(ct); return result;
+     }
+ 
+     public Task<StandingView> RecalculateStanding(ClaimsPrincipal principal, Guid termId,
+@@ -372,6 +380,7 @@ public sealed class RecordsService(AcademixDbContext db, IdentitySecurity securi
+             await AcademicFreshness.Ensure(db, inst, studentId, ct);
+             await db.Users.FromSqlInterpolated($"SELECT * FROM identity_users WHERE \"Id\" = {studentId} FOR UPDATE")
+                 .ToListAsync(ct);
++            actor = await Admin(principal, inst, ct);
+             var grades = await db.StudentTranscriptEntries.AsNoTracking().Where(x => x.StudentId == studentId &&
+                 x.InstitutionId == inst && x.TermId == termId).Select(x => new { x.Percentage, x.Passed }).ToListAsync(ct);
+             var policyData = grades.Select(x => (x.Percentage, x.Passed)).ToArray();
+@@ -394,13 +403,19 @@ public sealed class RecordsService(AcademixDbContext db, IdentitySecurity securi
+         });
+     }
+ 
+-    public async Task<StandingView> Standing(ClaimsPrincipal principal, Guid termId, Guid studentId, CancellationToken ct)
++    public Task<StandingView> Standing(ClaimsPrincipal principal, Guid termId, Guid studentId, CancellationToken ct)
++        => retry.ExecuteAsync<RecordsService,StandingView>(s=>s.StandingCore(principal,termId,studentId,ct),ct);
++
++    private async Task<StandingView> StandingCore(ClaimsPrincipal principal, Guid termId, Guid studentId, CancellationToken ct)
+     {
++        await using var tx=await db.Database.BeginTransactionAsync(System.Data.IsolationLevel.RepeatableRead,ct);
+         var inst = await StudentInstitution(principal, studentId, ct);
+         await AcademicFreshness.Ensure(db,inst,studentId,ct);
+         var item = await db.StudentTermStandings.AsNoTracking().SingleOrDefaultAsync(x => x.InstitutionId == inst &&
+             x.StudentId == studentId && x.TermId == termId, ct) ?? throw ApiFault.NotFound();
+-        return Map(item);
++        if(await AcademicFreshness.StandingStale(db,inst,studentId,termId,item.CalculatedAtUtc,ct))
++            throw ApiFault.Conflict("Academic standing is stale. Recalculate it from the synchronized transcript before continuing.");
++        var result=Map(item); await tx.CommitAsync(ct); return result;
+     }
+ 
+     public async Task<IReadOnlyList<LifecycleEventView>> Events(ClaimsPrincipal principal, Guid inst, int page, CancellationToken ct)

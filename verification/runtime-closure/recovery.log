@@ -1,0 +1,3 @@
+Confirmed relevant Docker processes stopped; renamed only the two checked temporary runtime directories; all backups and Docker storage preserved.
+Requested one Docker Desktop restart with both stale runtime directories removed from their original names.
+docker info after recovery exit code: 0

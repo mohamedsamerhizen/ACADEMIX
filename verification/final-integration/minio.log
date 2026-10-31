@@ -1,0 +1,28 @@
+Test run for C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\bin\Release\net10.0\Academix.Tests.dll (.NETCoreApp,Version=v10.0)
+VSTest version 18.0.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:00:18.81]     Academix.Tests.Integration.RealMinioIntegrationTests.RealProviderPreservesCommittedUploadsAndRecoversDurableCleanupAfterOutage [FAIL]
+  Failed Academix.Tests.Integration.RealMinioIntegrationTests.RealProviderPreservesCommittedUploadsAndRecoversDurableCleanupAfterOutage [18 s]
+  Error Message:
+   Minio.Exceptions.InternalClientException : MinIO API responded with message=Unsuccessful response from server without XML:No connection could be made because the target machine actively refused it. (127.0.0.1:54147). Status code=OK, response=No connection could be made because the target machine actively refused it. (127.0.0.1:54147), content=
+  Stack Trace:
+     at Minio.MinioClient.ParseErrorNoContent(ResponseResult response)
+   at Minio.MinioClient.ParseError(ResponseResult response)
+   at Minio.Handlers.DefaultErrorHandler.Handle(ResponseResult response)
+   at Minio.RequestExtensions.ExecuteTaskAsync(IMinioClient minioClient, HttpRequestMessageBuilder requestMessageBuilder, Type ignoreExceptionType, Boolean isSts, CancellationToken cancellationToken)
+   at Minio.MinioClient.BucketExistsAsync(BucketExistsArgs args, CancellationToken cancellationToken)
+   at Minio.MinioClient.StatObjectAsync(StatObjectArgs args, CancellationToken cancellationToken)
+   at Minio.MinioClient.GetObjectHelper(GetObjectArgs args, CancellationToken cancellationToken)
+   at Academix.Api.Storage.PrivateFileStore.GetAsync(String key, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Storage\PrivateFileStore.cs:line 51
+   at Academix.Tests.Integration.RealMinioIntegrationTests.BoundedStore.Bound[T](Func`2 action, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\RealMinioIntegrationTests.cs:line 33
+   at Academix.Tests.Integration.RealMinioIntegrationTests.RealProviderPreservesCommittedUploadsAndRecoversDurableCleanupAfterOutage() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\RealMinioIntegrationTests.cs:line 136
+   at Academix.Tests.Integration.RealMinioIntegrationTests.RealProviderPreservesCommittedUploadsAndRecoversDurableCleanupAfterOutage() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\RealMinioIntegrationTests.cs:line 149
+   at Academix.Tests.Integration.RealMinioIntegrationTests.RealProviderPreservesCommittedUploadsAndRecoversDurableCleanupAfterOutage() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\RealMinioIntegrationTests.cs:line 149
+   at Academix.Tests.Integration.RealMinioIntegrationTests.RealProviderPreservesCommittedUploadsAndRecoversDurableCleanupAfterOutage() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\RealMinioIntegrationTests.cs:line 151
+   at Academix.Tests.Integration.RealMinioIntegrationTests.RealProviderPreservesCommittedUploadsAndRecoversDurableCleanupAfterOutage() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\RealMinioIntegrationTests.cs:line 151
+--- End of stack trace from previous location ---
+Results File: C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\verification\final-integration\minio.trx
+
+Failed!  - Failed:     1, Passed:     0, Skipped:     0, Total:     1, Duration: 18 s - Academix.Tests.dll (net10.0)

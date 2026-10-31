@@ -1,0 +1,34 @@
+Unhandled exception. DotNet.Testcontainers.Builders.DockerUnavailableException: Docker is either not running or misconfigured. Please ensure that Docker is running and that the endpoint is properly configured.
+You can customize your configuration using either the environment variables or the ~/.testcontainers.properties file.
+For more information, visit: https://dotnet.testcontainers.org/custom_configuration/.
+  Details: 
+    Failed to connect to Docker endpoint at 'npipe://./pipe/docker_engine'.
+ ---> System.AggregateException: One or more errors occurred. (Failed to connect to Docker endpoint at 'npipe://./pipe/docker_engine'.)
+ ---> DotNet.Testcontainers.Builders.DockerUnavailableException: Failed to connect to Docker endpoint at 'npipe://./pipe/docker_engine'.
+ ---> System.TimeoutException: The operation has timed out.
+   at System.IO.Pipes.NamedPipeClientStream.ConnectInternal(Int32 timeout, CancellationToken cancellationToken, Int32 startTime)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Docker.DotNet.NPipe.DockerHandlerFactory.<>c__DisplayClass5_0.<<CreateHandler>b__0>d.MoveNext() in /_/src/Docker.DotNet.NPipe/DockerHandlerFactory.cs:line 58
+--- End of stack trace from previous location ---
+   at Microsoft.Net.Http.Client.ManagedHandler.ProcessRequestAsync(HttpRequestMessage request, CancellationToken cancellationToken) in /_/src/Microsoft.Net.Http.Client/ManagedHandler.cs:line 158
+   at Microsoft.Net.Http.Client.ManagedHandler.SendAsync(HttpRequestMessage httpRequestMessage, CancellationToken cancellationToken) in /_/src/Microsoft.Net.Http.Client/ManagedHandler.cs:line 75
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Docker.DotNet.DockerClient.PrivateMakeRequestAsync(TimeSpan timeout, HttpCompletionOption completionOption, HttpMethod method, String path, IQueryString queryString, IDictionary`2 headers, IRequestContent data, CancellationToken cancellationToken) in /_/src/Docker.DotNet/DockerClient.cs:line 393
+   at Docker.DotNet.DockerClient.MakeRequestAsync[T](IEnumerable`1 errorHandlers, HttpMethod method, String path, IQueryString queryString, IRequestContent body, IDictionary`2 headers, TimeSpan timeout, CancellationToken cancellationToken) in /_/src/Docker.DotNet/DockerClient.cs:line 173
+   at Docker.DotNet.SystemOperations.PingAsync(CancellationToken cancellationToken) in /_/src/Docker.DotNet/Endpoints/SystemOperations.cs:line 33
+   at DotNet.Testcontainers.Builders.DockerEndpointAuthenticationProvider.<>c__DisplayClass5_0.<<IsAvailable>b__0>d.MoveNext() in /_/src/Testcontainers/Builders/DockerEndpointAuthenticationProvider.cs:line 46
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at DotNet.Testcontainers.Guard.ThrowIf[TType](ArgumentInfo`1& argument, Func`2 condition, Func`2 ifClause) in /_/src/Testcontainers/Guard.Null.cs:line 62
+   at DotNet.Testcontainers.Builders.AbstractBuilder`4.Validate() in /_/src/Testcontainers/Builders/AbstractBuilder`4.cs:line 153
+   at DotNet.Testcontainers.Builders.ContainerBuilder`3.Validate() in /_/src/Testcontainers/Builders/ContainerBuilder`3.cs:line 510
+   at Testcontainers.PostgreSql.PostgreSqlBuilder.Validate() in /_/src/Testcontainers.PostgreSql/PostgreSqlBuilder.cs:line 225
+   at Testcontainers.PostgreSql.PostgreSqlBuilder.Build() in /_/src/Testcontainers.PostgreSql/PostgreSqlBuilder.cs:line 163
+   at Academix.Tests.Integration.ApiFixture..ctor() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\ApiFixture.cs:line 13
+   at Program.<Main>$(String[] args) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\verification\final-audit\probes\Program.cs:line 36
+   at Program.<Main>(String[] args)

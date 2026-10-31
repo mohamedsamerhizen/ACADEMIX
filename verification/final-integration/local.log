@@ -1,0 +1,8 @@
+Test run for C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\bin\Release\net10.0\Academix.Tests.dll (.NETCoreApp,Version=v10.0)
+VSTest version 18.0.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+Results File: C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\verification\final-integration\local.trx
+
+Passed!  - Failed:     0, Passed:   536, Skipped:     0, Total:   536, Duration: 2 s - Academix.Tests.dll (net10.0)

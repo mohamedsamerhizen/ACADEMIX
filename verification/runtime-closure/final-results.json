@@ -1,0 +1,65 @@
+{
+  "Date": "2026-10-31",
+  "Repository": "C:\\Users\\lenovo\\Desktop\\ACADEMIX\\phase24-final",
+  "FinalStart": "2026-10-31T12:11:05.6903603+03:00",
+  "FinalFinish": "2026-10-31T12:12:40.8127442+03:00",
+  "Complete": {
+    "Total": 696,
+    "Passed": 696,
+    "Failed": 0,
+    "OtherOrSkipped": 0
+  },
+  "Local": {
+    "Total": 540,
+    "Passed": 540,
+    "Failed": 0,
+    "OtherOrSkipped": 0
+  },
+  "Postgres": {
+    "Total": 155,
+    "Passed": 155,
+    "Failed": 0,
+    "OtherOrSkipped": 0
+  },
+  "RealMinio": {
+    "Total": 1,
+    "Passed": 1,
+    "Failed": 0,
+    "OtherOrSkipped": 0
+  },
+  "NewPostgresRegressions": {
+    "Total": 43,
+    "Passed": 43,
+    "Failed": 0,
+    "OtherOrSkipped": 0
+  },
+  "FocusedRegressions": {
+    "Passed": 43,
+    "Failed": 0,
+    "Total": 43
+  },
+  "InitialIntegration": {
+    "Passed": 152,
+    "Failed": 4,
+    "Total": 156
+  },
+  "MigrationCases": [
+    {
+      "Test": "Academix.Tests.Integration.Phase19MigrationExecutionTests.FullHistoryAppliesToPostgreSqlAndPreservesPrePhase19Data(upgrade: False)",
+      "Outcome": "Passed"
+    },
+    {
+      "Test": "Academix.Tests.Integration.Phase19MigrationExecutionTests.FullHistoryAppliesToPostgreSqlAndPreservesPrePhase19Data(upgrade: True)",
+      "Outcome": "Passed"
+    },
+    {
+      "Test": "Academix.Tests.Integration.FinalMigrationUpgradeTests.PopulatedPhase24UpgradePreservesEvidenceAndEnforcesRemediationGuards",
+      "Outcome": "Passed"
+    }
+  ],
+  "MigrationCount": 39,
+  "SourceChangedDuringFinalRun": [],
+  "ServerVersionOutput": [
+    "minio version RELEASE.2026-09-22T19-25-18Z (commit-id=df34868a88cc8c396807e04a7e220810b321bdaa)"
+  ]
+}

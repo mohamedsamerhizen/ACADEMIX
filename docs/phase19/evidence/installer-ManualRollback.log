@@ -1,0 +1,2 @@
+Application source restored. No database schema or academic data was changed by this script.
+If migrations have since been applied, use a reviewed database restore/forward-fix plan; do not run destructive Down migrations.

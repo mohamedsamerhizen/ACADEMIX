@@ -1,0 +1,9 @@
+Post-installation edit detected: Academix.Api/Services/Identity/AuthService.cs. Manual reconciliation required.
+At C:\Users\lenovo\Documents\ChatGPT\ACADEMIX\phase19-work\installer-tests\RealSuccess\phase19-installations\20261029T1
+04029619Z-44e6ea8ae57f4f72a8b49bc862975511\rollback.ps1:21 char:138
++ ... y.Sha256) { throw "Post-installation edit detected: $($entry.Path). M ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Post-installati...ation required.:String) [], RuntimeException
+    + FullyQualifiedErrorId : Post-installation edit detected: Academix.Api/Services/Identity/AuthService.cs. Manual r 
+   econciliation required.
+ 

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="d59cf4f3-ad41-4526-b9c6-610dbc7163e7" name="lenovo@DESKTOP-O6COQK7 2026-10-30 21:49:06" runUser="DESKTOP-O6COQK7\lenovo" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-10-30T21:49:06.4671095+03:00" queuing="2026-10-30T21:49:06.4671098+03:00" start="2026-10-30T21:48:55.4562874+03:00" finish="2026-10-30T21:49:10.5942968+03:00" />
+  <TestSettings name="default" id="d5787767-d3be-4088-b0da-27c28272e402">
+    <Deployment runDeploymentRoot="lenovo_DESKTOP-O6COQK7_2026-10-30_21_49_06" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="3b87d258-9402-436f-87e8-82001d160c6e" testId="5df4018f-90a2-ad4b-42b0-a0cec65825a4" testName="Academix.Tests.Integration.Phase19MigrationExecutionTests.FullHistoryAppliesToPostgreSqlAndPreservesPrePhase19Data(upgrade: False)" computerName="DESKTOP-O6COQK7" duration="00:00:04.0736591" startTime="2026-10-30T21:49:06.4561968+03:00" endTime="2026-10-30T21:49:10.5195379+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3b87d258-9402-436f-87e8-82001d160c6e" />
+    <UnitTestResult executionId="46ddb537-b78b-49e2-9546-7f7d59d768ae" testId="3f8bf584-87c7-9501-9b1a-cc016836c93e" testName="Academix.Tests.Integration.FinalMigrationUpgradeTests.PopulatedPhase24UpgradePreservesEvidenceAndEnforcesRemediationGuards" computerName="DESKTOP-O6COQK7" duration="00:00:09.9376110" startTime="2026-10-30T21:48:57.0210311+03:00" endTime="2026-10-30T21:49:06.9615805+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="46ddb537-b78b-49e2-9546-7f7d59d768ae">
+      <Output>
+        <StdOut>Applied 38 migrations; preserved 3 grades, 1 audit, 1 transcript, 1 issued credential, 4 documents; flagged 2 grades and invalidated 2 documents; append-only/evidence/command guards rejected tampering.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c36fe431-5079-43b5-874e-b82d944288f8" testId="7877dbde-c29c-af18-95ed-66160ce39a8d" testName="Academix.Tests.Integration.Phase19MigrationExecutionTests.FullHistoryAppliesToPostgreSqlAndPreservesPrePhase19Data(upgrade: True)" computerName="DESKTOP-O6COQK7" duration="00:00:09.4181231" startTime="2026-10-30T21:48:57.0200284+03:00" endTime="2026-10-30T21:49:06.4450418+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c36fe431-5079-43b5-874e-b82d944288f8" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Academix.Tests.Integration.FinalMigrationUpgradeTests.PopulatedPhase24UpgradePreservesEvidenceAndEnforcesRemediationGuards" storage="c:\users\lenovo\desktop\academix\phase24-final\academix.tests\bin\release\net10.0\academix.tests.dll" id="3f8bf584-87c7-9501-9b1a-cc016836c93e">
+      <Execution id="46ddb537-b78b-49e2-9546-7f7d59d768ae" />
+      <TestMethod codeBase="C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\bin\Release\net10.0\Academix.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Academix.Tests.Integration.FinalMigrationUpgradeTests" name="PopulatedPhase24UpgradePreservesEvidenceAndEnforcesRemediationGuards" />
+    </UnitTest>
+    <UnitTest name="Academix.Tests.Integration.Phase19MigrationExecutionTests.FullHistoryAppliesToPostgreSqlAndPreservesPrePhase19Data(upgrade: True)" storage="c:\users\lenovo\desktop\academix\phase24-final\academix.tests\bin\release\net10.0\academix.tests.dll" id="7877dbde-c29c-af18-95ed-66160ce39a8d">
+      <Execution id="c36fe431-5079-43b5-874e-b82d944288f8" />
+      <TestMethod codeBase="C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\bin\Release\net10.0\Academix.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Academix.Tests.Integration.Phase19MigrationExecutionTests" name="FullHistoryAppliesToPostgreSqlAndPreservesPrePhase19Data" />
+    </UnitTest>
+    <UnitTest name="Academix.Tests.Integration.Phase19MigrationExecutionTests.FullHistoryAppliesToPostgreSqlAndPreservesPrePhase19Data(upgrade: False)" storage="c:\users\lenovo\desktop\academix\phase24-final\academix.tests\bin\release\net10.0\academix.tests.dll" id="5df4018f-90a2-ad4b-42b0-a0cec65825a4">
+      <Execution id="3b87d258-9402-436f-87e8-82001d160c6e" />
+      <TestMethod codeBase="C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\bin\Release\net10.0\Academix.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Academix.Tests.Integration.Phase19MigrationExecutionTests" name="FullHistoryAppliesToPostgreSqlAndPreservesPrePhase19Data" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="5df4018f-90a2-ad4b-42b0-a0cec65825a4" executionId="3b87d258-9402-436f-87e8-82001d160c6e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3f8bf584-87c7-9501-9b1a-cc016836c93e" executionId="46ddb537-b78b-49e2-9546-7f7d59d768ae" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7877dbde-c29c-af18-95ed-66160ce39a8d" executionId="c36fe431-5079-43b5-874e-b82d944288f8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="3" executed="3" passed="3" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.4+50e68bbb8b (64-bit .NET 10.0.3)&#xD;
+[xUnit.net 00:00:00.43]   Discovering: Academix.Tests&#xD;
+[xUnit.net 00:00:00.52]   Discovered:  Academix.Tests&#xD;
+[xUnit.net 00:00:00.54]   Starting:    Academix.Tests&#xD;
+[testcontainers.org 00:00:00.08] Connected to Docker:&#xD;
+  Host: npipe://./pipe/docker_engine&#xD;
+  Server Version: 29.3.1&#xD;
+  Kernel Version: 6.6.87.2-microsoft-standard-WSL2&#xD;
+  API Version: 1.54&#xD;
+  Operating System: Docker Desktop&#xD;
+  Total Memory: 11.54 GB&#xD;
+  Labels: &#xD;
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli&#xD;
+[testcontainers.org 00:00:00.23] Docker container 1e437557d541 created&#xD;
+[testcontainers.org 00:00:00.27] Start Docker container 1e437557d541&#xD;
+[testcontainers.org 00:00:00.45] Wait for Docker container 1e437557d541 to complete readiness checks&#xD;
+[testcontainers.org 00:00:01.49] Docker container 1e437557d541 ready&#xD;
+[testcontainers.org 00:00:01.60] Docker container 1a390e1e772b created&#xD;
+[testcontainers.org 00:00:01.60] Docker container d90d890f5f2c created&#xD;
+[testcontainers.org 00:00:01.61] Start Docker container 1a390e1e772b&#xD;
+[testcontainers.org 00:00:01.62] Start Docker container d90d890f5f2c&#xD;
+[testcontainers.org 00:00:01.81] Wait for Docker container 1a390e1e772b to complete readiness checks&#xD;
+[testcontainers.org 00:00:01.82] Execute "pg_isready --host localhost --dbname migration_verification --username migration_tests" at Docker container 1a390e1e772b&#xD;
+[testcontainers.org 00:00:01.84] Wait for Docker container d90d890f5f2c to complete readiness checks&#xD;
+[testcontainers.org 00:00:01.85] Execute "pg_isready --host localhost --dbname remediation_upgrade --username upgrade_tests" at Docker container d90d890f5f2c&#xD;
+[testcontainers.org 00:00:02.90] Execute "pg_isready --host localhost --dbname migration_verification --username migration_tests" at Docker container 1a390e1e772b&#xD;
+[testcontainers.org 00:00:02.90] Execute "pg_isready --host localhost --dbname remediation_upgrade --username upgrade_tests" at Docker container d90d890f5f2c&#xD;
+[testcontainers.org 00:00:02.97] Docker container d90d890f5f2c ready&#xD;
+[testcontainers.org 00:00:02.97] Docker container 1a390e1e772b ready&#xD;
+[testcontainers.org 00:00:08.99] Delete Docker container 1a390e1e772b&#xD;
+[testcontainers.org 00:00:09.43] Docker container 8ca48aaba076 created&#xD;
+[testcontainers.org 00:00:09.43] Start Docker container 8ca48aaba076&#xD;
+[testcontainers.org 00:00:09.47] Delete Docker container d90d890f5f2c&#xD;
+[testcontainers.org 00:00:09.66] Wait for Docker container 8ca48aaba076 to complete readiness checks&#xD;
+[testcontainers.org 00:00:09.67] Execute "pg_isready --host localhost --dbname migration_verification --username migration_tests" at Docker container 8ca48aaba076&#xD;
+[testcontainers.org 00:00:10.75] Execute "pg_isready --host localhost --dbname migration_verification --username migration_tests" at Docker container 8ca48aaba076&#xD;
+[testcontainers.org 00:00:10.83] Docker container 8ca48aaba076 ready&#xD;
+[testcontainers.org 00:00:13.09] Delete Docker container 8ca48aaba076&#xD;
+[xUnit.net 00:00:14.06]   Finished:    Academix.Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

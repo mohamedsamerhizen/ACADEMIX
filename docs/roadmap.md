@@ -1,0 +1,11 @@
+# Roadmap
+- Phase 0 Foundation: accepted on user machine.
+- Phase 1 Identity and Academic Core: bundled, verify locally before accepting.
+- Phase 2 Learning Management: units, lessons, resources, assignments, submissions, progress.
+- Phase 3 Question Bank and exam configuration.
+- Phase 4 Examination execution and autosave engine.
+- Phase 5 Grading and results.
+- Phase 6 Notifications and background jobs.
+- Phase 7 Analytics.
+- Phase 8 Security and performance hardening.
+- Phase 9 Release readiness.

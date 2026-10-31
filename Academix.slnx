@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Academix.Api/Academix.Api.csproj" />
+  <Project Path="Academix.Tests/Academix.Tests.csproj" />
+</Solution>

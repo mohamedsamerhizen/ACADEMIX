@@ -1,0 +1,88 @@
+{
+  "status": "passed",
+  "markdownDocumentsChecked": 5,
+  "localReferencesChecked": 81,
+  "brokenReferences": [],
+  "svgAssets": [
+    {
+      "name": "architecture.svg",
+      "width": 1200,
+      "height": 850
+    },
+    {
+      "name": "business-modules.svg",
+      "width": 1200,
+      "height": 955
+    },
+    {
+      "name": "finance-lifecycle.svg",
+      "width": 1200,
+      "height": 825
+    },
+    {
+      "name": "grade-reconciliation.svg",
+      "width": 1200,
+      "height": 805
+    },
+    {
+      "name": "hero-banner.svg",
+      "width": 1200,
+      "height": 420
+    },
+    {
+      "name": "infrastructure-reliability.svg",
+      "width": 1200,
+      "height": 825
+    },
+    {
+      "name": "security-isolation.svg",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "name": "student-lifecycle.svg",
+      "width": 1200,
+      "height": 875
+    },
+    {
+      "name": "system-overview.svg",
+      "width": 1200,
+      "height": 690
+    },
+    {
+      "name": "technology-badges.svg",
+      "width": 1200,
+      "height": 70
+    },
+    {
+      "name": "verification-snapshot.svg",
+      "width": 1200,
+      "height": 710
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "academic-schema.jpg",
+      "dimensions": [
+        699,
+        654
+      ],
+      "bytes": 34617,
+      "sha256": "72b9196188c1adcd6e9e072d0818dfaa2b5c42f8bf1fa0f07dbb59064d196613"
+    },
+    {
+      "name": "openapi-overview.jpg",
+      "dimensions": [
+        699,
+        654
+      ],
+      "bytes": 32012,
+      "sha256": "52cbd1728fcba600f64b8ce559a7581f8add2daf5fe5ffef43aa23a4e4f38b09"
+    }
+  ],
+  "sourceSnapshotEntriesChecked": 436,
+  "sourceDifferences": [],
+  "historicalEvidenceFilesChecked": 675,
+  "historicalEvidenceDifferences": [],
+  "testsRerun": false
+}

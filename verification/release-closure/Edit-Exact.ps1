@@ -1,0 +1,4 @@
+function Edit {
+param([string]$path, [string]$old, [string]$new, [int]$count=1)
+$full=Join-Path (Get-Location) $path;$raw=[IO.File]::ReadAllText($full);$crlf=$raw.Contains("`r`n");$text=$raw.Replace("`r`n","`n");$old=$old.Replace("`r`n","`n");$new=$new.Replace("`r`n","`n");$found=([regex]::Matches($text,[regex]::Escape($old))).Count;if($found -ne $count){throw "$path expected $count matches; found $found"};$backup=Join-Path (Get-Location) ('verification/release-closure/source-before/'+$path);if(-not(Test-Path -LiteralPath $backup)){[IO.Directory]::CreateDirectory([IO.Path]::GetDirectoryName($backup))|Out-Null;[IO.File]::WriteAllText($backup,$raw)};$text=$text.Replace($old,$new);if($crlf){$text=$text.Replace("`n","`r`n")};[IO.File]::WriteAllText($full,$text)
+}

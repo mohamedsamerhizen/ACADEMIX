@@ -1,0 +1,9 @@
+Release status: INCOMPLETE. Read PHASE19_IMPLEMENTATION_REPORT.md for unimplemented requirements.
+C:\Users\lenovo\Documents\ChatGPT\ACADEMIX\phase19-work\delivery\apply.ps1 : Unsupported baseline or local change: 
+.config/dotnet-tools.json. No unknown file will be overwritten.
+At C:\Users\lenovo\Documents\ChatGPT\ACADEMIX\phase19-work\test-installer.ps1:44 char:1
++ & (Join-Path $package 'apply.ps1') -ProjectRoot $fixture
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,apply.ps1
+ 

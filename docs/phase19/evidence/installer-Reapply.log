@@ -1,0 +1,6 @@
+Release status: INCOMPLETE. Read PHASE19_IMPLEMENTATION_REPORT.md for unimplemented requirements.
+C:\Users\lenovo\Documents\ChatGPT\ACADEMIX\phase19-work\delivery\apply.ps1 : Unsupported baseline or local change: 
+Academix.Api/Controllers/EnrollmentsController.cs. No unknown file will be overwritten.
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,apply.ps1
+ 

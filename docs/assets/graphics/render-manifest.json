@@ -1,0 +1,68 @@
+[
+  {
+    "asset": "architecture.svg",
+    "width": 1200,
+    "height": 850,
+    "pngBytes": 103004
+  },
+  {
+    "asset": "business-modules.svg",
+    "width": 1200,
+    "height": 955,
+    "pngBytes": 105409
+  },
+  {
+    "asset": "finance-lifecycle.svg",
+    "width": 1200,
+    "height": 825,
+    "pngBytes": 107914
+  },
+  {
+    "asset": "grade-reconciliation.svg",
+    "width": 1200,
+    "height": 805,
+    "pngBytes": 103827
+  },
+  {
+    "asset": "hero-banner.svg",
+    "width": 1200,
+    "height": 420,
+    "pngBytes": 44426
+  },
+  {
+    "asset": "infrastructure-reliability.svg",
+    "width": 1200,
+    "height": 825,
+    "pngBytes": 116627
+  },
+  {
+    "asset": "security-isolation.svg",
+    "width": 1200,
+    "height": 800,
+    "pngBytes": 101775
+  },
+  {
+    "asset": "student-lifecycle.svg",
+    "width": 1200,
+    "height": 875,
+    "pngBytes": 95533
+  },
+  {
+    "asset": "system-overview.svg",
+    "width": 1200,
+    "height": 690,
+    "pngBytes": 95710
+  },
+  {
+    "asset": "technology-badges.svg",
+    "width": 1200,
+    "height": 70,
+    "pngBytes": 9794
+  },
+  {
+    "asset": "verification-snapshot.svg",
+    "width": 1200,
+    "height": 710,
+    "pngBytes": 82898
+  }
+]

@@ -1,0 +1,68 @@
+name: academix-fresh
+services:
+  postgres:
+    image: postgres:18-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: academix
+      POSTGRES_USER: academix
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Create .env with POSTGRES_PASSWORD}
+    ports:
+      - "127.0.0.1:5434:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U academix -d academix"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  minio:
+    image: cgr.dev/chainguard/minio:latest
+    restart: unless-stopped
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:?Set MinIO credentials in .env (see README.md)}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:?Set MinIO credentials in .env (see README.md)}
+    ports:
+      - "127.0.0.1:9001:9001"
+    volumes:
+      - minio_data:/data
+  api:
+    build:
+      context: .
+      dockerfile: Academix.Api/Dockerfile
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__Default: Host=postgres;Port=5432;Database=academix;Username=academix;Password=${POSTGRES_PASSWORD}
+      Database__ApplyMigrationsOnStartup: "true"
+      DataProtection__KeyRingPath: /var/academix/keyring
+      Documents__PdfLicense: ${DOCUMENTS_PDF_LICENSE:-}
+      Jwt__SigningKey: ${JWT_SIGNING_KEY:?Set JWT_SIGNING_KEY in .env (see README.md)}
+      Storage__Endpoint: minio:9000
+      Storage__AccessKey: ${MINIO_ROOT_USER}
+      Storage__SecretKey: ${MINIO_ROOT_PASSWORD}
+      Storage__Bucket: academix-private
+      Jwt__Issuer: ACADEMIX
+      Jwt__Audience: ACADEMIX.Api
+      Bootstrap__Enabled: ${BOOTSTRAP_ENABLED:-false}
+      Bootstrap__Email: ${BOOTSTRAP_EMAIL:-}
+      Bootstrap__Password: ${BOOTSTRAP_PASSWORD:-}
+    volumes:
+      - document_keyring:/var/academix/keyring
+    ports:
+      - "127.0.0.1:8081:8080"
+    healthcheck:
+      test: ["CMD-SHELL", "dotnet /app/Academix.Api.dll --health-probe"]
+      interval: 10s
+      timeout: 6s
+      retries: 10
+      start_period: 10s
+volumes:
+  minio_data:
+  postgres_data:
+  document_keyring:

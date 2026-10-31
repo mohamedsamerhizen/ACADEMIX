@@ -1,0 +1,122 @@
+using System;
+using Microsoft.EntityFrameworkCore.Migrations;
+
+#nullable disable
+
+namespace Academix.Api.Data.Migrations;
+
+public partial class Phase23ServiceDeskCompletion : Migration
+{
+    protected override void Up(MigrationBuilder migrationBuilder)
+    {
+        migrationBuilder.AddColumn<Guid>("AssignedStaffId", "student_service_cases", "uuid", nullable: true);
+        migrationBuilder.AddColumn<string>("CurrentQueueCode", "student_service_cases", "character varying(40)",
+            maxLength: 40, nullable: false, defaultValue: "GeneralSupport");
+        migrationBuilder.AddColumn<string>("Priority", "student_service_cases", "character varying(12)",
+            maxLength: 12, nullable: false, defaultValue: "Normal");
+        migrationBuilder.AddColumn<DateTime>("EscalatedAtUtc", "student_service_cases", "timestamp with time zone", nullable: true);
+        migrationBuilder.Sql("""
+            UPDATE student_service_cases AS c SET "CurrentQueueCode" = d."Code"
+            FROM student_service_definitions AS d
+            WHERE c."DefinitionId"=d."Id" AND c."InstitutionId"=d."InstitutionId";
+            """);
+        migrationBuilder.AddCheckConstraint("CK_p23_case_queue", "student_service_cases",
+            "\"CurrentQueueCode\" IN ('GeneralSupport','StudentAffairs','ITSupport','Library','CampusServices')");
+        migrationBuilder.AddCheckConstraint("CK_p23_case_priority", "student_service_cases",
+            "\"Priority\" IN ('Normal','High','Urgent')");
+        migrationBuilder.CreateIndex("IX_student_service_cases_AssignedStaffId", "student_service_cases", "AssignedStaffId");
+        migrationBuilder.CreateIndex("IX_p23_case_queue_status_due",
+            "student_service_cases", new[] { "InstitutionId", "CurrentQueueCode", "Status", "DueAtUtc" });
+        migrationBuilder.AddForeignKey("FK_student_service_cases_identity_users_AssignedStaffId", "student_service_cases",
+            "AssignedStaffId", "identity_users", principalColumn: "Id", onDelete: ReferentialAction.Restrict);
+
+        migrationBuilder.CreateTable("student_service_staff_grants", columns: t => new
+        {
+            Id = t.Column<Guid>(type: "uuid", nullable: false),
+            InstitutionId = t.Column<Guid>(type: "uuid", nullable: false),
+            UserId = t.Column<Guid>(type: "uuid", nullable: false),
+            QueueCode = t.Column<string>(type: "character varying(40)", maxLength: 40, nullable: false),
+            IsActive = t.Column<bool>(type: "boolean", nullable: false),
+            GrantedAtUtc = t.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+            Version = t.Column<long>(type: "bigint", nullable: false)
+        }, constraints: t =>
+        {
+            t.PrimaryKey("PK_student_service_staff_grants", x => x.Id);
+            t.ForeignKey("FK_p23_staff_institution", x => x.InstitutionId,
+                "institutions", "Id", onDelete: ReferentialAction.Restrict);
+            t.ForeignKey("FK_p23_staff_user", x => x.UserId,
+                "identity_users", "Id", onDelete: ReferentialAction.Restrict);
+        });
+        migrationBuilder.CreateIndex("IX_student_service_staff_grants_UserId", "student_service_staff_grants", "UserId");
+        migrationBuilder.CreateIndex("IX_p23_grant_queue_user",
+            "student_service_staff_grants", new[] { "InstitutionId", "QueueCode", "UserId" }, unique: true);
+
+        migrationBuilder.CreateTable("student_service_referrals", columns: t => new
+        {
+            Id = t.Column<Guid>(type: "uuid", nullable: false),
+            InstitutionId = t.Column<Guid>(type: "uuid", nullable: false),
+            CaseId = t.Column<Guid>(type: "uuid", nullable: false),
+            ActorId = t.Column<Guid>(type: "uuid", nullable: false),
+            FromQueue = t.Column<string>(type: "character varying(40)", maxLength: 40, nullable: false),
+            ToQueue = t.Column<string>(type: "character varying(40)", maxLength: 40, nullable: false),
+            Reason = t.Column<string>(type: "character varying(1000)", maxLength: 1000, nullable: false),
+            OccurredAtUtc = t.Column<DateTime>(type: "timestamp with time zone", nullable: false)
+        }, constraints: t =>
+        {
+            t.PrimaryKey("PK_student_service_referrals", x => x.Id);
+            t.ForeignKey("FK_p23_ref_case",
+                x => new { x.CaseId, x.InstitutionId }, "student_service_cases",
+                new[] { "Id", "InstitutionId" }, onDelete: ReferentialAction.Restrict);
+            t.ForeignKey("FK_p23_ref_actor", x => x.ActorId,
+                "identity_users", "Id", onDelete: ReferentialAction.Restrict);
+        });
+        migrationBuilder.CreateIndex("IX_student_service_referrals_ActorId", "student_service_referrals", "ActorId");
+        migrationBuilder.CreateIndex("IX_student_service_referrals_CaseId_InstitutionId", "student_service_referrals", new[] { "CaseId", "InstitutionId" });
+        migrationBuilder.CreateIndex("IX_p23_referral_case_date",
+            "student_service_referrals", new[] { "InstitutionId", "CaseId", "OccurredAtUtc" });
+
+        migrationBuilder.CreateTable("student_service_attachments", columns: t => new
+        {
+            Id = t.Column<Guid>(type: "uuid", nullable: false),
+            InstitutionId = t.Column<Guid>(type: "uuid", nullable: false),
+            CaseId = t.Column<Guid>(type: "uuid", nullable: false),
+            UploadedBy = t.Column<Guid>(type: "uuid", nullable: false),
+            FileName = t.Column<string>(type: "character varying(160)", maxLength: 160, nullable: false),
+            ContentType = t.Column<string>(type: "character varying(80)", maxLength: 80, nullable: false),
+            Visibility = t.Column<string>(type: "character varying(20)", maxLength: 20, nullable: false),
+            Size = t.Column<long>(type: "bigint", nullable: false),
+            Sha256 = t.Column<string>(type: "character varying(64)", maxLength: 64, nullable: false),
+            Content = t.Column<byte[]>(type: "bytea", nullable: false),
+            UploadedAtUtc = t.Column<DateTime>(type: "timestamp with time zone", nullable: false)
+        }, constraints: t =>
+        {
+            t.PrimaryKey("PK_student_service_attachments", x => x.Id);
+            t.CheckConstraint("CK_p23_attachment_size", "\"Size\" BETWEEN 1 AND 2097152");
+            t.ForeignKey("FK_p23_attach_case",
+                x => new { x.CaseId, x.InstitutionId }, "student_service_cases",
+                new[] { "Id", "InstitutionId" }, onDelete: ReferentialAction.Restrict);
+            t.ForeignKey("FK_p23_attach_user", x => x.UploadedBy,
+                "identity_users", "Id", onDelete: ReferentialAction.Restrict);
+        });
+        migrationBuilder.CreateIndex("IX_student_service_attachments_UploadedBy", "student_service_attachments", "UploadedBy");
+        migrationBuilder.CreateIndex("IX_student_service_attachments_CaseId_InstitutionId", "student_service_attachments", new[] { "CaseId", "InstitutionId" });
+        migrationBuilder.CreateIndex("IX_p23_attachment_case_date",
+            "student_service_attachments", new[] { "InstitutionId", "CaseId", "UploadedAtUtc" });
+    }
+
+    protected override void Down(MigrationBuilder migrationBuilder)
+    {
+        migrationBuilder.DropTable("student_service_attachments");
+        migrationBuilder.DropTable("student_service_referrals");
+        migrationBuilder.DropTable("student_service_staff_grants");
+        migrationBuilder.DropForeignKey("FK_student_service_cases_identity_users_AssignedStaffId", "student_service_cases");
+        migrationBuilder.DropCheckConstraint("CK_p23_case_queue", "student_service_cases");
+        migrationBuilder.DropCheckConstraint("CK_p23_case_priority", "student_service_cases");
+        migrationBuilder.DropIndex("IX_student_service_cases_AssignedStaffId", "student_service_cases");
+        migrationBuilder.DropIndex("IX_p23_case_queue_status_due", "student_service_cases");
+        migrationBuilder.DropColumn("AssignedStaffId", "student_service_cases");
+        migrationBuilder.DropColumn("CurrentQueueCode", "student_service_cases");
+        migrationBuilder.DropColumn("Priority", "student_service_cases");
+        migrationBuilder.DropColumn("EscalatedAtUtc", "student_service_cases");
+    }
+}

@@ -1,0 +1,1148 @@
+Test run for C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\bin\Release\net10.0\Academix.Tests.dll (.NETCoreApp,Version=v10.0)
+VSTest version 18.0.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:00:24.62]     Academix.Tests.Integration.Phase19RegistrarTests.ImportInvalidStudentDryRunCannotBeApprovedOrApplied [FAIL]
+[xUnit.net 00:00:24.63]     Academix.Tests.Integration.Phase19CompletionWorkflowTests.CurriculumTransitionRetainsHistoryAndRecognizesEachAchievementOnlyOnce [FAIL]
+[xUnit.net 00:00:25.12]     Academix.Tests.Integration.Phase19CompletionWorkflowTests.GradeCorrectionInvalidatesIssuedTranscriptUntilAReviewedReissuance [FAIL]
+[xUnit.net 00:00:25.13]     Academix.Tests.Integration.Phase19RegistrarTests.RegistrationHistoryDoesNotExposeLegacyCrossInstitutionStudentLinks [FAIL]
+  Failed Academix.Tests.Integration.Phase19CompletionWorkflowTests.CurriculumTransitionRetainsHistoryAndRecognizesEachAchievementOnlyOnce [1 s]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 47
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 54
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.CurriculumTransitionRetainsHistoryAndRecognizesEachAchievementOnlyOnce() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 169
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase19RegistrarTests.ImportInvalidStudentDryRunCannotBeApprovedOrApplied [1 s]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19RegistrarTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RegistrarTests.cs:line 39
+   at Academix.Tests.Integration.Phase19RegistrarTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RegistrarTests.cs:line 43
+   at Academix.Tests.Integration.Phase19RegistrarTests.ImportInvalidStudentDryRunCannotBeApprovedOrApplied() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RegistrarTests.cs:line 118
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase19CompletionWorkflowTests.GradeCorrectionInvalidatesIssuedTranscriptUntilAReviewedReissuance [499 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 47
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 54
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.GradeCorrectionInvalidatesIssuedTranscriptUntilAReviewedReissuance() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 208
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase19RegistrarTests.RegistrationHistoryDoesNotExposeLegacyCrossInstitutionStudentLinks [507 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19RegistrarTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RegistrarTests.cs:line 39
+   at Academix.Tests.Integration.Phase19RegistrarTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RegistrarTests.cs:line 43
+   at Academix.Tests.Integration.Phase19RegistrarTests.RegistrationHistoryDoesNotExposeLegacyCrossInstitutionStudentLinks() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RegistrarTests.cs:line 50
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:25.23]     Academix.Tests.Integration.Phase22PhysicalVenueTests.MaintenanceIsIdempotentBlocksOverlapsAndCanBeCancelled [FAIL]
+[xUnit.net 00:00:25.53]     Academix.Tests.Integration.Phase15CurriculumTests.PlanPublishAssignmentGpaAndTenantIsolation [FAIL]
+[xUnit.net 00:00:25.59]     Academix.Tests.Integration.Phase19RegistrarTests.ImportAppliesThroughAcademicServicesAndConcurrentResumeDoesNotDuplicate [FAIL]
+  Failed Academix.Tests.Integration.Phase22PhysicalVenueTests.MaintenanceIsIdempotentBlocksOverlapsAndCanBeCancelled [328 ms]
+  Error Message:
+   Academix.Api.Middleware.ApiFault : Idempotency key was used for a different allocation.
+  Stack Trace:
+     at Academix.Api.Services.AcademicOperations.CampusReservationService.CreateCore(ClaimsPrincipal principal, Guid institutionId, CampusReservationCreate request, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\AcademicOperations\CampusReservationService.cs:line 41
+   at Academix.Api.Services.AcademicOperations.CampusReservationService.CreateCore(ClaimsPrincipal principal, Guid institutionId, CampusReservationCreate request, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\AcademicOperations\CampusReservationService.cs:line 138
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Academix.Tests.Integration.Phase22PhysicalVenueTests.MaintenanceIsIdempotentBlocksOverlapsAndCanBeCancelled() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase22PhysicalVenueTests.cs:line 54
+   at Academix.Tests.Integration.Phase22PhysicalVenueTests.MaintenanceIsIdempotentBlocksOverlapsAndCanBeCancelled() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase22PhysicalVenueTests.cs:line 62
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase15CurriculumTests.PlanPublishAssignmentGpaAndTenantIsolation [2 s]
+  Error Message:
+   Assert.Equal() Failure: Values differ
+Expected: OK
+Actual:   InternalServerError
+  Stack Trace:
+     at Academix.Tests.Integration.Phase15CurriculumTests.PlanPublishAssignmentGpaAndTenantIsolation() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase15CurriculumTests.cs:line 81
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase19RegistrarTests.ImportAppliesThroughAcademicServicesAndConcurrentResumeDoesNotDuplicate [464 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19RegistrarTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RegistrarTests.cs:line 39
+   at Academix.Tests.Integration.Phase19RegistrarTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RegistrarTests.cs:line 43
+   at Academix.Tests.Integration.Phase19RegistrarTests.ImportAppliesThroughAcademicServicesAndConcurrentResumeDoesNotDuplicate() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RegistrarTests.cs:line 132
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:25.63]     Academix.Tests.Integration.Phase19CompletionWorkflowTests.ApprovedImportReusesAnIndependentlyAcceptedApplicantWithoutASecondIdentity [FAIL]
+[xUnit.net 00:00:26.39]     Academix.Tests.Integration.Phase19RegistrarTests.EnrollmentAndBulkEligibilityRespectClosedTermAndAcademicHolds [FAIL]
+[xUnit.net 00:00:26.53]     Academix.Tests.Integration.Phase19CompletionWorkflowTests.RejectedApplicantAndConflictingEmailNeverGainStudentPrivileges [FAIL]
+  Failed Academix.Tests.Integration.Phase19CompletionWorkflowTests.ApprovedImportReusesAnIndependentlyAcceptedApplicantWithoutASecondIdentity [514 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 47
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 54
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.ApprovedImportReusesAnIndependentlyAcceptedApplicantWithoutASecondIdentity() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 336
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase19RegistrarTests.EnrollmentAndBulkEligibilityRespectClosedTermAndAcademicHolds [797 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19RegistrarTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RegistrarTests.cs:line 39
+   at Academix.Tests.Integration.Phase19RegistrarTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RegistrarTests.cs:line 43
+   at Academix.Tests.Integration.Phase19RegistrarTests.EnrollmentAndBulkEligibilityRespectClosedTermAndAcademicHolds() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RegistrarTests.cs:line 88
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase19CompletionWorkflowTests.RejectedApplicantAndConflictingEmailNeverGainStudentPrivileges [891 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 47
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 54
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.RejectedApplicantAndConflictingEmailNeverGainStudentPrivileges() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 89
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:26.81]     Academix.Tests.Integration.Phase19RegistrarTests.PostgreSqlRejectsPublishedPolicyMutationAndCrossInstitutionHold [FAIL]
+[xUnit.net 00:00:26.94]     Academix.Tests.Integration.Phase19CompletionWorkflowTests.OutboxRecoversExpiredLeasesAndConcurrentWorkersPublishOneDurableReceipt [FAIL]
+  Failed Academix.Tests.Integration.Phase19RegistrarTests.PostgreSqlRejectsPublishedPolicyMutationAndCrossInstitutionHold [414 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19RegistrarTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RegistrarTests.cs:line 39
+   at Academix.Tests.Integration.Phase19RegistrarTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RegistrarTests.cs:line 43
+   at Academix.Tests.Integration.Phase19RegistrarTests.PostgreSqlRejectsPublishedPolicyMutationAndCrossInstitutionHold() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RegistrarTests.cs:line 178
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase19CompletionWorkflowTests.OutboxRecoversExpiredLeasesAndConcurrentWorkersPublishOneDurableReceipt [415 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 47
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 54
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.OutboxRecoversExpiredLeasesAndConcurrentWorkersPublishOneDurableReceipt() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 189
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:27.08]     Academix.Tests.Integration.Phase23ServiceDeskTests.ReferralAndSlaReportFollowCurrentQueueWithoutChangingOriginalServiceDefinition [FAIL]
+[xUnit.net 00:00:27.24]     Academix.Tests.Integration.Phase16LifecycleTests.AdmissionApprovalIsSingleUse_TransferIsIsolated_GraduationNeedsAudit [FAIL]
+[xUnit.net 00:00:27.26]     Academix.Tests.Integration.Phase19RegistrarTests.DecisionSnapshotsRemainHistoricalWhenHoldIsReleased [FAIL]
+  Failed Academix.Tests.Integration.Phase23ServiceDeskTests.ReferralAndSlaReportFollowCurrentQueueWithoutChangingOriginalServiceDefinition [1 s]
+  Error Message:
+   System.InvalidOperationException : The LINQ expression 'DbSet<StudentServiceCase>()
+    .Where(s => s.InstitutionId == @institution && @queues
+        .Contains(s.CurrentQueueCode))
+    .GroupBy(s => s.CurrentQueueCode)
+    .Select(g => new ServiceCaseQueueReport(
+        g.Key, 
+        g
+            .AsQueryable()
+            .Count(e0 => e0.Status != "Closed" && e0.Status != "Rejected" && e0.Status != "Cancelled" && e0.Status != "Resolved"), 
+        g
+            .AsQueryable()
+            .Count(e0 => e0.DueAtUtc < @now && e0.Status != "Closed" && e0.Status != "Rejected" && e0.Status != "Cancelled" && e0.Status != "Resolved"), 
+        g
+            .AsQueryable()
+            .Count(e0 => e0.AssignedStaffId == null && e0.Status != "Closed" && e0.Status != "Rejected" && e0.Status != "Cancelled" && e0.Status != "Resolved")
+    ))
+    .OrderBy(e1 => e1.Queue)' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+  Stack Trace:
+     at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutorExpression[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass11_0`1.<ExecuteCore>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToArrayAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Academix.Api.Services.StudentServices.StudentServiceCaseService.Report(ClaimsPrincipal principal, Guid institution, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\StudentServices\StudentServiceCaseService.cs:line 452
+   at Academix.Tests.Integration.Phase23ServiceDeskTests.ReferralAndSlaReportFollowCurrentQueueWithoutChangingOriginalServiceDefinition() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase23ServiceDeskTests.cs:line 79
+   at Academix.Tests.Integration.Phase23ServiceDeskTests.ReferralAndSlaReportFollowCurrentQueueWithoutChangingOriginalServiceDefinition() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase23ServiceDeskTests.cs:line 81
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase16LifecycleTests.AdmissionApprovalIsSingleUse_TransferIsIsolated_GraduationNeedsAudit [3 s]
+  Error Message:
+   Assert.Equal() Failure: Values differ
+Expected: Conflict
+Actual:   NotFound
+  Stack Trace:
+     at Academix.Tests.Integration.Phase16LifecycleTests.AdmissionApprovalIsSingleUse_TransferIsIsolated_GraduationNeedsAudit() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase16LifecycleTests.cs:line 104
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase19RegistrarTests.DecisionSnapshotsRemainHistoricalWhenHoldIsReleased [453 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19RegistrarTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RegistrarTests.cs:line 39
+   at Academix.Tests.Integration.Phase19RegistrarTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RegistrarTests.cs:line 43
+   at Academix.Tests.Integration.Phase19RegistrarTests.DecisionSnapshotsRemainHistoricalWhenHoldIsReleased() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RegistrarTests.cs:line 104
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:27.43]     Academix.Tests.Integration.Phase19CompletionWorkflowTests.ImportDatabaseFailureRollsBackMembershipProfileAndCheckpointThenResumesOnce [FAIL]
+[xUnit.net 00:00:27.68]     Academix.Tests.Integration.Phase19RegistrarTests.PolicyPublicationRequiresIndependentReviewerAndPreventsOverlap [FAIL]
+[xUnit.net 00:00:27.73]     Academix.Tests.Integration.Phase23ServiceDeskTests.StaffOnlyAttachmentAndNotesCannotBeReadByStudent [FAIL]
+[xUnit.net 00:00:27.84]     Academix.Tests.Integration.Phase19CompletionWorkflowTests.ScheduledOutboxRetriesAfterPermissionFailureAndNeverDuplicatesNotifications [FAIL]
+  Failed Academix.Tests.Integration.Phase19CompletionWorkflowTests.ImportDatabaseFailureRollsBackMembershipProfileAndCheckpointThenResumesOnce [487 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 47
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 54
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.ImportDatabaseFailureRollsBackMembershipProfileAndCheckpointThenResumesOnce() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 287
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase19RegistrarTests.PolicyPublicationRequiresIndependentReviewerAndPreventsOverlap [416 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19RegistrarTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RegistrarTests.cs:line 39
+   at Academix.Tests.Integration.Phase19RegistrarTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RegistrarTests.cs:line 43
+   at Academix.Tests.Integration.Phase19RegistrarTests.PolicyPublicationRequiresIndependentReviewerAndPreventsOverlap() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RegistrarTests.cs:line 65
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase23ServiceDeskTests.StaffOnlyAttachmentAndNotesCannotBeReadByStudent [642 ms]
+  Error Message:
+   System.NullReferenceException : Object reference not set to an instance of an object.
+  Stack Trace:
+     at Microsoft.AspNetCore.Http.FormFile.set_ContentType(String value)
+   at Academix.Tests.Integration.Phase23ServiceDeskTests.StaffOnlyAttachmentAndNotesCannotBeReadByStudent() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase23ServiceDeskTests.cs:line 111
+   at Academix.Tests.Integration.Phase23ServiceDeskTests.StaffOnlyAttachmentAndNotesCannotBeReadByStudent() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase23ServiceDeskTests.cs:line 120
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase19CompletionWorkflowTests.ScheduledOutboxRetriesAfterPermissionFailureAndNeverDuplicatesNotifications [407 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 47
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 54
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.ScheduledOutboxRetriesAfterPermissionFailureAndNeverDuplicatesNotifications() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 243
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:28.08]     Academix.Tests.Integration.Phase19RegistrarTests.StudentAndOtherInstitutionCannotChangePolicy [FAIL]
+[xUnit.net 00:00:28.11]     Academix.Tests.Integration.Phase4ExamExecutionTests.StudentCanStartResumeAutosaveAndSubmitWithoutSeeingAnswerKey [FAIL]
+[xUnit.net 00:00:28.22]     Academix.Tests.Integration.Phase19CompletionWorkflowTests.AttendanceExcuseCompletesOnlyWhenItsSingleBusinessEffectCommits [FAIL]
+  Failed Academix.Tests.Integration.Phase19RegistrarTests.StudentAndOtherInstitutionCannotChangePolicy [403 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19RegistrarTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RegistrarTests.cs:line 39
+   at Academix.Tests.Integration.Phase19RegistrarTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RegistrarTests.cs:line 43
+   at Academix.Tests.Integration.Phase19RegistrarTests.StudentAndOtherInstitutionCannotChangePolicy() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RegistrarTests.cs:line 78
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase4ExamExecutionTests.StudentCanStartResumeAutosaveAndSubmitWithoutSeeingAnswerKey [4 s]
+  Error Message:
+   Assert.Equal() Failure: Values differ
+Expected: 2026-10-30T18:49:52.5859282Z
+Actual:   2026-10-30T18:49:52.5859280Z
+  Stack Trace:
+     at Academix.Tests.Integration.Phase4ExamExecutionTests.StudentCanStartResumeAutosaveAndSubmitWithoutSeeingAnswerKey() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase4ExamExecutionTests.cs:line 139
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase19CompletionWorkflowTests.AttendanceExcuseCompletesOnlyWhenItsSingleBusinessEffectCommits [378 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 47
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 54
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.AttendanceExcuseCompletesOnlyWhenItsSingleBusinessEffectCommits() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 128
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:28.62]     Academix.Tests.Integration.Phase19CompletionWorkflowTests.LegacyProofCaptureAndNewKeyRevocationAreIndependentOfJwtRotation [FAIL]
+[xUnit.net 00:00:28.66]     Academix.Tests.Integration.Phase21FinanceTests.FinancialPermissionRevocationAndInstitutionOwnershipApplyEvenToIdempotentRetries [FAIL]
+[xUnit.net 00:00:29.02]     Academix.Tests.Integration.Phase19CompletionWorkflowTests.WorkerIsolatesPoisonAttemptsDeliversOutboxAndRetriesWithoutDuplicateAudits(count: 3, failures: 1) [FAIL]
+[xUnit.net 00:00:29.37]     Academix.Tests.Integration.Phase19CompletionWorkflowTests.WorkerIsolatesPoisonAttemptsDeliversOutboxAndRetriesWithoutDuplicateAudits(count: 103, failures: 100) [FAIL]
+  Failed Academix.Tests.Integration.Phase19CompletionWorkflowTests.LegacyProofCaptureAndNewKeyRevocationAreIndependentOfJwtRotation [399 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 47
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 54
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.LegacyProofCaptureAndNewKeyRevocationAreIndependentOfJwtRotation() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 268
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase21FinanceTests.FinancialPermissionRevocationAndInstitutionOwnershipApplyEvenToIdempotentRetries [5 s]
+  Error Message:
+   Npgsql.PostgresException : 42702: column reference "old.Id" is ambiguous
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+  Stack Trace:
+     at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.ExecuteInternalCommand(Byte[] data, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlTransaction.Commit(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.CommitAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.CommitAsync(CancellationToken cancellationToken)
+   at Academix.Api.Services.Finance.FinanceService.<>c__DisplayClass64_0.<<Write>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceService.cs:line 65
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Finance.FinanceService.<>c__DisplayClass64_0.<<Write>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceService.cs:line 65
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Academix.Api.Services.Finance.FinanceService.AccountWrite(ClaimsPrincipal user, Guid accountId, Guid request, String operation, Object input, FinancePermission permission, Func`3 action, CancellationToken ct, Boolean student) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceService.cs:line 71
+   at Academix.Api.Services.Finance.FinanceService.InvoiceAction(ClaimsPrincipal user, Guid id, FinanceAction input, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceBilling.cs:line 74
+   at Academix.Tests.Integration.Phase21FinanceTests.FinancialPermissionRevocationAndInstitutionOwnershipApplyEvenToIdempotentRetries() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase21FinanceTests.cs:line 182
+   at Academix.Tests.Integration.Phase21FinanceTests.FinancialPermissionRevocationAndInstitutionOwnershipApplyEvenToIdempotentRetries() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase21FinanceTests.cs:line 186
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase19CompletionWorkflowTests.WorkerIsolatesPoisonAttemptsDeliversOutboxAndRetriesWithoutDuplicateAudits(count: 3, failures: 1) [393 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 47
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 54
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.WorkerIsolatesPoisonAttemptsDeliversOutboxAndRetriesWithoutDuplicateAudits(Int32 count, Int32 failures) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RemediationTests.cs:line 65
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase19CompletionWorkflowTests.WorkerIsolatesPoisonAttemptsDeliversOutboxAndRetriesWithoutDuplicateAudits(count: 103, failures: 100) [346 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 47
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 54
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.WorkerIsolatesPoisonAttemptsDeliversOutboxAndRetriesWithoutDuplicateAudits(Int32 count, Int32 failures) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RemediationTests.cs:line 65
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:29.71]     Academix.Tests.Integration.Phase19CompletionWorkflowTests.MissingAttendanceAndCrossTenantExecutionNeverCompleteAnApprovedRequest [FAIL]
+[xUnit.net 00:00:29.71]     Academix.Tests.Integration.Phase21FinanceTests.FinancialHoldsRespectPolicyDueDatesStudentAccessAndApprovedRescheduling [FAIL]
+[xUnit.net 00:00:30.14]     Academix.Tests.Integration.Phase19CompletionWorkflowTests.ApplicantAcceptanceProvisionsExactlyOnceAndRejectsPrematureOrCrossTenantAccess [FAIL]
+[xUnit.net 00:00:30.60]     Academix.Tests.Integration.Phase19CompletionWorkflowTests.PdfIssueSurvivesKeyRotationAndChecksStorageOwnershipRevocationAndSupersession [FAIL]
+[xUnit.net 00:00:31.03]     Academix.Tests.Integration.Phase19CompletionWorkflowTests.StorageFailureRollsBackIssuanceAndCorruptionCannotPassVerification [FAIL]
+  Failed Academix.Tests.Integration.Phase19CompletionWorkflowTests.MissingAttendanceAndCrossTenantExecutionNeverCompleteAnApprovedRequest [342 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 47
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 54
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.MissingAttendanceAndCrossTenantExecutionNeverCompleteAnApprovedRequest() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 146
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase21FinanceTests.FinancialHoldsRespectPolicyDueDatesStudentAccessAndApprovedRescheduling [1 s]
+  Error Message:
+   Npgsql.PostgresException : 42702: column reference "old.Id" is ambiguous
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+  Stack Trace:
+     at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.ExecuteInternalCommand(Byte[] data, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlTransaction.Commit(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.CommitAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.CommitAsync(CancellationToken cancellationToken)
+   at Academix.Api.Services.Finance.FinanceService.<>c__DisplayClass64_0.<<Write>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceService.cs:line 65
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Finance.FinanceService.<>c__DisplayClass64_0.<<Write>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceService.cs:line 65
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Academix.Api.Services.Finance.FinanceService.AccountWrite(ClaimsPrincipal user, Guid accountId, Guid request, String operation, Object input, FinancePermission permission, Func`3 action, CancellationToken ct, Boolean student) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceService.cs:line 71
+   at Academix.Api.Services.Finance.FinanceService.InvoiceAction(ClaimsPrincipal user, Guid id, FinanceAction input, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceBilling.cs:line 74
+   at Academix.Tests.Integration.Phase21FinanceTests.Invoice(Scenario s) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase21FinanceTests.cs:line 59
+   at Academix.Tests.Integration.Phase21FinanceTests.Invoice(Scenario s) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase21FinanceTests.cs:line 59
+   at Academix.Tests.Integration.Phase21FinanceTests.FinancialHoldsRespectPolicyDueDatesStudentAccessAndApprovedRescheduling() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase21FinanceTests.cs:line 152
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase19CompletionWorkflowTests.ApplicantAcceptanceProvisionsExactlyOnceAndRejectsPrematureOrCrossTenantAccess [435 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 47
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 54
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.ApplicantAcceptanceProvisionsExactlyOnceAndRejectsPrematureOrCrossTenantAccess() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 67
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase19CompletionWorkflowTests.PdfIssueSurvivesKeyRotationAndChecksStorageOwnershipRevocationAndSupersession [451 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 47
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 54
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.PdfIssueSurvivesKeyRotationAndChecksStorageOwnershipRevocationAndSupersession() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 100
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase19CompletionWorkflowTests.StorageFailureRollsBackIssuanceAndCorruptionCannotPassVerification [429 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 47
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 54
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.StorageFailureRollsBackIssuanceAndCorruptionCannotPassVerification() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 114
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:31.33]     Academix.Tests.Integration.Phase21FinanceTests.SimultaneousRefundRequestsReserveOnlyAvailableCash [FAIL]
+[xUnit.net 00:00:31.44]     Academix.Tests.Integration.Phase19CompletionWorkflowTests.AuthorizationDoesNotReuseAnAccountTrackedBeforeDeactivation [FAIL]
+[xUnit.net 00:00:31.86]     Academix.Tests.Integration.Phase19CompletionWorkflowTests.PdfDatabaseRollbackLeavesDurableCleanupThatRetriesAndPreservesCommittedReissuance [FAIL]
+[xUnit.net 00:00:32.19]     Academix.Tests.Integration.Phase19CompletionWorkflowTests.PdfTransientDatabaseFailureRetriesWithFreshTrackedStateAndOneIssuance [FAIL]
+[xUnit.net 00:00:32.47]     Academix.Tests.Integration.Phase19CompletionWorkflowTests.ImportNewIdentityWaitsForVerifiedActivationThenResumesWithoutDuplicateAccounts [FAIL]
+  Failed Academix.Tests.Integration.Phase21FinanceTests.SimultaneousRefundRequestsReserveOnlyAvailableCash [1 s]
+  Error Message:
+   Npgsql.PostgresException : 42702: column reference "old.Id" is ambiguous
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+  Stack Trace:
+     at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.ExecuteInternalCommand(Byte[] data, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlTransaction.Commit(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.CommitAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.CommitAsync(CancellationToken cancellationToken)
+   at Academix.Api.Services.Finance.FinanceService.<>c__DisplayClass64_0.<<Write>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceService.cs:line 65
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Finance.FinanceService.<>c__DisplayClass64_0.<<Write>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceService.cs:line 65
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Academix.Api.Services.Finance.FinanceService.AccountWrite(ClaimsPrincipal user, Guid accountId, Guid request, String operation, Object input, FinancePermission permission, Func`3 action, CancellationToken ct, Boolean student) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceService.cs:line 71
+   at Academix.Api.Services.Finance.FinanceService.InvoiceAction(ClaimsPrincipal user, Guid id, FinanceAction input, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceBilling.cs:line 74
+   at Academix.Tests.Integration.Phase21FinanceTests.Invoice(Scenario s) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase21FinanceTests.cs:line 59
+   at Academix.Tests.Integration.Phase21FinanceTests.Invoice(Scenario s) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase21FinanceTests.cs:line 59
+   at Academix.Tests.Integration.Phase21FinanceTests.SimultaneousRefundRequestsReserveOnlyAvailableCash() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase21FinanceTests.cs:line 104
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase19CompletionWorkflowTests.AuthorizationDoesNotReuseAnAccountTrackedBeforeDeactivation [409 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 47
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 54
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.AuthorizationDoesNotReuseAnAccountTrackedBeforeDeactivation() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 368
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase19CompletionWorkflowTests.PdfDatabaseRollbackLeavesDurableCleanupThatRetriesAndPreservesCommittedReissuance [422 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 47
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 54
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.PdfDatabaseRollbackLeavesDurableCleanupThatRetriesAndPreservesCommittedReissuance() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RemediationTests.cs:line 117
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase19CompletionWorkflowTests.PdfTransientDatabaseFailureRetriesWithFreshTrackedStateAndOneIssuance [329 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 47
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 54
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.PdfTransientDatabaseFailureRetriesWithFreshTrackedStateAndOneIssuance() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19RemediationTests.cs:line 29
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase19CompletionWorkflowTests.ImportNewIdentityWaitsForVerifiedActivationThenResumesWithoutDuplicateAccounts [276 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 47
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 54
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.ImportNewIdentityWaitsForVerifiedActivationThenResumesWithoutDuplicateAccounts() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 316
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:32.74]     Academix.Tests.Integration.Phase19CompletionWorkflowTests.RenewedInvitationRejectsOldTokensAndExpiredInvitationsNeverActivate [FAIL]
+[xUnit.net 00:00:32.79]     Academix.Tests.Integration.Phase21FinanceTests.RepeatedConcurrentPostingAndDuplicateReferencesCannotCollectMoneyTwice [FAIL]
+[xUnit.net 00:00:33.05]     Academix.Tests.Integration.Phase19CompletionWorkflowTests.EnrollmentExceptionGrantsOnlyItsApprovedRuleAndNeverBypassesHoldsOrCapacity [FAIL]
+[xUnit.net 00:00:33.95]     Academix.Tests.Integration.Phase21FinanceTests.BillingCashAllocationRefundAndReversalsReconcileWithVerifiableReceipts [FAIL]
+  Failed Academix.Tests.Integration.Phase19CompletionWorkflowTests.RenewedInvitationRejectsOldTokensAndExpiredInvitationsNeverActivate [268 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 47
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 54
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.RenewedInvitationRejectsOldTokensAndExpiredInvitationsNeverActivate() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 356
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase21FinanceTests.RepeatedConcurrentPostingAndDuplicateReferencesCannotCollectMoneyTwice [1 s]
+  Error Message:
+   Npgsql.PostgresException : 42702: column reference "old.Id" is ambiguous
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+  Stack Trace:
+     at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.ExecuteInternalCommand(Byte[] data, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlTransaction.Commit(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.CommitAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.CommitAsync(CancellationToken cancellationToken)
+   at Academix.Api.Services.Finance.FinanceService.<>c__DisplayClass64_0.<<Write>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceService.cs:line 65
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Finance.FinanceService.<>c__DisplayClass64_0.<<Write>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceService.cs:line 65
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Academix.Api.Services.Finance.FinanceService.AccountWrite(ClaimsPrincipal user, Guid accountId, Guid request, String operation, Object input, FinancePermission permission, Func`3 action, CancellationToken ct, Boolean student) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceService.cs:line 71
+   at Academix.Api.Services.Finance.FinanceService.PaymentAction(ClaimsPrincipal user, Guid id, FinanceAction input, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinancePayments.cs:line 32
+   at Academix.Tests.Integration.Phase21FinanceTests.<>c__DisplayClass10_0.<<RepeatedConcurrentPostingAndDuplicateReferencesCannotCollectMoneyTwice>g__Post|1>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase21FinanceTests.cs:line 95
+--- End of stack trace from previous location ---
+   at Academix.Tests.Integration.Phase21FinanceTests.<>c__DisplayClass10_0.<<RepeatedConcurrentPostingAndDuplicateReferencesCannotCollectMoneyTwice>g__Post|1>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase21FinanceTests.cs:line 95
+--- End of stack trace from previous location ---
+   at Academix.Tests.Integration.Phase21FinanceTests.RepeatedConcurrentPostingAndDuplicateReferencesCannotCollectMoneyTwice() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase21FinanceTests.cs:line 96
+   at Academix.Tests.Integration.Phase21FinanceTests.RepeatedConcurrentPostingAndDuplicateReferencesCannotCollectMoneyTwice() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase21FinanceTests.cs:line 99
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase19CompletionWorkflowTests.EnrollmentExceptionGrantsOnlyItsApprovedRuleAndNeverBypassesHoldsOrCapacity [310 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 47
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 54
+   at Academix.Tests.Integration.Phase19CompletionWorkflowTests.EnrollmentExceptionGrantsOnlyItsApprovedRuleAndNeverBypassesHoldsOrCapacity() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase19CompletionWorkflowTests.cs:line 220
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase21FinanceTests.BillingCashAllocationRefundAndReversalsReconcileWithVerifiableReceipts [1 s]
+  Error Message:
+   Npgsql.PostgresException : 42702: column reference "old.Id" is ambiguous
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+  Stack Trace:
+     at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.ExecuteInternalCommand(Byte[] data, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlTransaction.Commit(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.CommitAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.CommitAsync(CancellationToken cancellationToken)
+   at Academix.Api.Services.Finance.FinanceService.<>c__DisplayClass64_0.<<Write>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceService.cs:line 65
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Finance.FinanceService.<>c__DisplayClass64_0.<<Write>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceService.cs:line 65
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Academix.Api.Services.Finance.FinanceService.AccountWrite(ClaimsPrincipal user, Guid accountId, Guid request, String operation, Object input, FinancePermission permission, Func`3 action, CancellationToken ct, Boolean student) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceService.cs:line 71
+   at Academix.Api.Services.Finance.FinanceService.InvoiceAction(ClaimsPrincipal user, Guid id, FinanceAction input, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceBilling.cs:line 74
+   at Academix.Tests.Integration.Phase21FinanceTests.Invoice(Scenario s) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase21FinanceTests.cs:line 59
+   at Academix.Tests.Integration.Phase21FinanceTests.Invoice(Scenario s) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase21FinanceTests.cs:line 59
+   at Academix.Tests.Integration.Phase21FinanceTests.BillingCashAllocationRefundAndReversalsReconcileWithVerifiableReceipts() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase21FinanceTests.cs:line 66
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:35.16]     Academix.Tests.Integration.Phase21FinanceTests.FailureAfterJournalWriteRollsBackLiabilityOutboxAndIdempotencyTogether [FAIL]
+  Failed Academix.Tests.Integration.Phase21FinanceTests.FailureAfterJournalWriteRollsBackLiabilityOutboxAndIdempotencyTogether [1 s]
+  Error Message:
+   Npgsql.PostgresException : 42702: column reference "old.Id" is ambiguous
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+  Stack Trace:
+     at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.ExecuteInternalCommand(Byte[] data, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlTransaction.Commit(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.CommitAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.CommitAsync(CancellationToken cancellationToken)
+   at Academix.Api.Services.Finance.FinanceService.<>c__DisplayClass64_0.<<Write>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceService.cs:line 65
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Finance.FinanceService.<>c__DisplayClass64_0.<<Write>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceService.cs:line 65
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Academix.Api.Services.Finance.FinanceService.AccountWrite(ClaimsPrincipal user, Guid accountId, Guid request, String operation, Object input, FinancePermission permission, Func`3 action, CancellationToken ct, Boolean student) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceService.cs:line 71
+   at Academix.Api.Services.Finance.FinanceService.InvoiceAction(ClaimsPrincipal user, Guid id, FinanceAction input, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceBilling.cs:line 74
+   at Academix.Tests.Integration.Phase21FinanceTests.FailureAfterJournalWriteRollsBackLiabilityOutboxAndIdempotencyTogether() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase21FinanceTests.cs:line 144
+   at Academix.Tests.Integration.Phase21FinanceTests.FailureAfterJournalWriteRollsBackLiabilityOutboxAndIdempotencyTogether() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase21FinanceTests.cs:line 147
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:36.06]     Academix.Tests.Integration.Phase21FinanceTests.ReportingKeepsCurrenciesSeparateAndReconciliationNeverCreatesCashOrBankConfirmation [FAIL]
+[xUnit.net 00:00:37.04]     Academix.Tests.Integration.Phase21FinanceTests.PaidInvoiceScholarshipsCreditNotesRevocationAndReschedulingUseCorrectingEntries [FAIL]
+  Failed Academix.Tests.Integration.Phase21FinanceTests.ReportingKeepsCurrenciesSeparateAndReconciliationNeverCreatesCashOrBankConfirmation [897 ms]
+  Error Message:
+   Npgsql.PostgresException : 42702: column reference "old.Id" is ambiguous
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+  Stack Trace:
+     at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.ExecuteInternalCommand(Byte[] data, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlTransaction.Commit(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.CommitAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.CommitAsync(CancellationToken cancellationToken)
+   at Academix.Api.Services.Finance.FinanceService.<>c__DisplayClass64_0.<<Write>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceService.cs:line 65
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Finance.FinanceService.<>c__DisplayClass64_0.<<Write>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceService.cs:line 65
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Academix.Api.Services.Finance.FinanceService.AccountWrite(ClaimsPrincipal user, Guid accountId, Guid request, String operation, Object input, FinancePermission permission, Func`3 action, CancellationToken ct, Boolean student) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceService.cs:line 71
+   at Academix.Api.Services.Finance.FinanceService.InvoiceAction(ClaimsPrincipal user, Guid id, FinanceAction input, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceBilling.cs:line 74
+   at Academix.Tests.Integration.Phase21FinanceTests.Invoice(Scenario s) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase21FinanceTests.cs:line 59
+   at Academix.Tests.Integration.Phase21FinanceTests.Invoice(Scenario s) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase21FinanceTests.cs:line 59
+   at Academix.Tests.Integration.Phase21FinanceTests.ReportingKeepsCurrenciesSeparateAndReconciliationNeverCreatesCashOrBankConfirmation() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase21FinanceTests.cs:line 166
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase21FinanceTests.PaidInvoiceScholarshipsCreditNotesRevocationAndReschedulingUseCorrectingEntries [969 ms]
+  Error Message:
+   Npgsql.PostgresException : 42702: column reference "old.Id" is ambiguous
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+  Stack Trace:
+     at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.ExecuteInternalCommand(Byte[] data, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlTransaction.Commit(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.CommitAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.CommitAsync(CancellationToken cancellationToken)
+   at Academix.Api.Services.Finance.FinanceService.<>c__DisplayClass64_0.<<Write>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceService.cs:line 65
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Finance.FinanceService.<>c__DisplayClass64_0.<<Write>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceService.cs:line 65
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Academix.Api.Services.Finance.FinanceService.AccountWrite(ClaimsPrincipal user, Guid accountId, Guid request, String operation, Object input, FinancePermission permission, Func`3 action, CancellationToken ct, Boolean student) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceService.cs:line 71
+   at Academix.Api.Services.Finance.FinanceService.InvoiceAction(ClaimsPrincipal user, Guid id, FinanceAction input, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Finance\FinanceBilling.cs:line 74
+   at Academix.Tests.Integration.Phase21FinanceTests.Invoice(Scenario s) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase21FinanceTests.cs:line 59
+   at Academix.Tests.Integration.Phase21FinanceTests.Invoice(Scenario s) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase21FinanceTests.cs:line 59
+   at Academix.Tests.Integration.Phase21FinanceTests.PaidInvoiceScholarshipsCreditNotesRevocationAndReschedulingUseCorrectingEntries() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase21FinanceTests.cs:line 112
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:41.45]     Academix.Tests.Integration.Phase20AcademicProgressTests.ExemptionsRequireIndependentApprovalAndNeverGrantInventedCredit [FAIL]
+  Failed Academix.Tests.Integration.Phase20AcademicProgressTests.ExemptionsRequireIndependentApprovalAndNeverGrantInventedCredit [1 s]
+  Error Message:
+   System.InvalidOperationException : The LINQ expression 'DbSet<CurriculumCourse>()
+    .Where(c => c.PlanId == @plan_Id)
+    .Join(
+        inner: DbSet<Course>(), 
+        outerKeySelector: c => (object)c.CourseId, 
+        innerKeySelector: c0 => (object)c0.Id, 
+        resultSelector: (c, c0) => new TransparentIdentifier<CurriculumCourse, Course>(
+            Outer = c, 
+            Inner = c0
+        ))
+    .OrderBy(ti => new CurriculumCourseView(
+        ti.Outer.CourseId, 
+        ti.Inner.Code, 
+        ti.Inner.Title, 
+        ti.Outer.RequirementKind, 
+        ti.Outer.CreditHours, 
+        ti.Outer.RecommendedTerm
+    ).RecommendedTerm)' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+  Stack Trace:
+     at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutorExpression[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass11_0`1.<ExecuteCore>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Academix.Api.Services.Curriculum.CurriculumService.Map(CurriculumPlan plan, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Curriculum\CurriculumService.cs:line 22
+   at Academix.Api.Services.Curriculum.CurriculumService.<>c__DisplayClass24_0.<<PublishCore>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Curriculum\CurriculumService.cs:line 180
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Curriculum.CurriculumService.<>c__DisplayClass24_0.<<PublishCore>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Curriculum\CurriculumService.cs:line 180
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Academix.Api.Services.Curriculum.CurriculumService.PublishCore(ClaimsPrincipal principal, Guid planId, PublishCurriculumPlan request, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Curriculum\CurriculumService.cs:line 160
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Academix.Tests.Integration.Phase20AcademicProgressTests.Setup(Boolean completed) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase20AcademicProgressTests.cs:line 62
+   at Academix.Tests.Integration.Phase20AcademicProgressTests.Setup(Boolean completed) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase20AcademicProgressTests.cs:line 70
+   at Academix.Tests.Integration.Phase20AcademicProgressTests.ExemptionsRequireIndependentApprovalAndNeverGrantInventedCredit() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase20AcademicProgressTests.cs:line 185
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:42.16]     Academix.Tests.Integration.Phase20AcademicProgressTests.StudyPlanRevisionsRetainHistoryAndNeverCreateEnrollments [FAIL]
+[xUnit.net 00:00:42.84]     Academix.Tests.Integration.Phase20AcademicProgressTests.RejectedGraduationsCanResubmitAndChangedRecordsPreventFinalization [FAIL]
+  Failed Academix.Tests.Integration.Phase20AcademicProgressTests.StudyPlanRevisionsRetainHistoryAndNeverCreateEnrollments [707 ms]
+  Error Message:
+   System.InvalidOperationException : The LINQ expression 'DbSet<CurriculumCourse>()
+    .Where(c => c.PlanId == @plan_Id)
+    .Join(
+        inner: DbSet<Course>(), 
+        outerKeySelector: c => (object)c.CourseId, 
+        innerKeySelector: c0 => (object)c0.Id, 
+        resultSelector: (c, c0) => new TransparentIdentifier<CurriculumCourse, Course>(
+            Outer = c, 
+            Inner = c0
+        ))
+    .OrderBy(ti => new CurriculumCourseView(
+        ti.Outer.CourseId, 
+        ti.Inner.Code, 
+        ti.Inner.Title, 
+        ti.Outer.RequirementKind, 
+        ti.Outer.CreditHours, 
+        ti.Outer.RecommendedTerm
+    ).RecommendedTerm)' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+  Stack Trace:
+     at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutorExpression[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass11_0`1.<ExecuteCore>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Academix.Api.Services.Curriculum.CurriculumService.Map(CurriculumPlan plan, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Curriculum\CurriculumService.cs:line 22
+   at Academix.Api.Services.Curriculum.CurriculumService.<>c__DisplayClass24_0.<<PublishCore>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Curriculum\CurriculumService.cs:line 180
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Curriculum.CurriculumService.<>c__DisplayClass24_0.<<PublishCore>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Curriculum\CurriculumService.cs:line 180
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Academix.Api.Services.Curriculum.CurriculumService.PublishCore(ClaimsPrincipal principal, Guid planId, PublishCurriculumPlan request, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Curriculum\CurriculumService.cs:line 160
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Academix.Tests.Integration.Phase20AcademicProgressTests.Setup(Boolean completed) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase20AcademicProgressTests.cs:line 62
+   at Academix.Tests.Integration.Phase20AcademicProgressTests.Setup(Boolean completed) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase20AcademicProgressTests.cs:line 70
+   at Academix.Tests.Integration.Phase20AcademicProgressTests.StudyPlanRevisionsRetainHistoryAndNeverCreateEnrollments() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase20AcademicProgressTests.cs:line 123
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase20AcademicProgressTests.RejectedGraduationsCanResubmitAndChangedRecordsPreventFinalization [678 ms]
+  Error Message:
+   System.InvalidOperationException : The LINQ expression 'DbSet<CurriculumCourse>()
+    .Where(c => c.PlanId == @plan_Id)
+    .Join(
+        inner: DbSet<Course>(), 
+        outerKeySelector: c => (object)c.CourseId, 
+        innerKeySelector: c0 => (object)c0.Id, 
+        resultSelector: (c, c0) => new TransparentIdentifier<CurriculumCourse, Course>(
+            Outer = c, 
+            Inner = c0
+        ))
+    .OrderBy(ti => new CurriculumCourseView(
+        ti.Outer.CourseId, 
+        ti.Inner.Code, 
+        ti.Inner.Title, 
+        ti.Outer.RequirementKind, 
+        ti.Outer.CreditHours, 
+        ti.Outer.RecommendedTerm
+    ).RecommendedTerm)' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+  Stack Trace:
+     at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutorExpression[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass11_0`1.<ExecuteCore>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Academix.Api.Services.Curriculum.CurriculumService.Map(CurriculumPlan plan, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Curriculum\CurriculumService.cs:line 22
+   at Academix.Api.Services.Curriculum.CurriculumService.<>c__DisplayClass24_0.<<PublishCore>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Curriculum\CurriculumService.cs:line 180
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Curriculum.CurriculumService.<>c__DisplayClass24_0.<<PublishCore>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Curriculum\CurriculumService.cs:line 180
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Academix.Api.Services.Curriculum.CurriculumService.PublishCore(ClaimsPrincipal principal, Guid planId, PublishCurriculumPlan request, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Curriculum\CurriculumService.cs:line 160
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Academix.Tests.Integration.Phase20AcademicProgressTests.Setup(Boolean completed) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase20AcademicProgressTests.cs:line 62
+   at Academix.Tests.Integration.Phase20AcademicProgressTests.Setup(Boolean completed) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase20AcademicProgressTests.cs:line 70
+   at Academix.Tests.Integration.Phase20AcademicProgressTests.RejectedGraduationsCanResubmitAndChangedRecordsPreventFinalization() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase20AcademicProgressTests.cs:line 170
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:43.54]     Academix.Tests.Integration.Phase8AdvancedLearningTests.TeamProjectAndRubricGradingLifecycle [FAIL]
+[xUnit.net 00:00:43.54]     Academix.Tests.Integration.Phase8AdvancedLearningTests.DiscussionPermissionsLockingAndHiddenReplies [FAIL]
+[xUnit.net 00:00:43.55]     Academix.Tests.Integration.Phase20AcademicProgressTests.SessionsKeepNotesPrivateAndRequireStudentAcknowledgement [FAIL]
+  Failed Academix.Tests.Integration.Phase8AdvancedLearningTests.TeamProjectAndRubricGradingLifecycle [6 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase8AdvancedLearningTests.Seed() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase8AdvancedLearningTests.cs:line 42
+   at Academix.Tests.Integration.Phase8AdvancedLearningTests.Seed() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase8AdvancedLearningTests.cs:line 47
+   at Academix.Tests.Integration.Phase8AdvancedLearningTests.TeamProjectAndRubricGradingLifecycle() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase8AdvancedLearningTests.cs:line 99
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase8AdvancedLearningTests.DiscussionPermissionsLockingAndHiddenReplies [2 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.Phase8AdvancedLearningTests.Seed() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase8AdvancedLearningTests.cs:line 42
+   at Academix.Tests.Integration.Phase8AdvancedLearningTests.Seed() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase8AdvancedLearningTests.cs:line 47
+   at Academix.Tests.Integration.Phase8AdvancedLearningTests.DiscussionPermissionsLockingAndHiddenReplies() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase8AdvancedLearningTests.cs:line 61
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase20AcademicProgressTests.SessionsKeepNotesPrivateAndRequireStudentAcknowledgement [708 ms]
+  Error Message:
+   System.InvalidOperationException : The LINQ expression 'DbSet<CurriculumCourse>()
+    .Where(c => c.PlanId == @plan_Id)
+    .Join(
+        inner: DbSet<Course>(), 
+        outerKeySelector: c => (object)c.CourseId, 
+        innerKeySelector: c0 => (object)c0.Id, 
+        resultSelector: (c, c0) => new TransparentIdentifier<CurriculumCourse, Course>(
+            Outer = c, 
+            Inner = c0
+        ))
+    .OrderBy(ti => new CurriculumCourseView(
+        ti.Outer.CourseId, 
+        ti.Inner.Code, 
+        ti.Inner.Title, 
+        ti.Outer.RequirementKind, 
+        ti.Outer.CreditHours, 
+        ti.Outer.RecommendedTerm
+    ).RecommendedTerm)' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+  Stack Trace:
+     at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutorExpression[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass11_0`1.<ExecuteCore>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Academix.Api.Services.Curriculum.CurriculumService.Map(CurriculumPlan plan, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Curriculum\CurriculumService.cs:line 22
+   at Academix.Api.Services.Curriculum.CurriculumService.<>c__DisplayClass24_0.<<PublishCore>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Curriculum\CurriculumService.cs:line 180
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Curriculum.CurriculumService.<>c__DisplayClass24_0.<<PublishCore>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Curriculum\CurriculumService.cs:line 180
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Academix.Api.Services.Curriculum.CurriculumService.PublishCore(ClaimsPrincipal principal, Guid planId, PublishCurriculumPlan request, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Curriculum\CurriculumService.cs:line 160
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Academix.Tests.Integration.Phase20AcademicProgressTests.Setup(Boolean completed) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase20AcademicProgressTests.cs:line 62
+   at Academix.Tests.Integration.Phase20AcademicProgressTests.Setup(Boolean completed) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase20AcademicProgressTests.cs:line 70
+   at Academix.Tests.Integration.Phase20AcademicProgressTests.SessionsKeepNotesPrivateAndRequireStudentAcknowledgement() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase20AcademicProgressTests.cs:line 98
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:44.95]     Academix.Tests.Integration.AssignmentDeadlineConcurrencyTests.ClosedAssignmentDuringRowLockWaitRejectsNewWork(submitExistingDraft: True) [FAIL]
+[xUnit.net 00:00:44.95]     Academix.Tests.Integration.AssignmentDeadlineConcurrencyTests.ClosedAssignmentDuringRowLockWaitRejectsNewWork(submitExistingDraft: False) [FAIL]
+[xUnit.net 00:00:44.95]     Academix.Tests.Integration.Phase20AcademicProgressTests.GraduationRequiresDepartmentReviewIndependentApprovalAndConcurrentFinalizationIsIdempotent [FAIL]
+  Failed Academix.Tests.Integration.AssignmentDeadlineConcurrencyTests.ClosedAssignmentDuringRowLockWaitRejectsNewWork(submitExistingDraft: True) [7 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.AssignmentDeadlineConcurrencyTests.SeedAsync(Boolean existingDraft) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\AssignmentDeadlineConcurrencyTests.cs:line 35
+   at Academix.Tests.Integration.AssignmentDeadlineConcurrencyTests.SeedAsync(Boolean existingDraft) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\AssignmentDeadlineConcurrencyTests.cs:line 44
+   at Academix.Tests.Integration.AssignmentDeadlineConcurrencyTests.ClosedAssignmentDuringRowLockWaitRejectsNewWork(Boolean submitExistingDraft) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\AssignmentDeadlineConcurrencyTests.cs:line 118
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.AssignmentDeadlineConcurrencyTests.ClosedAssignmentDuringRowLockWaitRejectsNewWork(submitExistingDraft: False) [1 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.AssignmentDeadlineConcurrencyTests.SeedAsync(Boolean existingDraft) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\AssignmentDeadlineConcurrencyTests.cs:line 35
+   at Academix.Tests.Integration.AssignmentDeadlineConcurrencyTests.SeedAsync(Boolean existingDraft) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\AssignmentDeadlineConcurrencyTests.cs:line 44
+   at Academix.Tests.Integration.AssignmentDeadlineConcurrencyTests.ClosedAssignmentDuringRowLockWaitRejectsNewWork(Boolean submitExistingDraft) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\AssignmentDeadlineConcurrencyTests.cs:line 118
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase20AcademicProgressTests.GraduationRequiresDepartmentReviewIndependentApprovalAndConcurrentFinalizationIsIdempotent [1 s]
+  Error Message:
+   System.InvalidOperationException : The LINQ expression 'DbSet<CurriculumCourse>()
+    .Where(c => c.PlanId == @plan_Id)
+    .Join(
+        inner: DbSet<Course>(), 
+        outerKeySelector: c => (object)c.CourseId, 
+        innerKeySelector: c0 => (object)c0.Id, 
+        resultSelector: (c, c0) => new TransparentIdentifier<CurriculumCourse, Course>(
+            Outer = c, 
+            Inner = c0
+        ))
+    .OrderBy(ti => new CurriculumCourseView(
+        ti.Outer.CourseId, 
+        ti.Inner.Code, 
+        ti.Inner.Title, 
+        ti.Outer.RequirementKind, 
+        ti.Outer.CreditHours, 
+        ti.Outer.RecommendedTerm
+    ).RecommendedTerm)' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+  Stack Trace:
+     at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutorExpression[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass11_0`1.<ExecuteCore>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Academix.Api.Services.Curriculum.CurriculumService.Map(CurriculumPlan plan, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Curriculum\CurriculumService.cs:line 22
+   at Academix.Api.Services.Curriculum.CurriculumService.<>c__DisplayClass24_0.<<PublishCore>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Curriculum\CurriculumService.cs:line 180
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Curriculum.CurriculumService.<>c__DisplayClass24_0.<<PublishCore>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Curriculum\CurriculumService.cs:line 180
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Academix.Api.Services.Curriculum.CurriculumService.PublishCore(ClaimsPrincipal principal, Guid planId, PublishCurriculumPlan request, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Curriculum\CurriculumService.cs:line 160
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Academix.Tests.Integration.Phase20AcademicProgressTests.Setup(Boolean completed) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase20AcademicProgressTests.cs:line 62
+   at Academix.Tests.Integration.Phase20AcademicProgressTests.Setup(Boolean completed) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase20AcademicProgressTests.cs:line 70
+   at Academix.Tests.Integration.Phase20AcademicProgressTests.GraduationRequiresDepartmentReviewIndependentApprovalAndConcurrentFinalizationIsIdempotent() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase20AcademicProgressTests.cs:line 139
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:45.17]     Academix.Tests.Integration.FinalRemediationIntegrationTests.ExamAppealRequiresReconciliationBeforeRecordsAndDegreeAuditAndPreservesManualOverride [FAIL]
+[xUnit.net 00:00:45.64]     Academix.Tests.Integration.Phase20AcademicProgressTests.AdvisorWorkloadReassignmentHistoryAndCurrentRoleAuthorization [FAIL]
+[xUnit.net 00:00:45.65]     Academix.Tests.Integration.FinalRemediationIntegrationTests.WaitingProtectedMutationRevalidatesAuthorityAfterInstitutionLock(operation: "Building", revocation: "Role") [FAIL]
+[xUnit.net 00:00:45.73]     Academix.Tests.Integration.Phase12AnalyticsTests.SectionMetrics_DenyUnassignedTeachersAndOtherStudents [FAIL]
+  Failed Academix.Tests.Integration.FinalRemediationIntegrationTests.ExamAppealRequiresReconciliationBeforeRecordsAndDegreeAuditAndPreservesManualOverride [509 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 46
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 57
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.ExamAppealRequiresReconciliationBeforeRecordsAndDegreeAuditAndPreservesManualOverride() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 78
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase20AcademicProgressTests.AdvisorWorkloadReassignmentHistoryAndCurrentRoleAuthorization [689 ms]
+  Error Message:
+   System.InvalidOperationException : The LINQ expression 'DbSet<CurriculumCourse>()
+    .Where(c => c.PlanId == @plan_Id)
+    .Join(
+        inner: DbSet<Course>(), 
+        outerKeySelector: c => (object)c.CourseId, 
+        innerKeySelector: c0 => (object)c0.Id, 
+        resultSelector: (c, c0) => new TransparentIdentifier<CurriculumCourse, Course>(
+            Outer = c, 
+            Inner = c0
+        ))
+    .OrderBy(ti => new CurriculumCourseView(
+        ti.Outer.CourseId, 
+        ti.Inner.Code, 
+        ti.Inner.Title, 
+        ti.Outer.RequirementKind, 
+        ti.Outer.CreditHours, 
+        ti.Outer.RecommendedTerm
+    ).RecommendedTerm)' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+  Stack Trace:
+     at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutorExpression[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass11_0`1.<ExecuteCore>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Academix.Api.Services.Curriculum.CurriculumService.Map(CurriculumPlan plan, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Curriculum\CurriculumService.cs:line 22
+   at Academix.Api.Services.Curriculum.CurriculumService.<>c__DisplayClass24_0.<<PublishCore>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Curriculum\CurriculumService.cs:line 180
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Curriculum.CurriculumService.<>c__DisplayClass24_0.<<PublishCore>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Curriculum\CurriculumService.cs:line 180
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Academix.Api.Services.Curriculum.CurriculumService.PublishCore(ClaimsPrincipal principal, Guid planId, PublishCurriculumPlan request, CancellationToken ct) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Curriculum\CurriculumService.cs:line 160
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Academix.Api.Services.Infrastructure.RetryingServiceWork.<>c__DisplayClass3_0`2.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Services\Infrastructure\RetryingServiceWork.cs:line 24
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Academix.Tests.Integration.Phase20AcademicProgressTests.Setup(Boolean completed) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase20AcademicProgressTests.cs:line 62
+   at Academix.Tests.Integration.Phase20AcademicProgressTests.Setup(Boolean completed) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase20AcademicProgressTests.cs:line 70
+   at Academix.Tests.Integration.Phase20AcademicProgressTests.AdvisorWorkloadReassignmentHistoryAndCurrentRoleAuthorization() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase20AcademicProgressTests.cs:line 76
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.FinalRemediationIntegrationTests.WaitingProtectedMutationRevalidatesAuthorityAfterInstitutionLock(operation: "Building", revocation: "Role") [477 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 46
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 57
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.WaitingProtectedMutationRevalidatesAuthorityAfterInstitutionLock(String operation, String revocation) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 155
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.Phase12AnalyticsTests.SectionMetrics_DenyUnassignedTeachersAndOtherStudents [737 ms]
+  Error Message:
+   Assert.Equal() Failure: Values differ
+Expected: OK
+Actual:   InternalServerError
+  Stack Trace:
+     at Academix.Tests.Integration.Phase12AnalyticsTests.SectionMetrics_DenyUnassignedTeachersAndOtherStudents() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\Phase12AnalyticsTests.cs:line 105
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:46.04]     Academix.Tests.Integration.FinalRemediationIntegrationTests.WaitingProtectedMutationRevalidatesAuthorityAfterInstitutionLock(operation: "Reservation", revocation: "Role") [FAIL]
+[xUnit.net 00:00:46.40]     Academix.Tests.Integration.FinalRemediationIntegrationTests.WaitingProtectedMutationRevalidatesAuthorityAfterInstitutionLock(operation: "Reservation", revocation: "Membership") [FAIL]
+[xUnit.net 00:00:46.74]     Academix.Tests.Integration.FinalRemediationIntegrationTests.WaitingProtectedMutationRevalidatesAuthorityAfterInstitutionLock(operation: "Reservation", revocation: "Disabled") [FAIL]
+[xUnit.net 00:00:47.05]     Academix.Tests.Integration.FinalRemediationIntegrationTests.WaitingProtectedMutationRevalidatesAuthorityAfterInstitutionLock(operation: "Grant", revocation: "Role") [FAIL]
+[xUnit.net 00:00:47.34]     Academix.Tests.Integration.FinalRemediationIntegrationTests.LearningCleanupIntentSurvivesRollbackAndNeverDeletesReferencedUploads [FAIL]
+  Failed Academix.Tests.Integration.FinalRemediationIntegrationTests.WaitingProtectedMutationRevalidatesAuthorityAfterInstitutionLock(operation: "Reservation", revocation: "Role") [393 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 46
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 57
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.WaitingProtectedMutationRevalidatesAuthorityAfterInstitutionLock(String operation, String revocation) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 155
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.FinalRemediationIntegrationTests.WaitingProtectedMutationRevalidatesAuthorityAfterInstitutionLock(operation: "Reservation", revocation: "Membership") [358 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 46
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 57
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.WaitingProtectedMutationRevalidatesAuthorityAfterInstitutionLock(String operation, String revocation) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 155
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.FinalRemediationIntegrationTests.WaitingProtectedMutationRevalidatesAuthorityAfterInstitutionLock(operation: "Reservation", revocation: "Disabled") [338 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 46
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 57
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.WaitingProtectedMutationRevalidatesAuthorityAfterInstitutionLock(String operation, String revocation) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 155
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.FinalRemediationIntegrationTests.WaitingProtectedMutationRevalidatesAuthorityAfterInstitutionLock(operation: "Grant", revocation: "Role") [304 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 46
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 57
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.WaitingProtectedMutationRevalidatesAuthorityAfterInstitutionLock(String operation, String revocation) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 155
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.FinalRemediationIntegrationTests.LearningCleanupIntentSurvivesRollbackAndNeverDeletesReferencedUploads [296 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 46
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 57
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.LearningCleanupIntentSurvivesRollbackAndNeverDeletesReferencedUploads() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 198
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:47.61]     Academix.Tests.Integration.FinalRemediationIntegrationTests.IssuedGraduationPdfBecomesSourceChangedAndReissuanceRetainsOriginalArtifact [FAIL]
+[xUnit.net 00:00:47.89]     Academix.Tests.Integration.FinalRemediationIntegrationTests.IdenticalTimetableAndRoomCodesInDifferentInstitutionsRemainIndependent [FAIL]
+[xUnit.net 00:00:48.17]     Academix.Tests.Integration.FinalRemediationIntegrationTests.FailureDuringSourceInvalidationRollsBackTheAssessmentAndAllDependentMarkers [FAIL]
+[xUnit.net 00:00:48.44]     Academix.Tests.Integration.FinalRemediationIntegrationTests.ConcurrentReservationAndEnrollmentCannotCommitInsufficientSeats [FAIL]
+[xUnit.net 00:00:48.70]     Academix.Tests.Integration.FinalRemediationIntegrationTests.ExistingPhysicalSeatsAndTimetablesConstrainLaterIndividualAndBatchEnrollment [FAIL]
+  Failed Academix.Tests.Integration.FinalRemediationIntegrationTests.IssuedGraduationPdfBecomesSourceChangedAndReissuanceRetainsOriginalArtifact [269 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 46
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 57
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.IssuedGraduationPdfBecomesSourceChangedAndReissuanceRetainsOriginalArtifact() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 109
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.FinalRemediationIntegrationTests.IdenticalTimetableAndRoomCodesInDifferentInstitutionsRemainIndependent [276 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 46
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 57
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.IdenticalTimetableAndRoomCodesInDifferentInstitutionsRemainIndependent() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 225
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.FinalRemediationIntegrationTests.FailureDuringSourceInvalidationRollsBackTheAssessmentAndAllDependentMarkers [276 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 46
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 57
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.FailureDuringSourceInvalidationRollsBackTheAssessmentAndAllDependentMarkers() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 171
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.FinalRemediationIntegrationTests.ConcurrentReservationAndEnrollmentCannotCommitInsufficientSeats [269 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 46
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 57
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.ConcurrentReservationAndEnrollmentCannotCommitInsufficientSeats() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 189
+--- End of stack trace from previous location ---
+  Failed Academix.Tests.Integration.FinalRemediationIntegrationTests.ExistingPhysicalSeatsAndTimetablesConstrainLaterIndividualAndBatchEnrollment [265 ms]
+  Error Message:
+   System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')
+  Stack Trace:
+     at Academix.Api.Domain.Courses.Course.Create(Guid id, Guid institutionId, String code, String title) in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Api\Entities\Courses\Course.cs:line 22
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 46
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.Setup() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 57
+   at Academix.Tests.Integration.FinalRemediationIntegrationTests.ExistingPhysicalSeatsAndTimetablesConstrainLaterIndividualAndBatchEnrollment() in C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\Academix.Tests\Integration\FinalRemediationIntegrationTests.cs:line 129
+--- End of stack trace from previous location ---
+Results File: C:\Users\lenovo\Desktop\ACADEMIX\phase24-final\verification\final-integration\integration-after-migrations.trx
+
+Failed!  - Failed:    66, Passed:    46, Skipped:     0, Total:   112, Duration: 48 s - Academix.Tests.dll (net10.0)

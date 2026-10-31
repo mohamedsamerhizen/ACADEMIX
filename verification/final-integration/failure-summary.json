@@ -1,0 +1,266 @@
+[
+  {
+    "Name": "Academix.Tests.Integration.Phase21FinanceTests.FinancialPermissionRevocationAndInstitutionOwnershipApplyEvenToIdempotentRetries",
+    "Error": "Npgsql.PostgresException : 42702: column reference \"old.Id\" is ambiguous\r"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase21FinanceTests.PaidInvoiceScholarshipsCreditNotesRevocationAndReschedulingUseCorrectingEntries",
+    "Error": "Npgsql.PostgresException : 42702: column reference \"old.Id\" is ambiguous\r"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19RegistrarTests.ImportAppliesThroughAcademicServicesAndConcurrentResumeDoesNotDuplicate",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase22PhysicalVenueTests.MaintenanceIsIdempotentBlocksOverlapsAndCanBeCancelled",
+    "Error": "Academix.Api.Middleware.ApiFault : Idempotency key was used for a different allocation."
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19RegistrarTests.DecisionSnapshotsRemainHistoricalWhenHoldIsReleased",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19CompletionWorkflowTests.PdfIssueSurvivesKeyRotationAndChecksStorageOwnershipRevocationAndSupersession",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.FinalRemediationIntegrationTests.IssuedGraduationPdfBecomesSourceChangedAndReissuanceRetainsOriginalArtifact",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19CompletionWorkflowTests.ScheduledOutboxRetriesAfterPermissionFailureAndNeverDuplicatesNotifications",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase20AcademicProgressTests.StudyPlanRevisionsRetainHistoryAndNeverCreateEnrollments",
+    "Error": "System.InvalidOperationException : The LINQ expression 'DbSet<CurriculumCourse>()\r"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19RegistrarTests.PostgreSqlRejectsPublishedPolicyMutationAndCrossInstitutionHold",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19CompletionWorkflowTests.ApplicantAcceptanceProvisionsExactlyOnceAndRejectsPrematureOrCrossTenantAccess",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase8AdvancedLearningTests.DiscussionPermissionsLockingAndHiddenReplies",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19CompletionWorkflowTests.ImportDatabaseFailureRollsBackMembershipProfileAndCheckpointThenResumesOnce",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19CompletionWorkflowTests.PdfDatabaseRollbackLeavesDurableCleanupThatRetriesAndPreservesCommittedReissuance",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.FinalRemediationIntegrationTests.WaitingProtectedMutationRevalidatesAuthorityAfterInstitutionLock(operation: \"Reservation\", revocation: \"Disabled\")",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.FinalRemediationIntegrationTests.WaitingProtectedMutationRevalidatesAuthorityAfterInstitutionLock(operation: \"Reservation\", revocation: \"Membership\")",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.FinalRemediationIntegrationTests.IdenticalTimetableAndRoomCodesInDifferentInstitutionsRemainIndependent",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19CompletionWorkflowTests.EnrollmentExceptionGrantsOnlyItsApprovedRuleAndNeverBypassesHoldsOrCapacity",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase21FinanceTests.RepeatedConcurrentPostingAndDuplicateReferencesCannotCollectMoneyTwice",
+    "Error": "Npgsql.PostgresException : 42702: column reference \"old.Id\" is ambiguous\r"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase20AcademicProgressTests.ExemptionsRequireIndependentApprovalAndNeverGrantInventedCredit",
+    "Error": "System.InvalidOperationException : The LINQ expression 'DbSet<CurriculumCourse>()\r"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19RegistrarTests.PolicyPublicationRequiresIndependentReviewerAndPreventsOverlap",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase21FinanceTests.FailureAfterJournalWriteRollsBackLiabilityOutboxAndIdempotencyTogether",
+    "Error": "Npgsql.PostgresException : 42702: column reference \"old.Id\" is ambiguous\r"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase23ServiceDeskTests.ReferralAndSlaReportFollowCurrentQueueWithoutChangingOriginalServiceDefinition",
+    "Error": "System.InvalidOperationException : The LINQ expression 'DbSet<StudentServiceCase>()\r"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19CompletionWorkflowTests.ApprovedImportReusesAnIndependentlyAcceptedApplicantWithoutASecondIdentity",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase20AcademicProgressTests.GraduationRequiresDepartmentReviewIndependentApprovalAndConcurrentFinalizationIsIdempotent",
+    "Error": "System.InvalidOperationException : The LINQ expression 'DbSet<CurriculumCourse>()\r"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase20AcademicProgressTests.RejectedGraduationsCanResubmitAndChangedRecordsPreventFinalization",
+    "Error": "System.InvalidOperationException : The LINQ expression 'DbSet<CurriculumCourse>()\r"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19CompletionWorkflowTests.RejectedApplicantAndConflictingEmailNeverGainStudentPrivileges",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19CompletionWorkflowTests.AttendanceExcuseCompletesOnlyWhenItsSingleBusinessEffectCommits",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.FinalRemediationIntegrationTests.ExamAppealRequiresReconciliationBeforeRecordsAndDegreeAuditAndPreservesManualOverride",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19CompletionWorkflowTests.LegacyProofCaptureAndNewKeyRevocationAreIndependentOfJwtRotation",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase21FinanceTests.ReportingKeepsCurrenciesSeparateAndReconciliationNeverCreatesCashOrBankConfirmation",
+    "Error": "Npgsql.PostgresException : 42702: column reference \"old.Id\" is ambiguous\r"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19CompletionWorkflowTests.AuthorizationDoesNotReuseAnAccountTrackedBeforeDeactivation",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.FinalRemediationIntegrationTests.WaitingProtectedMutationRevalidatesAuthorityAfterInstitutionLock(operation: \"Grant\", revocation: \"Role\")",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19CompletionWorkflowTests.GradeCorrectionInvalidatesIssuedTranscriptUntilAReviewedReissuance",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase16LifecycleTests.AdmissionApprovalIsSingleUse_TransferIsIsolated_GraduationNeedsAudit",
+    "Error": "Assert.Equal() Failure: Values differ\r"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19CompletionWorkflowTests.ImportNewIdentityWaitsForVerifiedActivationThenResumesWithoutDuplicateAccounts",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19CompletionWorkflowTests.StorageFailureRollsBackIssuanceAndCorruptionCannotPassVerification",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19RegistrarTests.ImportInvalidStudentDryRunCannotBeApprovedOrApplied",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase20AcademicProgressTests.SessionsKeepNotesPrivateAndRequireStudentAcknowledgement",
+    "Error": "System.InvalidOperationException : The LINQ expression 'DbSet<CurriculumCourse>()\r"
+  },
+  {
+    "Name": "Academix.Tests.Integration.FinalRemediationIntegrationTests.WaitingProtectedMutationRevalidatesAuthorityAfterInstitutionLock(operation: \"Building\", revocation: \"Role\")",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.AssignmentDeadlineConcurrencyTests.ClosedAssignmentDuringRowLockWaitRejectsNewWork(submitExistingDraft: True)",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.FinalRemediationIntegrationTests.WaitingProtectedMutationRevalidatesAuthorityAfterInstitutionLock(operation: \"Reservation\", revocation: \"Role\")",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19CompletionWorkflowTests.MissingAttendanceAndCrossTenantExecutionNeverCompleteAnApprovedRequest",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19RegistrarTests.RegistrationHistoryDoesNotExposeLegacyCrossInstitutionStudentLinks",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19RegistrarTests.StudentAndOtherInstitutionCannotChangePolicy",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.FinalRemediationIntegrationTests.ExistingPhysicalSeatsAndTimetablesConstrainLaterIndividualAndBatchEnrollment",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase23ServiceDeskTests.StaffOnlyAttachmentAndNotesCannotBeReadByStudent",
+    "Error": "System.NullReferenceException : Object reference not set to an instance of an object."
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase12AnalyticsTests.SectionMetrics_DenyUnassignedTeachersAndOtherStudents",
+    "Error": "Assert.Equal() Failure: Values differ\r"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19CompletionWorkflowTests.CurriculumTransitionRetainsHistoryAndRecognizesEachAchievementOnlyOnce",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.AssignmentDeadlineConcurrencyTests.ClosedAssignmentDuringRowLockWaitRejectsNewWork(submitExistingDraft: False)",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.FinalRemediationIntegrationTests.LearningCleanupIntentSurvivesRollbackAndNeverDeletesReferencedUploads",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19CompletionWorkflowTests.PdfTransientDatabaseFailureRetriesWithFreshTrackedStateAndOneIssuance",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase4ExamExecutionTests.StudentCanStartResumeAutosaveAndSubmitWithoutSeeingAnswerKey",
+    "Error": "Assert.Equal() Failure: Values differ\r"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19RegistrarTests.EnrollmentAndBulkEligibilityRespectClosedTermAndAcademicHolds",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19CompletionWorkflowTests.WorkerIsolatesPoisonAttemptsDeliversOutboxAndRetriesWithoutDuplicateAudits(count: 103, failures: 100)",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19CompletionWorkflowTests.OutboxRecoversExpiredLeasesAndConcurrentWorkersPublishOneDurableReceipt",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.FinalRemediationIntegrationTests.ConcurrentReservationAndEnrollmentCannotCommitInsufficientSeats",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase8AdvancedLearningTests.TeamProjectAndRubricGradingLifecycle",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase20AcademicProgressTests.AdvisorWorkloadReassignmentHistoryAndCurrentRoleAuthorization",
+    "Error": "System.InvalidOperationException : The LINQ expression 'DbSet<CurriculumCourse>()\r"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19CompletionWorkflowTests.RenewedInvitationRejectsOldTokensAndExpiredInvitationsNeverActivate",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase15CurriculumTests.PlanPublishAssignmentGpaAndTenantIsolation",
+    "Error": "Assert.Equal() Failure: Values differ\r"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase21FinanceTests.SimultaneousRefundRequestsReserveOnlyAvailableCash",
+    "Error": "Npgsql.PostgresException : 42702: column reference \"old.Id\" is ambiguous\r"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase21FinanceTests.BillingCashAllocationRefundAndReversalsReconcileWithVerifiableReceipts",
+    "Error": "Npgsql.PostgresException : 42702: column reference \"old.Id\" is ambiguous\r"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase19CompletionWorkflowTests.WorkerIsolatesPoisonAttemptsDeliversOutboxAndRetriesWithoutDuplicateAudits(count: 3, failures: 1)",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.FinalRemediationIntegrationTests.FailureDuringSourceInvalidationRollsBackTheAssessmentAndAllDependentMarkers",
+    "Error": "System.ArgumentException : Course code must have 2-8 letters and 2-4 digits. (Parameter 'code')"
+  },
+  {
+    "Name": "Academix.Tests.Integration.Phase21FinanceTests.FinancialHoldsRespectPolicyDueDatesStudentAccessAndApprovedRescheduling",
+    "Error": "Npgsql.PostgresException : 42702: column reference \"old.Id\" is ambiguous\r"
+  }
+]

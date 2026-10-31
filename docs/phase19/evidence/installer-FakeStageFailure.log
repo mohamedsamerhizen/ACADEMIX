@@ -1,0 +1,9 @@
+Release status: INCOMPLETE. Read PHASE19_IMPLEMENTATION_REPORT.md for unimplemented requirements.
+SIMULATED dotnet invocation 1 for FakeStageFailure. This is an installer control-flow test.
+C:\Users\lenovo\Documents\ChatGPT\ACADEMIX\phase19-work\delivery\apply.ps1 : Release build failed (42).
+At C:\Users\lenovo\Documents\ChatGPT\ACADEMIX\phase19-work\test-installer.ps1:44 char:1
++ & (Join-Path $package 'apply.ps1') -ProjectRoot $fixture
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,apply.ps1
+ 
