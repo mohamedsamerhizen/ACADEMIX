@@ -28,3 +28,5 @@
 
 # Preserve local runtime-verification fixture backups without publishing them.
 /verification/runtime-closure/source-before/
+/VERIFY_PHASE23_LOCAL.ps1
+/VERIFY_PHASE24_FINAL_LOCAL.ps1
