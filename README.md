@@ -7,13 +7,17 @@
 
 **University ERP, Student Information & Learning Management Backend**
 
-ACADEMIX connects admissions, teaching, assessment, academic records and institutional operations in one ASP.NET Core API. Its engineering focus is the integrity of decisions across those domains: who may act, which evidence is current, what must commit together, and what happens when a dependency fails.
+ACADEMIX is a **.NET 10 / PostgreSQL 18 modular monolith** for university operations. One ASP.NET Core API connects admissions and registration, learning and assessment, academic records and graduation, finance, campus services and institutional quality.
+
+Its engineering focus is the integrity of decisions across those modules: who may act, which evidence is current, what must commit together, and what happens when a dependency fails.
 
 ![Technology badges: .NET 10, ASP.NET Core, PostgreSQL 18, EF Core 10, MinIO and Docker](docs/assets/graphics/technology-badges.svg)
 
-**Backend only.** No student/admin frontend or hosted university deployment is included. The accepted release is **APPROVED_WITH_DOCUMENTED_LIMITATIONS**, supported by a dated **696/696 passing** verification run. Portfolio acceptance is distinct from production deployment certification.
+**Verified baseline: 696/696 passing tests** in the accepted 2026-10-31 release run. **Backend API only**, with genuine OpenAPI JSON captures below. Release status: **APPROVED_WITH_DOCUMENTED_LIMITATIONS**; portfolio acceptance is distinct from production deployment certification.
 
-[Capabilities](#core-capabilities) · [Workflows](#connected-business-workflows) · [Architecture](#architecture) · [Evidence](#verified-engineering-evidence) · [Quick start](#quick-start--docker) · [Documentation](#documentation-index)
+[Overview](#at-a-glance) · [Architecture](#architecture) · [Capabilities](#core-capabilities) · [API captures](#real-api-captures) · [Evidence](#verified-engineering-evidence) · [Quick start](#quick-start--docker) · [Documentation](#documentation-index)
+
+By [Mohamed Samer Mohammed](https://github.com/mohamedsamerhizen).
 
 ## Why ACADEMIX exists
 
@@ -35,6 +39,14 @@ ACADEMIX models the connections explicitly. Published evidence, current academic
 
 ![System overview connecting admissions, teaching, records and institutional operations through a shared academic model](docs/assets/graphics/system-overview.svg)
 
+## Architecture
+
+![Actual modular monolith request flow from consumers through ASP.NET Core authentication, controllers and scoped services to PostgreSQL, private MinIO and background workers](docs/assets/graphics/architecture.svg)
+
+`Academix.Api` is one deployable application. Controllers handle transport; scoped services implement workflows, resource authorization and transaction orchestration. EF Core and ASP.NET Core Identity share `AcademixDbContext`. PostgreSQL holds relational state and durable Outbox records; MinIO holds private artifacts. Background workers perform delivery, expiration and recovery work.
+
+This structure keeps cross-domain academic and finance operations close to their relational transaction boundary while keeping HTTP handling separate from business rules. It uses no message broker, microservice deployment topology or independent application-layer assemblies. See the [architecture guide](docs/architecture.md) for the repository's structural notes; early phase examples there are historical subsets of the current domain coverage.
+
 ## Core capabilities
 
 ![Twelve implemented domain groups, from institutional governance to shared infrastructure](docs/assets/graphics/business-modules.svg)
@@ -53,13 +65,13 @@ ACADEMIX models the connections explicitly. Published evidence, current academic
 
 ## Real API captures
 
-The configured interface is **machine-readable OpenAPI JSON**, displayed below in the browser's native JSON view. These genuine captures came from the current Release assembly running against a newly created, isolated local PostgreSQL database. They show contract discovery, not Swagger UI, a frontend or execution of every listed workflow.
+These genuine browser captures show **Development OpenAPI JSON** from the accepted Release assembly using an isolated local PostgreSQL database. They document API discovery; no Swagger UI or student/admin frontend is configured.
 
-| OpenAPI identity and first operation | Academic workspace response schema |
+| API identity and an advising operation | Academic workspace response fields |
 |---|---|
 | [![Live OpenAPI JSON showing the Academix.Api title and an advising institution policy operation](docs/assets/screenshots/openapi-overview.jpg)](docs/assets/screenshots/openapi-overview.jpg) | [![Live OpenAPI JSON showing academic workspace response fields](docs/assets/screenshots/academic-schema.jpg)](docs/assets/screenshots/academic-schema.jpg) |
 
-Open either image for full size. [Capture provenance and scope](docs/API_GUIDE.md#screenshot-provenance) explain the isolated environment and sanitization.
+*Left: API title and advising policy route. Right: response schema fields, without populated student data.* Open either image for full size. [Capture provenance and scope](docs/API_GUIDE.md#screenshot-provenance) describe the isolated environment and sanitization.
 
 ## Connected business workflows
 
@@ -96,14 +108,6 @@ Fees and invoices establish obligations; scholarship assistance and verified pay
 ### Scheduling and institutional services
 
 Teaching sessions and physical examination reservations share room capacity and collision constraints. Administrative occupancy/calendar access is distinct from supported member availability queries. Service requests use queue grants and object access checks to control who may read a case, comment privately, attach evidence or refer it onward; a broad staff role alone does not confer every case's access.
-
-## Architecture
-
-![Actual modular monolith request flow from consumers through ASP.NET Core authentication, controllers and scoped services to PostgreSQL, private MinIO and background workers](docs/assets/graphics/architecture.svg)
-
-`Academix.Api` is one deployable application. Controllers handle transport; scoped services implement workflows, resource authorization and transaction orchestration. EF Core and ASP.NET Core Identity share `AcademixDbContext`. PostgreSQL holds relational state and durable Outbox records; MinIO holds private artifacts. Background workers perform delivery, expiration and recovery work.
-
-This structure keeps cross-domain academic and finance operations close to their relational transaction boundary while keeping HTTP handling separate from business rules. It uses no message broker, microservice deployment topology or independent application-layer assemblies. See the [architecture guide](docs/architecture.md) for the repository's structural notes; early phase examples there are historical subsets of the current domain coverage.
 
 ## Roles, authorization and institution isolation
 
@@ -186,7 +190,7 @@ Academix.Tests/
   Integration/          PostgreSQL and real-provider regression scenarios
   ...                   Local domain, authorization and security cases
 compose.yaml            PostgreSQL, MinIO and API local environment
-docs/                   Guides, original visuals and genuine API captures
+docs/                   Guides, original visuals, API captures and history/
 verification/           Historical audit and final executed release evidence
 ```
 
@@ -267,7 +271,9 @@ Verified public routes include `GET /api/courses`, `GET /health/live` and `GET /
 - [Final release closure](verification/FINAL_RELEASE_CLOSURE.md) — authoritative accepted outcome and limitations.
 - [Executed final results](verification/runtime-closure/final-results.json) — test classification and migration outcomes.
 - [Architecture notes](docs/architecture.md) — structural background; early phase subsets remain historical.
-- [Presentation report](docs/PORTFOLIO_PRESENTATION_REPORT.md) — documentation scope and validation.
+- [Presentation report](docs/PORTFOLIO_PRESENTATION_REPORT.md) — original documentation scope and validation.
+- [Development history](docs/history/README.md) — preserved Phase 23/24 package notes and historical script paths.
+- [Final GitHub presentation check](docs/FINAL_GITHUB_PRESENTATION_CHECK.md) — final cleanup, integrity checks and owner settings.
 
 Phase design files, roadmap and older audit packages are development history. Their phase-specific descriptions and older test totals do not supersede the final closure.
 
@@ -286,5 +292,7 @@ Useful review and interview topics are the **post-lock reauthorization** regress
 
 ## Author and license
 
-This release snapshot does not declare verified author metadata or include a root `LICENSE` file. No license is inferred from the portfolio presentation or the design references.
+Created by **[Mohamed Samer Mohammed](https://github.com/mohamedsamerhizen)**.
+
+No root `LICENSE` file is included. No license is inferred from this portfolio presentation.
 

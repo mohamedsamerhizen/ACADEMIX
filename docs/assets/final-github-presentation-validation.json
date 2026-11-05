@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-05",
+  "timezone": "Asia/Baghdad",
+  "decision": "READY_WITH_PRESENTATION_LIMITATIONS",
+  "baseline": {
+    "date": "2026-10-31",
+    "passed": 696,
+    "failed": 0,
+    "skipped": 0,
+    "testsRerun": false
+  },
+  "integrity": {
+    "tracked": 704,
+    "initialTracked": 704,
+    "changed": [
+      "README.md"
+    ],
+    "moved": [
+      "PHASE23_FINAL_README.md",
+      "PHASE23_PACKAGE01_README.md",
+      "PHASE24_FINAL_README.md",
+      "PHASE24_PACKAGE01_README.md"
+    ],
+    "sourceEntries": 436,
+    "sourceDifferences": [],
+    "evidenceEntries": 675,
+    "evidenceDifferences": [],
+    "suspiciousFilenames": [],
+    "textFilesScanned": 684,
+    "credentialCandidates": 27
+  },
+  "historicalMoves": [
+    {
+      "from": "PHASE23_FINAL_README.md",
+      "to": "docs/history/PHASE23_FINAL_README.md",
+      "sha256": "32D7CE581890443418CF3FD08905161BBE583885E83EFF6F1C0C5D11D089B3ED",
+      "bytesPreserved": true
+    },
+    {
+      "from": "PHASE23_PACKAGE01_README.md",
+      "to": "docs/history/PHASE23_PACKAGE01_README.md",
+      "sha256": "CF309C48EEE3677177F9AB000F6A7E1B37EC7FC9818E1B6C3DEEF104866A3A9F",
+      "bytesPreserved": true
+    },
+    {
+      "from": "PHASE24_FINAL_README.md",
+      "to": "docs/history/PHASE24_FINAL_README.md",
+      "sha256": "5C6D7C6CECBBFD13C17B5711C882C9843118E98AF4842D39A4B4E3F31C063B22",
+      "bytesPreserved": true
+    },
+    {
+      "from": "PHASE24_PACKAGE01_README.md",
+      "to": "docs/history/PHASE24_PACKAGE01_README.md",
+      "sha256": "DF38C257BB16CD1AC43C544A7C6F53BD73CEA9EFDE19C0DD8DFB3F017BBE4775",
+      "bytesPreserved": true
+    }
+  ],
+  "hygieneReview": {
+    "highConfidenceFindings": 0,
+    "credentialAssignmentCandidates": 27,
+    "testFixtureDeclarations": 20,
+    "testDiscoveryExamples": 6,
+    "documentationPlaceholders": 1,
+    "liveCredentialsDetected": 0,
+    "historyScanned": false
+  },
+  "visualReview": {
+    "light": "passed",
+    "dark": "passed",
+    "genuineOpenApiGallery": "passed",
+    "originalAssetsUnchanged": true,
+    "hostedGitHubRendering": "pending owner push"
+  },
+  "externalPages": {
+    "author": "https://github.com/mohamedsamerhizen",
+    "repository": "https://github.com/mohamedsamerhizen/ACADEMIX",
+    "openedSuccessfully": true
+  },
+  "committed": false,
+  "pushed": false,
+  "published": false,
+  "linksAndImages": {
+    "documents": [
+      "README.md",
+      "docs/history/README.md",
+      "docs/history/PHASE23_FINAL_README.md",
+      "docs/history/PHASE23_PACKAGE01_README.md",
+      "docs/history/PHASE24_FINAL_README.md",
+      "docs/history/PHASE24_PACKAGE01_README.md",
+      "docs/FINAL_GITHUB_PRESENTATION_CHECK.md"
+    ],
+    "localReferences": 64,
+    "brokenReferences": [],
+    "externalLinks": [
+      "https://github.com/mohamedsamerhizen",
+      "https://github.com/mohamedsamerhizen/ACADEMIX"
+    ],
+    "svgCount": 11,
+    "decodedImages": 16,
+    "scriptPathsChecked": [
+      "VERIFY_PHASE23_LOCAL.ps1",
+      "VERIFY_PHASE24_FINAL_LOCAL.ps1"
+    ],
+    "scriptExecution": false
+  }
+}
